@@ -15,11 +15,11 @@ C:/Users/bassc/OneDrive/Documents/GameDev/VirtualPet
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49184
+60526
 Successfully changed project path to: C:/Users/bassc/OneDrive/Documents/GameDev/VirtualPet
 C:/Users/bassc/OneDrive/Documents/GameDev/VirtualPet
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 21.16 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 36.81 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.1f1 (77a89f25062f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Resources/UnitySubsystems
@@ -35,132 +35,1803 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56272
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56808
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.001878 seconds.
+Registered in 0.002103 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 19.75 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 19.96 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.929 seconds
+- Completed reload, in  1.121 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000498 seconds.
+Registered in 0.000531 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.718 seconds
+- Completed reload, in  0.758 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
 Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1114 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 57.7 MB.
-System memory in use after: 57.8 MB.
+System memory in use before: 63.7 MB.
+System memory in use after: 63.8 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1557.
-Total: 1.691300 ms (FindLiveObjects: 0.162300 ms CreateObjectMapping: 0.028400 ms MarkObjects: 1.427700 ms  DeleteObjects: 0.072000 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Fantasy Forest Environment Free Sample
-  artifactKey: Guid(24e336d84a3a41f47b34cd47f443281d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Forest Environment Free Sample using Guid(24e336d84a3a41f47b34cd47f443281d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ebcfd79200a6b9476368769e0f40171') in 0.008739 seconds
-  Import took 0.010479 seconds .
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1567.
+Total: 2.453300 ms (FindLiveObjects: 0.270900 ms CreateObjectMapping: 0.090900 ms MarkObjects: 1.999100 ms  DeleteObjects: 0.090700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.996169 seconds.
-  path: Assets/Fantasy Forest Environment Free Sample/PostProcessing Profile.asset
-  artifactKey: Guid(84e004e54aa75074885db0856eedb697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Forest Environment Free Sample/PostProcessing Profile.asset using Guid(84e004e54aa75074885db0856eedb697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '404f2e09da91e9eeeb0c7f380943b0be') in 0.025186 seconds
-  Import took 0.027395 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.798848 seconds.
-  path: Assets/Fantasy Forest Environment Free Sample/Scenes
-  artifactKey: Guid(62872d07d188c1c40b0a8f51ce5f5d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Forest Environment Free Sample/Scenes using Guid(62872d07d188c1c40b0a8f51ce5f5d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9488f56168826e87f9d5b39839ac082') in 0.007386 seconds
-  Import took 0.011217 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027187 seconds.
   path: Assets/Fantasy Forest Environment Free Sample/Scenes/New Terrain.asset
   artifactKey: Guid(02bc0e2176f6a4e4ea3faf0c622664cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Forest Environment Free Sample/Scenes/New Terrain.asset using Guid(02bc0e2176f6a4e4ea3faf0c622664cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb7a761bcdcabd900d028a679286878') in 0.098169 seconds
-  Import took 0.101369 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.165909 seconds.
-  path: Assets/Fantasy Forest Environment Free Sample/Scenes/assets.unity
-  artifactKey: Guid(a143ab047b99a124ca579bc8e0366cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Forest Environment Free Sample/Scenes/assets.unity using Guid(a143ab047b99a124ca579bc8e0366cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0105f93e5507f31b1da5b662fd398a9') in 0.007116 seconds
-  Import took 0.010436 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.339764 seconds.
-  path: Assets/Fantasy Forest Environment Free Sample/Scenes/demoScene_free.unity
-  artifactKey: Guid(7769f33fb4fa2e5458344a36556ad760) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Forest Environment Free Sample/Scenes/demoScene_free.unity using Guid(7769f33fb4fa2e5458344a36556ad760) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0582910a7f5cc266f359ec8184e80049') in 0.013900 seconds
-  Import took 0.018035 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.019207 seconds.
-  path: Assets/Fantasy Forest Environment Free Sample/Scenes/demoScene_free.unity
-  artifactKey: Guid(7769f33fb4fa2e5458344a36556ad760) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Forest Environment Free Sample/Scenes/demoScene_free.unity using Guid(7769f33fb4fa2e5458344a36556ad760) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0582910a7f5cc266f359ec8184e80049') in 0.004595 seconds
-  Import took 0.008216 seconds .
+Start importing Assets/Fantasy Forest Environment Free Sample/Scenes/New Terrain.asset using Guid(02bc0e2176f6a4e4ea3faf0c622664cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93d162e5597428172e33162a8c9ed919') in 0.126231 seconds
+  Import took 0.129412 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000550 seconds.
+Registered in 0.000541 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.708 seconds
+- Completed reload, in  0.695 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1108 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 58.7 MB.
-System memory in use after: 58.3 MB.
+Unloading 1109 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 64.6 MB.
+System memory in use after: 64.6 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1564.
-Total: 2.206300 ms (FindLiveObjects: 0.178100 ms CreateObjectMapping: 0.031300 ms MarkObjects: 1.564000 ms  DeleteObjects: 0.431600 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1573.
+Total: 2.257500 ms (FindLiveObjects: 0.158000 ms CreateObjectMapping: 0.026800 ms MarkObjects: 2.011900 ms  DeleteObjects: 0.059500 ms)
 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Import Request.
+  Time since last request: 136.531311 seconds.
+  path: Assets/2d
+  artifactKey: Guid(4679b4fc89d07b143a35b042a5f4abd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d using Guid(4679b4fc89d07b143a35b042a5f4abd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9643330591a116b4f159d178913aad4f') in 0.009784 seconds
+  Import took 0.011842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002910 seconds.
+  path: Assets/2d
+  artifactKey: Guid(4679b4fc89d07b143a35b042a5f4abd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d using Guid(4679b4fc89d07b143a35b042a5f4abd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9643330591a116b4f159d178913aad4f') in 0.003707 seconds
+  Import took 0.005544 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029472 seconds.
+  path: Assets/2d/Player.physicMaterial
+  artifactKey: Guid(ff5a248e03f705244a53ca3cb89d55df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Player.physicMaterial using Guid(ff5a248e03f705244a53ca3cb89d55df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '028efc43230885c55608b9df9e307cee') in 0.014261 seconds
+  Import took 0.016129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.490266 seconds.
+  path: Assets/2d/Scenes
+  artifactKey: Guid(bc5cfccdca4d25c4da1d366890d7c011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Scenes using Guid(bc5cfccdca4d25c4da1d366890d7c011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12048791584e765b2f0910417d434623') in 0.008849 seconds
+  Import took 0.010687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.859383 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/balcony_1.prefab
+  artifactKey: Guid(c38d9ad2091ce564cb30a5a72e673544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/balcony_1.prefab using Guid(c38d9ad2091ce564cb30a5a72e673544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adaf9628640f24dc898d892db0d1c740') in 0.248979 seconds
+  Import took 0.251096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_tower_rectangular.prefab
+  artifactKey: Guid(f26b24b97b5031e4d8984eb41762eda1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_tower_rectangular.prefab using Guid(f26b24b97b5031e4d8984eb41762eda1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ffade76f95a5397c059de51c77c81cc') in 0.203895 seconds
+  Import took 0.205931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_13.prefab
+  artifactKey: Guid(0630c1b9608295c4d9ecdd8d0c037e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_13.prefab using Guid(0630c1b9608295c4d9ecdd8d0c037e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb115ad6291eb88d0ca0a4925b2b2538') in 0.103243 seconds
+  Import took 0.105345 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_tower_b.prefab
+  artifactKey: Guid(c3aaabf748230a240b46f1f13fc141cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_tower_b.prefab using Guid(c3aaabf748230a240b46f1f13fc141cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94bcc9ecaefa61c2c050e8dca635ee1b') in 0.014514 seconds
+  Import took 0.016562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_tower_c.prefab
+  artifactKey: Guid(6d0dce87575d6dd4da148933d82bedd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_tower_c.prefab using Guid(6d0dce87575d6dd4da148933d82bedd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32d87bf276de6a855f83217c01ec1b3d') in 0.014041 seconds
+  Import took 0.016055 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_05.prefab
+  artifactKey: Guid(1f290b386bc343b4abde6ac8a609e068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_05.prefab using Guid(1f290b386bc343b4abde6ac8a609e068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b1f334c53484a0281370fc9518292fd') in 0.012958 seconds
+  Import took 0.015004 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_props/barrel_group.prefab
+  artifactKey: Guid(84573fa2e72500d49835406b46d71622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_props/barrel_group.prefab using Guid(84573fa2e72500d49835406b46d71622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4385b349c2f93af32f7fd8663e9f97a3') in 0.015166 seconds
+  Import took 0.017201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_10.prefab
+  artifactKey: Guid(019a25b5cc9981d47ae145f0b82ad22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_10.prefab using Guid(019a25b5cc9981d47ae145f0b82ad22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f71333a353deb3188e9b2e324cb91760') in 0.015009 seconds
+  Import took 0.017128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_gate_a.prefab
+  artifactKey: Guid(a8df532e065d8c644a1f2aad6c8ad88d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_gate_a.prefab using Guid(a8df532e065d8c644a1f2aad6c8ad88d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae055f0899ad8a29e5ac5e83e480409') in 0.017312 seconds
+  Import took 0.019372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/balcony_2.prefab
+  artifactKey: Guid(d9994290a3429744c9b00201ba123d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/balcony_2.prefab using Guid(d9994290a3429744c9b00201ba123d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4afc906cc4aa2f0ae5ad7d34fe6d8150') in 0.013584 seconds
+  Import took 0.015971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_20.prefab
+  artifactKey: Guid(766e249e1459668468b95898fb325445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_20.prefab using Guid(766e249e1459668468b95898fb325445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '100d821f12f0b975239dc1e338ef4ad6') in 0.013000 seconds
+  Import took 0.015019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_portcullis.prefab
+  artifactKey: Guid(f457757cb02425744b1b55994756c4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_portcullis.prefab using Guid(f457757cb02425744b1b55994756c4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fbbdc0a5f24ca6c821883a1dc016fca') in 0.012414 seconds
+  Import took 0.014359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_15.prefab
+  artifactKey: Guid(dddb890a09d7d0c48ad87caccb6e3a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_15.prefab using Guid(dddb890a09d7d0c48ad87caccb6e3a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40cf0e8485669143a6396655be1de530') in 0.013928 seconds
+  Import took 0.016131 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_tower_octagon.prefab
+  artifactKey: Guid(3d5764d3cca272942b5087884ae75b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_tower_octagon.prefab using Guid(3d5764d3cca272942b5087884ae75b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1971f62e35fdc7fe539514d59f138adb') in 0.012419 seconds
+  Import took 0.014542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_main.prefab
+  artifactKey: Guid(9a0029d66f7229f4dacf38d09d5ddea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_main.prefab using Guid(9a0029d66f7229f4dacf38d09d5ddea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab5abe65f767873bf845d5bb2b1e0c3b') in 0.014434 seconds
+  Import took 0.016427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_door_1.prefab
+  artifactKey: Guid(400b8778c89ead84e80de7c245ff38b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_door_1.prefab using Guid(400b8778c89ead84e80de7c245ff38b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d8e90adebdcbe2624ea9c61a054a558') in 0.012830 seconds
+  Import took 0.014809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_16.prefab
+  artifactKey: Guid(835e05937eec06b4b87f0dabf95fe842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_16.prefab using Guid(835e05937eec06b4b87f0dabf95fe842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42eb30fca28998f0e28fb94f4c676895') in 0.013526 seconds
+  Import took 0.015719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_base_a.prefab
+  artifactKey: Guid(47e2e704f483a9c4aad38842dcadc89f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_base_a.prefab using Guid(47e2e704f483a9c4aad38842dcadc89f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35cf23bf8cb81cdfa1bc884623d5528a') in 0.012656 seconds
+  Import took 0.014727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_wall_b.prefab
+  artifactKey: Guid(b0b614057f82758419565fb514ebd466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_wall_b.prefab using Guid(b0b614057f82758419565fb514ebd466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dbca34f47234016f838846243ed2005') in 0.012706 seconds
+  Import took 0.014619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_19.prefab
+  artifactKey: Guid(d6dfddd766e16874bafbff7d2f2501b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_19.prefab using Guid(d6dfddd766e16874bafbff7d2f2501b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06715f8cf96af96046c801174847776f') in 0.013044 seconds
+  Import took 0.015121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_03.prefab
+  artifactKey: Guid(144d1d48e42b16e408d98127b892490c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_03.prefab using Guid(144d1d48e42b16e408d98127b892490c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24a73e174110d8a2b10fab5cc4c98883') in 0.013199 seconds
+  Import took 0.015243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_wall_5m_h21m.prefab
+  artifactKey: Guid(f0cdf773223c8bd49ad0cb82eb59e3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_wall_5m_h21m.prefab using Guid(f0cdf773223c8bd49ad0cb82eb59e3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15e9033984645da4e4adaadc44b1e44d') in 0.011797 seconds
+  Import took 0.013756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_4_c.prefab
+  artifactKey: Guid(0f345181e86804249a0fb3f87ec033e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_4_c.prefab using Guid(0f345181e86804249a0fb3f87ec033e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffbf6a629c7b88cba8cebff1ef4bf298') in 0.012047 seconds
+  Import took 0.014028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_4_e.prefab
+  artifactKey: Guid(0351661530c98814f9bbb56b5b2b7a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_4_e.prefab using Guid(0351661530c98814f9bbb56b5b2b7a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '870c4ca418391d1c50fbf3b1eefb5c85') in 0.012255 seconds
+  Import took 0.014335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_props/boat_03.prefab
+  artifactKey: Guid(6feceae911d87fa43973eb944d04162f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_props/boat_03.prefab using Guid(6feceae911d87fa43973eb944d04162f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e583802de9631166015dd91ab5b13a4') in 0.012505 seconds
+  Import took 0.014474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_04.prefab
+  artifactKey: Guid(2ae16399f9f71cd49a385e59aa119a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_04.prefab using Guid(2ae16399f9f71cd49a385e59aa119a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c56e933157b5392ef8cece1543dc53e') in 0.015952 seconds
+  Import took 0.017942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_props/boat_02.prefab
+  artifactKey: Guid(571a69f902adb9846a5eabd744415ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_props/boat_02.prefab using Guid(571a69f902adb9846a5eabd744415ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f0e5050a97e6234a68ee1dc42f12d6') in 0.012733 seconds
+  Import took 0.014771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_gate_b.prefab
+  artifactKey: Guid(c469cf09f09915a42b708588a9ae16a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_gate_b.prefab using Guid(c469cf09f09915a42b708588a9ae16a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36f4ee1fedeedb634ae46fba56d2732f') in 0.012933 seconds
+  Import took 0.014979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_wall_corner_a.prefab
+  artifactKey: Guid(91f1d84678abb9c4898d530e4a3338ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_wall_corner_a.prefab using Guid(91f1d84678abb9c4898d530e4a3338ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06cbb7ab272671f54222712de3ceeaa5') in 0.015441 seconds
+  Import took 0.017345 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_wall_corner_b.prefab
+  artifactKey: Guid(68a304d5c1fe096449cbba55ea58ffc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_wall_corner_b.prefab using Guid(68a304d5c1fe096449cbba55ea58ffc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '247adfc832a8d9ed4df21dc37a324672') in 0.012711 seconds
+  Import took 0.014687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_02.prefab
+  artifactKey: Guid(d94818446e8bc164f9acdba29d3911d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_02.prefab using Guid(d94818446e8bc164f9acdba29d3911d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '917315089b4dcca6516757263c8ac171') in 0.013018 seconds
+  Import took 0.015088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_wall_15m.prefab
+  artifactKey: Guid(52b2dd90b973b4b4cae0206dc54205e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_wall_15m.prefab using Guid(52b2dd90b973b4b4cae0206dc54205e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38dad8f18fd2c1ff8b1c7ce0c741648c') in 0.011839 seconds
+  Import took 0.013842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/church_b.prefab
+  artifactKey: Guid(a171831104ef26d47ad426856629c37c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/church_b.prefab using Guid(a171831104ef26d47ad426856629c37c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19e1da9a2cfbdb539567040276e12d94') in 0.013244 seconds
+  Import took 0.015305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_bridge.prefab
+  artifactKey: Guid(47787e06b20293d4da1261c91fa4aafb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_bridge.prefab using Guid(47787e06b20293d4da1261c91fa4aafb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c30cc6f49457b3645806238cf1592b1a') in 0.012506 seconds
+  Import took 0.014632 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_08.prefab
+  artifactKey: Guid(4ee08ada65953df469db0d6a3de4274b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_08.prefab using Guid(4ee08ada65953df469db0d6a3de4274b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '671d1bc992526090345e1f2ef6cac93b') in 0.014811 seconds
+  Import took 0.016926 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_props/boat_01.prefab
+  artifactKey: Guid(c3f5eece0f81b3944990d6c0d91d442f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_props/boat_01.prefab using Guid(c3f5eece0f81b3944990d6c0d91d442f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9caa411f1178fb92d5333c987c470884') in 0.013346 seconds
+  Import took 0.015275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/city_tower_a.prefab
+  artifactKey: Guid(bce5fc2f859a0234baae5543a7f5e668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/city_tower_a.prefab using Guid(bce5fc2f859a0234baae5543a7f5e668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90c73062567011f38107b3dd8361c03c') in 0.013908 seconds
+  Import took 0.015976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_2_b.prefab
+  artifactKey: Guid(9ca16bd2c0008114883d448b97fda8cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_2_b.prefab using Guid(9ca16bd2c0008114883d448b97fda8cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e308cfdb45b915d2459d0013e7b0130') in 0.012283 seconds
+  Import took 0.014287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_21.prefab
+  artifactKey: Guid(db1ecc7f1c4946a498d495065d9a028b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_21.prefab using Guid(db1ecc7f1c4946a498d495065d9a028b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1294369712d0e5bd71693eeb027d535') in 0.013678 seconds
+  Import took 0.015714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_1_c.prefab
+  artifactKey: Guid(ab2f50faa3d91bc4aaebd0b9e5afeabb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_1_c.prefab using Guid(ab2f50faa3d91bc4aaebd0b9e5afeabb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b626fb7b94641fc869bb5fc00d6c81c8') in 0.012302 seconds
+  Import took 0.014323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_wall_5m.prefab
+  artifactKey: Guid(263aefa800a1fe74f92bb203147304d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_wall_5m.prefab using Guid(263aefa800a1fe74f92bb203147304d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f5a16b175d37fea4239616fca54fc7b') in 0.012146 seconds
+  Import took 0.014150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_tower_e.prefab
+  artifactKey: Guid(ef8eb86c10d081b4aa36b26585370005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_tower_e.prefab using Guid(ef8eb86c10d081b4aa36b26585370005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '196083c974e0bc9a6a9ff2b80569edc8') in 0.012213 seconds
+  Import took 0.014165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_2_c.prefab
+  artifactKey: Guid(96b071f3bc60d7d4aacbc4434d917221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_2_c.prefab using Guid(96b071f3bc60d7d4aacbc4434d917221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84987fefbcb9ebe01dba5df6ba805924') in 0.019369 seconds
+  Import took 0.021330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_wall_a.prefab
+  artifactKey: Guid(1a21ac63d1f3f8f469c6fa25adbfb1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_wall_a.prefab using Guid(1a21ac63d1f3f8f469c6fa25adbfb1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97e5c93e414f007de38db14321987acf') in 0.012053 seconds
+  Import took 0.014099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_07.prefab
+  artifactKey: Guid(ce6d0eda755266e4d85c532f7dc62628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_07.prefab using Guid(ce6d0eda755266e4d85c532f7dc62628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4954db76ed20f89560a18b266bb36a7') in 0.017223 seconds
+  Import took 0.019429 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_4_a.prefab
+  artifactKey: Guid(0f850d0fac04ede4ea27e49385eb7027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_4_a.prefab using Guid(0f850d0fac04ede4ea27e49385eb7027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90b11910537cf72c9ff33be719a4fcbc') in 0.011925 seconds
+  Import took 0.013958 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_18_a.prefab
+  artifactKey: Guid(d658997afdc195a469ebe748bf4f171b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_18_a.prefab using Guid(d658997afdc195a469ebe748bf4f171b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fab9691fb98bb56ca0aa69f24ab09ed4') in 0.013222 seconds
+  Import took 0.015826 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_11.prefab
+  artifactKey: Guid(914008923a1f33345b91f7350da887df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_11.prefab using Guid(914008923a1f33345b91f7350da887df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e2b958a23b9cc72ec29aefe9e4ca02d') in 0.014282 seconds
+  Import took 0.016459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/balcony_3.prefab
+  artifactKey: Guid(473dc35e42dda5641bd3241cece97eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/balcony_3.prefab using Guid(473dc35e42dda5641bd3241cece97eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e4a389f373a75b3378f4cd52195831c') in 0.013965 seconds
+  Import took 0.016058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/building_base_a.prefab
+  artifactKey: Guid(2be032c219a3b6141b44c75798f7b7e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/building_base_a.prefab using Guid(2be032c219a3b6141b44c75798f7b7e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19e63431de9f74548ac771e7cf36385b') in 0.011985 seconds
+  Import took 0.014090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_4_d.prefab
+  artifactKey: Guid(be94a01de7d946f42ad8977005e56367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_4_d.prefab using Guid(be94a01de7d946f42ad8977005e56367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6bfe98e7723431502ca82c46df82c26') in 0.012776 seconds
+  Import took 0.014781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_3_a.prefab
+  artifactKey: Guid(5d3868b714fa0de41b12d3a29f5dbecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_3_a.prefab using Guid(5d3868b714fa0de41b12d3a29f5dbecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c98e27f2fa93ca64909dba5c8ea172ac') in 0.012502 seconds
+  Import took 0.014491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_09.prefab
+  artifactKey: Guid(d7fd44a9ba1363345ba0969019d4c1c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_09.prefab using Guid(d7fd44a9ba1363345ba0969019d4c1c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cb4b8513b842d7f77858f8c2c278546') in 0.013854 seconds
+  Import took 0.015924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_2_a.prefab
+  artifactKey: Guid(4f697ab24631edb4bba1e3830c27f917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_2_a.prefab using Guid(4f697ab24631edb4bba1e3830c27f917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea1bc28a8f9e8e4e875d058a0ada79dc') in 0.012485 seconds
+  Import took 0.014517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_props/barrel.prefab
+  artifactKey: Guid(55eac99f5049e5045a42f2528f476504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_props/barrel.prefab using Guid(55eac99f5049e5045a42f2528f476504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc419a15129355771a43716aedcd55ab') in 0.012351 seconds
+  Import took 0.014358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_tower_corner.prefab
+  artifactKey: Guid(08f2ef463b7ae7b47af2e8f88368eb62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_tower_corner.prefab using Guid(08f2ef463b7ae7b47af2e8f88368eb62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b9bb241865f48fb30778c9436e6942d') in 0.012829 seconds
+  Import took 0.014899 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_wall_incline.prefab
+  artifactKey: Guid(34c9ec8815e932a449b60e21e90b2f25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_wall_incline.prefab using Guid(34c9ec8815e932a449b60e21e90b2f25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48436da6f5f94e549afee7714223fadc') in 0.013178 seconds
+  Import took 0.015605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_props/banner.prefab
+  artifactKey: Guid(195ee2530fc763341a03f3df4b50ed56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_props/banner.prefab using Guid(195ee2530fc763341a03f3df4b50ed56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28d1201b9558a55067e17ad095e4dcbf') in 0.012357 seconds
+  Import took 0.014469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_wall_2,5m.prefab
+  artifactKey: Guid(430f6f101fc52be4d9169a97e35a8355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_wall_2,5m.prefab using Guid(430f6f101fc52be4d9169a97e35a8355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '084d8016bf938ec85fe9a61f93f61dba') in 0.012426 seconds
+  Import took 0.014452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_1_b.prefab
+  artifactKey: Guid(e131b8edd216f3f44b6b7c51d084bd92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_1_b.prefab using Guid(e131b8edd216f3f44b6b7c51d084bd92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a62a7e957c08801a6f21da1647baa1fe') in 0.013017 seconds
+  Import took 0.015114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_18_b.prefab
+  artifactKey: Guid(5f208560a6f0f234a97623f38d780fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_18_b.prefab using Guid(5f208560a6f0f234a97623f38d780fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff43c7efb4ff2d66639ffacd853cbd5d') in 0.013884 seconds
+  Import took 0.015983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_tower_round.prefab
+  artifactKey: Guid(d4bbfcf82f1bd6f43a1ef19c811777fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_tower_round.prefab using Guid(d4bbfcf82f1bd6f43a1ef19c811777fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f7472a61df84a432050c5157d1eefab') in 0.012692 seconds
+  Import took 0.015038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_tower_a.prefab
+  artifactKey: Guid(b8a64239d2d33cc45a19f47b821be342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_tower_a.prefab using Guid(b8a64239d2d33cc45a19f47b821be342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1b75dba6f778cfbb015e75d1ea0d383') in 0.013756 seconds
+  Import took 0.015927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_wall_incline_lower.prefab
+  artifactKey: Guid(f4a0e82704596ec4cb1fb2b1fb1e6285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_wall_incline_lower.prefab using Guid(f4a0e82704596ec4cb1fb2b1fb1e6285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f28616812a9c71d90df6c58168a84f50') in 0.012448 seconds
+  Import took 0.014584 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_14.prefab
+  artifactKey: Guid(414be24aef66cda4884ad5836d90cc67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_14.prefab using Guid(414be24aef66cda4884ad5836d90cc67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9147b1036afeaa8b2944082784a6c706') in 0.015072 seconds
+  Import took 0.017117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_props/box.prefab
+  artifactKey: Guid(07a4904133d4b4142b6e071d776d66e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_props/box.prefab using Guid(07a4904133d4b4142b6e071d776d66e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78c403baf33e3bf9b52db9316ba32101') in 0.013549 seconds
+  Import took 0.015893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/church_a.prefab
+  artifactKey: Guid(b9df55b1335e07a4bab3c9fa3518ac32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/church_a.prefab using Guid(b9df55b1335e07a4bab3c9fa3518ac32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c2673968c7fbe169042041b2e6c4558') in 0.014262 seconds
+  Import took 0.016359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_tower_f.prefab
+  artifactKey: Guid(43b0753a7651a8d47ad47c96f61ffa03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_tower_f.prefab using Guid(43b0753a7651a8d47ad47c96f61ffa03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7843e69909761570ef7ca4d8d4a14e0') in 0.015104 seconds
+  Import took 0.017307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_01.prefab
+  artifactKey: Guid(f0894d3a3479c634485553b098c987cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_01.prefab using Guid(f0894d3a3479c634485553b098c987cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d3354990a775b875a8df5e249666b7b') in 0.013207 seconds
+  Import took 0.015245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/church_c.prefab
+  artifactKey: Guid(f4de0ab387921c249ba58df3e3374f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/church_c.prefab using Guid(f4de0ab387921c249ba58df3e3374f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '780ee0ea972346eecc2da7ca59b40219') in 0.013983 seconds
+  Import took 0.016126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_4_b.prefab
+  artifactKey: Guid(f1a0828eedd5f6b4b9d45f675c00fa72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_4_b.prefab using Guid(f1a0828eedd5f6b4b9d45f675c00fa72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '857a89bfd99f4bb167106c24b010be28') in 0.012088 seconds
+  Import took 0.014060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_12.prefab
+  artifactKey: Guid(36493f57f683da240b7f01888e9acf52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_12.prefab using Guid(36493f57f683da240b7f01888e9acf52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '126b4778f9d0de526ac173894918375e') in 0.012525 seconds
+  Import took 0.014617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_gate.prefab
+  artifactKey: Guid(2c419a4d68bda8948a41d26abd8021e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_gate.prefab using Guid(2c419a4d68bda8948a41d26abd8021e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91f32eb38380a4ddbf88319e6c299e5f') in 0.013459 seconds
+  Import took 0.015586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_3_b.prefab
+  artifactKey: Guid(3b8201363e0324d4b9aa5c610905b779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_3_b.prefab using Guid(3b8201363e0324d4b9aa5c610905b779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2e7f4aa481232cfdf4b6f37c50e929e') in 0.012481 seconds
+  Import took 0.014901 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_tower_d.prefab
+  artifactKey: Guid(97a72a993e7104a41840f3f66fb997c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/citadel_tower_d.prefab using Guid(97a72a993e7104a41840f3f66fb997c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '568a5d5f933a03fc45c346e59b02ba6b') in 0.014411 seconds
+  Import took 0.016613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/building_base_b.prefab
+  artifactKey: Guid(acbf4a0f34d82894e994f6afd624e722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/building_base_b.prefab using Guid(acbf4a0f34d82894e994f6afd624e722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91c63d7bc81cbb8175a45cd8c4955256') in 0.012993 seconds
+  Import took 0.015156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_17.prefab
+  artifactKey: Guid(3a81b160c8bb7ed4693476cfc728a161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_17.prefab using Guid(3a81b160c8bb7ed4693476cfc728a161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8164617b61dc5d547a1b4be17d95a2b8') in 0.012336 seconds
+  Import took 0.014520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_1_a.prefab
+  artifactKey: Guid(67250b40a6676684c8c551e4a1fddcdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_bridge_1_a.prefab using Guid(67250b40a6676684c8c551e4a1fddcdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47f2af3c9fdda5c67accfe4f27d4eb6f') in 0.012349 seconds
+  Import took 0.014481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_wall_10m.prefab
+  artifactKey: Guid(cc7ebc849fa32c34f8182aecf45c5bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_wall_10m.prefab using Guid(cc7ebc849fa32c34f8182aecf45c5bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b899b7725071ef3383c250da220130') in 0.012686 seconds
+  Import took 0.014911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_wall_incline_uper.prefab
+  artifactKey: Guid(08527eefb817b6342b9e1864101eb44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_unique_buildings/castle_wall_incline_uper.prefab using Guid(08527eefb817b6342b9e1864101eb44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '072ecd079e04bdbc4151abb781342c3c') in 0.011773 seconds
+  Import took 0.013780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_06.prefab
+  artifactKey: Guid(2d336554bc95f6942a90d88547aeb1b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs/prefab_civilian_buildings/civilian_house_06.prefab using Guid(2d336554bc95f6942a90d88547aeb1b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '319cc35b73e19b49abca1e714f0f312a') in 0.013966 seconds
+  Import took 0.016308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.738377 seconds.
+  path: Assets/2d/Scenes/SampleScene.unity
+  artifactKey: Guid(753d5be1939026b4ca4c6534f8938d71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Scenes/SampleScene.unity using Guid(753d5be1939026b4ca4c6534f8938d71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '464dc44a7144d1f6717473ce7b7c9909') in 0.008268 seconds
+  Import took 0.010364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000469 seconds.
+  path: Assets/2d/Scenes/SampleScene.unity
+  artifactKey: Guid(753d5be1939026b4ca4c6534f8938d71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Scenes/SampleScene.unity using Guid(753d5be1939026b4ca4c6534f8938d71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '464dc44a7144d1f6717473ce7b7c9909') in 0.002908 seconds
+  Import took 0.004932 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000598 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.773 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1109 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.9 MB.
+System memory in use after: 68.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1582.
+Total: 2.408700 ms (FindLiveObjects: 0.282700 ms CreateObjectMapping: 0.099300 ms MarkObjects: 1.955600 ms  DeleteObjects: 0.069500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.775898 seconds.
+  path: Assets/2d/Scripts
+  artifactKey: Guid(7d760dd707b9ec04c832b712abcb9182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Scripts using Guid(7d760dd707b9ec04c832b712abcb9182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd44588a0d60195e8283f8868ad89e650') in 0.010011 seconds
+  Import took 0.012330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.726555 seconds.
+  path: Assets/2d/Scripts/CameraController.cs
+  artifactKey: Guid(ba0edd5510c719e42ba6f02193550fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Scripts/CameraController.cs using Guid(ba0edd5510c719e42ba6f02193550fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5652e3134a99f74ac0c2eb85942cd95') in 0.090763 seconds
+  Import took 0.092681 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.445757 seconds.
+  path: Assets/2d/Player
+  artifactKey: Guid(339ba28aa04802947b3b3d0614c2da54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Player using Guid(339ba28aa04802947b3b3d0614c2da54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a41178bebdfcf56c3fcc7857f187d1e0') in 0.002722 seconds
+  Import took 0.004882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.046893 seconds.
+  path: Assets/2d/Player/Kenney_Male_Adventurer_Papered.png
+  artifactKey: Guid(f2637a8919d23164c80fc73670984544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Player/Kenney_Male_Adventurer_Papered.png using Guid(f2637a8919d23164c80fc73670984544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6d103c9c13b585f103291255cc2b9ca') in 0.221171 seconds
+  Import took 0.226990 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.981298 seconds.
+  path: Assets/2d/Player/Animation
+  artifactKey: Guid(bd738f49b108b064289ea77f79de7730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Player/Animation using Guid(bd738f49b108b064289ea77f79de7730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '295f97bd278e6e1ffd0bb1ce57a8faaa') in 0.008240 seconds
+  Import took 0.010436 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.215128 seconds.
+  path: Assets/2d/Player/Animation/Player.controller
+  artifactKey: Guid(ed7d5ded55bb3e647afb830102661558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Player/Animation/Player.controller using Guid(ed7d5ded55bb3e647afb830102661558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60b5296d3deb4e4fc930a930726ed370') in 0.007112 seconds
+  Import took 0.009093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.272366 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City
+  artifactKey: Guid(13ae391e3f2416044972219478686182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City using Guid(13ae391e3f2416044972219478686182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '504d0425382fa0e76a42394c629a7937') in 0.007756 seconds
+  Import took 0.010156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032663 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/THE WHOLE CITY.prefab
+  artifactKey: Guid(f847e81fbd5c1914bbee1cbb492ab06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/THE WHOLE CITY.prefab using Guid(f847e81fbd5c1914bbee1cbb492ab06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f49f8ea388e6e7821ba1d754245cdef') in 0.486330 seconds
+  Import took 0.500683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.225464 seconds.
+  path: Assets/2d/Polylised - Medieval Desert City/Prefabs
+  artifactKey: Guid(210c70dc7cd87064ba2c31893ea4bb1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2d/Polylised - Medieval Desert City/Prefabs using Guid(210c70dc7cd87064ba2c31893ea4bb1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb5c37114c1e7324002307adb6cb36df') in 0.008456 seconds
+  Import took 0.010694 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000769 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.746 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1109 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.5 MB.
+System memory in use after: 70.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1592.
+Total: 1.883600 ms (FindLiveObjects: 0.197800 ms CreateObjectMapping: 0.048200 ms MarkObjects: 1.575300 ms  DeleteObjects: 0.061000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000502 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.694 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.5 MB.
+System memory in use after: 70.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1596.
+Total: 1.780100 ms (FindLiveObjects: 0.162200 ms CreateObjectMapping: 0.026400 ms MarkObjects: 1.524100 ms  DeleteObjects: 0.065500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000558 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.668 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.5 MB.
+System memory in use after: 70.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1599.
+Total: 1.722900 ms (FindLiveObjects: 0.162400 ms CreateObjectMapping: 0.024600 ms MarkObjects: 1.465600 ms  DeleteObjects: 0.068900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000613 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.710 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.6 MB.
+System memory in use after: 70.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1602.
+Total: 2.572600 ms (FindLiveObjects: 0.237500 ms CreateObjectMapping: 0.048600 ms MarkObjects: 2.212700 ms  DeleteObjects: 0.072000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000559 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.673 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.6 MB.
+System memory in use after: 70.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1605.
+Total: 1.971700 ms (FindLiveObjects: 0.168000 ms CreateObjectMapping: 0.026700 ms MarkObjects: 1.709300 ms  DeleteObjects: 0.066100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000568 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.672 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.6 MB.
+System memory in use after: 70.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1608.
+Total: 2.492400 ms (FindLiveObjects: 0.299500 ms CreateObjectMapping: 0.072300 ms MarkObjects: 1.989000 ms  DeleteObjects: 0.129500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2590.299877 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e1ade904f8483502412a943970edefa') in 0.018164 seconds
+  Import took 0.020470 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000904 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.674 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.6 MB.
+System memory in use after: 70.6 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1611.
+Total: 1.701000 ms (FindLiveObjects: 0.165100 ms CreateObjectMapping: 0.027600 ms MarkObjects: 1.446300 ms  DeleteObjects: 0.060400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000572 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.685 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.6 MB.
+System memory in use after: 70.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1614.
+Total: 2.000100 ms (FindLiveObjects: 0.218000 ms CreateObjectMapping: 0.044900 ms MarkObjects: 1.674400 ms  DeleteObjects: 0.061600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000566 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.698 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.6 MB.
+System memory in use after: 70.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1617.
+Total: 1.852300 ms (FindLiveObjects: 0.161200 ms CreateObjectMapping: 0.023200 ms MarkObjects: 1.583700 ms  DeleteObjects: 0.082500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000560 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.670 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.6 MB.
+System memory in use after: 70.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1620.
+Total: 1.957800 ms (FindLiveObjects: 0.164200 ms CreateObjectMapping: 0.028700 ms MarkObjects: 1.697400 ms  DeleteObjects: 0.066100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000576 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.709 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.6 MB.
+System memory in use after: 70.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1623.
+Total: 2.167300 ms (FindLiveObjects: 0.176000 ms CreateObjectMapping: 0.029700 ms MarkObjects: 1.893600 ms  DeleteObjects: 0.065900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000854 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.706 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.6 MB.
+System memory in use after: 70.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1626.
+Total: 2.009300 ms (FindLiveObjects: 0.218900 ms CreateObjectMapping: 0.036200 ms MarkObjects: 1.683100 ms  DeleteObjects: 0.068900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000664 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.690 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.6 MB.
+System memory in use after: 70.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1629.
+Total: 1.929400 ms (FindLiveObjects: 0.249900 ms CreateObjectMapping: 0.046400 ms MarkObjects: 1.566700 ms  DeleteObjects: 0.064800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000620 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.706 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.6 MB.
+System memory in use after: 70.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1632.
+Total: 1.972000 ms (FindLiveObjects: 0.249700 ms CreateObjectMapping: 0.051300 ms MarkObjects: 1.606900 ms  DeleteObjects: 0.062800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000571 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.673 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.6 MB.
+System memory in use after: 70.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1635.
+Total: 2.184200 ms (FindLiveObjects: 0.225400 ms CreateObjectMapping: 0.037500 ms MarkObjects: 1.848600 ms  DeleteObjects: 0.070800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2786.344263 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca82713f456caf2caf020b015aca7ac3') in 0.019657 seconds
+  Import took 0.022392 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000597 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.746 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.6 MB.
+System memory in use after: 70.7 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1638.
+Total: 1.763600 ms (FindLiveObjects: 0.164700 ms CreateObjectMapping: 0.024900 ms MarkObjects: 1.497200 ms  DeleteObjects: 0.076000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000576 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.728 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.6 MB.
+System memory in use after: 70.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1641.
+Total: 1.968600 ms (FindLiveObjects: 0.166300 ms CreateObjectMapping: 0.027400 ms MarkObjects: 1.699200 ms  DeleteObjects: 0.074900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000784 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.684 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.6 MB.
+System memory in use after: 70.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1644.
+Total: 1.988500 ms (FindLiveObjects: 0.190600 ms CreateObjectMapping: 0.031700 ms MarkObjects: 1.701400 ms  DeleteObjects: 0.063600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000478 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.657 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1111 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1648.
+Total: 2.080300 ms (FindLiveObjects: 0.172100 ms CreateObjectMapping: 0.033800 ms MarkObjects: 1.804500 ms  DeleteObjects: 0.069000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000493 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.650 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1652.
+Total: 1.663000 ms (FindLiveObjects: 0.153100 ms CreateObjectMapping: 0.026600 ms MarkObjects: 1.429300 ms  DeleteObjects: 0.052900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000713 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.707 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1655.
+Total: 2.435200 ms (FindLiveObjects: 0.387800 ms CreateObjectMapping: 0.054600 ms MarkObjects: 1.919900 ms  DeleteObjects: 0.071500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000590 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.650 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1658.
+Total: 1.903700 ms (FindLiveObjects: 0.155400 ms CreateObjectMapping: 0.026900 ms MarkObjects: 1.655300 ms  DeleteObjects: 0.065000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000499 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.686 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1661.
+Total: 1.992100 ms (FindLiveObjects: 0.225500 ms CreateObjectMapping: 0.036100 ms MarkObjects: 1.649400 ms  DeleteObjects: 0.079700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000593 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.688 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1664.
+Total: 1.824000 ms (FindLiveObjects: 0.163500 ms CreateObjectMapping: 0.025100 ms MarkObjects: 1.573400 ms  DeleteObjects: 0.060900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000504 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.659 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1667.
+Total: 2.003300 ms (FindLiveObjects: 0.172800 ms CreateObjectMapping: 0.026600 ms MarkObjects: 1.736300 ms  DeleteObjects: 0.066500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000517 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.679 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1670.
+Total: 1.736200 ms (FindLiveObjects: 0.184900 ms CreateObjectMapping: 0.028700 ms MarkObjects: 1.463300 ms  DeleteObjects: 0.058300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000544 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.692 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1673.
+Total: 1.959300 ms (FindLiveObjects: 0.202100 ms CreateObjectMapping: 0.033200 ms MarkObjects: 1.655800 ms  DeleteObjects: 0.067200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000537 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.709 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1676.
+Total: 1.778300 ms (FindLiveObjects: 0.172500 ms CreateObjectMapping: 0.027700 ms MarkObjects: 1.518700 ms  DeleteObjects: 0.058500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000788 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.678 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1679.
+Total: 1.993800 ms (FindLiveObjects: 0.202900 ms CreateObjectMapping: 0.028400 ms MarkObjects: 1.699000 ms  DeleteObjects: 0.062000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000445 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.626 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1682.
+Total: 1.709200 ms (FindLiveObjects: 0.155000 ms CreateObjectMapping: 0.032500 ms MarkObjects: 1.469400 ms  DeleteObjects: 0.051100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000525 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.667 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1685.
+Total: 1.988100 ms (FindLiveObjects: 0.234800 ms CreateObjectMapping: 0.065700 ms MarkObjects: 1.621300 ms  DeleteObjects: 0.065200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000532 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.663 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1688.
+Total: 1.862500 ms (FindLiveObjects: 0.207400 ms CreateObjectMapping: 0.035300 ms MarkObjects: 1.553500 ms  DeleteObjects: 0.064600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000519 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.664 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1691.
+Total: 1.929300 ms (FindLiveObjects: 0.227100 ms CreateObjectMapping: 0.035600 ms MarkObjects: 1.583300 ms  DeleteObjects: 0.082100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000503 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.670 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.8 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1694.
+Total: 1.961600 ms (FindLiveObjects: 0.175600 ms CreateObjectMapping: 0.033700 ms MarkObjects: 1.686200 ms  DeleteObjects: 0.064800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000573 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.653 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.8 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1697.
+Total: 1.794600 ms (FindLiveObjects: 0.173700 ms CreateObjectMapping: 0.026600 ms MarkObjects: 1.532000 ms  DeleteObjects: 0.061200 ms)
+
