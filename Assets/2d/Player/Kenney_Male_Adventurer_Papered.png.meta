@@ -185,6 +185,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -194,11 +196,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -216,9 +218,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -1371,6 +1376,60 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Kenney_Male_Adventurer_Papered_16: -4357588424444947024
+      Kenney_Male_Adventurer_Papered_28: -8184900522379972261
+      Kenney_Male_Adventurer_Papered_11: -4116097229350411602
+      Kenney_Male_Adventurer_Papered_45: 5555438153807111515
+      Kenney_Male_Adventurer_Papered_22: -1058060645201953738
+      Kenney_Male_Adventurer_Papered_29: -5719100507859447566
+      Kenney_Male_Adventurer_Papered_8: 461564136957266378
+      Kenney_Male_Adventurer_Papered_23: -422400795995485198
+      Kenney_Male_Adventurer_Papered_3: 4204530120183701859
+      Kenney_Male_Adventurer_Papered_44: -2023997012026133831
+      Kenney_Male_Adventurer_Papered_7: -6410547489956427562
+      Kenney_Male_Adventurer_Papered_17: 6645084308793382001
+      Kenney_Male_Adventurer_Papered_24: -2899610212975043538
+      Kenney_Male_Adventurer_Papered_47: 5058547992080913899
+      Kenney_Male_Adventurer_Papered_51: 4463048718489501051
+      Kenney_Male_Adventurer_Papered_34: -3883732523539198047
+      Kenney_Male_Adventurer_Papered_37: -76789060773872758
+      Kenney_Male_Adventurer_Papered_6: 5724687492036094998
+      Kenney_Male_Adventurer_Papered_50: -2015381804179927610
+      Kenney_Male_Adventurer_Papered_2: -2897610542617772824
+      Kenney_Male_Adventurer_Papered_13: 8983136720727038175
+      Kenney_Male_Adventurer_Papered_1: 106919660501034232
+      Kenney_Male_Adventurer_Papered_5: 3805004178044200267
+      Kenney_Male_Adventurer_Papered_38: 1704778177385529590
+      Kenney_Male_Adventurer_Papered_41: 4719673846691360409
+      Kenney_Male_Adventurer_Papered_19: -6639179642126785382
+      Kenney_Male_Adventurer_Papered_27: 8933616670531744033
+      Kenney_Male_Adventurer_Papered_15: -6412681898257993454
+      Kenney_Male_Adventurer_Papered_43: -3690007869938131647
+      Kenney_Male_Adventurer_Papered_4: 7910164215081926686
+      Kenney_Male_Adventurer_Papered_9: -1484685154291124700
+      Kenney_Male_Adventurer_Papered_21: -1219855663252189688
+      Kenney_Male_Adventurer_Papered_46: -2169231368029934313
+      Kenney_Male_Adventurer_Papered_35: 385188011639942492
+      Kenney_Male_Adventurer_Papered_32: -7816401098179802684
+      Kenney_Male_Adventurer_Papered_20: 7992177192141422926
+      Kenney_Male_Adventurer_Papered_14: 4639784757617296899
+      Kenney_Male_Adventurer_Papered_25: 1801624105517846964
+      Kenney_Male_Adventurer_Papered_36: -2027727083744355857
+      Kenney_Male_Adventurer_Papered_39: 1491614475256748316
+      Kenney_Male_Adventurer_Papered_42: 4105075026889344455
+      Kenney_Male_Adventurer_Papered_48: -8261122991928900013
+      Kenney_Male_Adventurer_Papered_10: 2398410186528862766
+      Kenney_Male_Adventurer_Papered_12: -6551809146543317313
+      Kenney_Male_Adventurer_Papered_26: -4250974395714039129
+      Kenney_Male_Adventurer_Papered_0: -353080403629206956
+      Kenney_Male_Adventurer_Papered_33: -7594465829416371262
+      Kenney_Male_Adventurer_Papered_40: -2348380723751900312
+      Kenney_Male_Adventurer_Papered_49: 1026031183803638658
+      Kenney_Male_Adventurer_Papered_31: -787141553573508514
+      Kenney_Male_Adventurer_Papered_18: -323384382322664205
+      Kenney_Male_Adventurer_Papered_30: 4034087328193074939
+      Kenney_Male_Adventurer_Papered_52: -9063139855460845968
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
