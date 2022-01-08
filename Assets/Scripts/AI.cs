@@ -10,11 +10,18 @@ public class AI : MonoBehaviour
     private NavMeshAgent nav;
     public float radius;
     public float timer = 5f;
+    private bool destination;
     public float movement = 7f;
     public Vector3 lastSeen;
+    [SerializeField] float destinationReachedTreshold;
+    private Rigidbody rb;
+    public Animator anim;
+    public SpriteRenderer sr;
+    private float movementDirection;
 
     private void Start()
     {
+        rb = GetComponent<Rigidbody>();
         nav = GetComponent<NavMeshAgent>(); 
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         lastSeen = transform.position;
@@ -23,12 +30,38 @@ public class AI : MonoBehaviour
     private void Update()
     {
         OnAIStates();
+        if (nav.velocity != Vector3.zero)
+            anim.SetBool("moving", true);
+        else
+            anim.SetBool("moving", false);
+        if(lastSeen.x == transform.position.x && lastSeen.z == transform.position.z)
+        {
+            destination = true;
+        }
+        else
+        {
+            destination = false;
+            movementDirection = lastSeen.x - transform.position.x;
+        }
+        if (destination)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        if (!sr.flipX && movementDirection > 0)
+        {
+            sr.flipX = true;
+        }
+        else if(sr.flipX && movementDirection < 0)
+        {
+            sr.flipX = false;
+        }
     }
     private void OnAIStates()
     {
         timer -= Time.deltaTime;
         movement -= Time.deltaTime;
         nav.SetDestination(lastSeen);
+        nav.updateRotation = false;
         if (state == AllStates.Random)
         {
             if (timer <= 0f)
@@ -42,7 +75,6 @@ public class AI : MonoBehaviour
             }   
         }
     }
-
     public Vector3 RandomNavmeshLocation(float radius)
     {
         Vector3 randomDirection = Random.insideUnitSphere * radius;
