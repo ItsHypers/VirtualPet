@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 13d3a09257b39984f89433a038e9e7fa, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: d2f25e2aed03a7d42952314ddec62df0, type: 2}
 --- !u!1 &48980710
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,7 +648,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394247129}
   m_LocalRotation: {x: 0.14562222, y: -0, z: -0, w: 0.9893403}
-  m_LocalPosition: {x: 19.4, y: 3.9, z: 29.32}
+  m_LocalPosition: {x: 19.4, y: 5.1, z: 23.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1094,6 +1094,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: base
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f1304520dab0b04bab23de560daa91e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0f1304520dab0b04bab23de560daa91e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f1304520dab0b04bab23de560daa91e, type: 3}
 --- !u!1 &769456520
@@ -1310,7 +1318,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1246949405}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 76.817}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 76.816}
 --- !u!1 &999235828
 GameObject:
   m_ObjectHideFlags: 0
@@ -1604,7 +1612,7 @@ Animator:
   m_GameObject: {fileID: 1074548924}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0b40f072748a2d449a36362ecee01761, type: 2}
+  m_Controller: {fileID: 9100000, guid: ed7d5ded55bb3e647afb830102661558, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3130,17 +3138,17 @@ NavMeshAgent:
   m_GameObject: {fileID: 1958156600}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.7
-  m_Speed: 5.7
+  m_Radius: 1.2
+  m_Speed: 5.55
   m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 120.77
+  m_AngularSpeed: 120.7
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.94
-  m_BaseOffset: 0.88
+  m_Height: 2.15
+  m_BaseOffset: 1.64
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &1958156609
