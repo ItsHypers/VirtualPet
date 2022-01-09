@@ -16,7 +16,6 @@ public class AI : MonoBehaviour
     [SerializeField] float destinationReachedTreshold;
     private Rigidbody rb;
     public Animator anim;
-    public SpriteRenderer sr;
     private float movementDirection;
 
     private void Start()
@@ -46,14 +45,6 @@ public class AI : MonoBehaviour
         if (destination)
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
-        }
-        if (!sr.flipX && movementDirection > 0)
-        {
-            sr.flipX = true;
-        }
-        else if(sr.flipX && movementDirection < 0)
-        {
-            sr.flipX = false;
         }
     }
     private void OnAIStates()
