@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17225231, g: 0.46466595, b: 0.49285987, a: 1}
+  m_IndirectSpecularColor: {r: 0.14774096, g: 0.25161418, b: 0.13373613, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -470,7 +470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &370295286
 Light:
   m_ObjectHideFlags: 0
@@ -606,7 +606,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394247129}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba0edd5510c719e42ba6f02193550fce, type: 3}
   m_Name: 
@@ -670,14 +670,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394247129}
-  m_LocalRotation: {x: 0.14562222, y: -0, z: -0, w: 0.9893403}
-  m_LocalPosition: {x: 19.4, y: 5.1, z: 23.15}
+  m_LocalRotation: {x: 0.19782841, y: 0, z: 0, w: 0.98023665}
+  m_LocalPosition: {x: 29.68, y: 11.28, z: 3.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 16.747002, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 22.82, y: 0, z: 0}
 --- !u!114 &394247135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1013,7 +1013,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 534.88995, y: 323.03705}
+  m_AnchoredPosition: {x: 285, y: 234}
   m_SizeDelta: {x: 365.233, y: 37.354}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &577840334
@@ -1172,7 +1172,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 517.26495, y: 323.03705}
+  m_AnchoredPosition: {x: 267.37506, y: 234}
   m_SizeDelta: {x: 372.895, y: 46.612}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &711325264
@@ -2297,7 +2297,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 558.05096, y: 196.45602}
+  m_AnchoredPosition: {x: 308.16107, y: 107.418976}
   m_SizeDelta: {x: 365.233, y: 37.354}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1409836501
@@ -2394,7 +2394,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 548, y: 195}
+  m_AnchoredPosition: {x: 298.1101, y: 105.96295}
   m_SizeDelta: {x: 372.895, y: 46.612}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1516146036
@@ -2546,7 +2546,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 530.521, y: 265.93704}
+  m_AnchoredPosition: {x: 280.6311, y: 176.9}
   m_SizeDelta: {x: 365.233, y: 37.354}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1550693942
@@ -2771,7 +2771,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 516.8283, y: 266.08273}
+  m_AnchoredPosition: {x: 266.93842, y: 177.04568}
   m_SizeDelta: {x: 372.895, y: 46.612}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1593069490
@@ -3349,6 +3349,7 @@ GameObject:
   - component: {fileID: 1958156608}
   - component: {fileID: 1958156607}
   - component: {fileID: 1958156609}
+  - component: {fileID: 1958156610}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -3505,6 +3506,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Money: 0
   text: {fileID: 1946515974}
+--- !u!114 &1958156610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958156600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2edfc0c58f6db6b46b87ea090068c575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bs: {fileID: 1958156609}
+  DelayAmount: 1
+  increment: 1
 --- !u!1 &1982126351
 GameObject:
   m_ObjectHideFlags: 0
