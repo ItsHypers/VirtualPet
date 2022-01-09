@@ -1079,6 +1079,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 554996859}
     m_Modifications:
+    - target: {fileID: 5883209809017435515, guid: 053f007d75c6cb64d8e61bae0a84e876, type: 3}
+      propertyPath: mat
+      value: 
+      objectReference: {fileID: 2100000, guid: b275748777af7b24e905781cadf7eddc, type: 2}
     - target: {fileID: 6210434594045527336, guid: 053f007d75c6cb64d8e61bae0a84e876, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1936,6 +1940,10 @@ PrefabInstance:
       value: -232.711
       objectReference: {fileID: 0}
     - target: {fileID: 1581270155305086941, guid: fd58271d8028f68499111a073e946c1e, type: 3}
+      propertyPath: mat
+      value: 
+      objectReference: {fileID: 2100000, guid: b275748777af7b24e905781cadf7eddc, type: 2}
+    - target: {fileID: 1581270155305086941, guid: fd58271d8028f68499111a073e946c1e, type: 3}
       propertyPath: amplitude
       value: 1
       objectReference: {fileID: 0}
@@ -2454,6 +2462,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 554996859}
     m_Modifications:
+    - target: {fileID: 5883209809017435515, guid: 053f007d75c6cb64d8e61bae0a84e876, type: 3}
+      propertyPath: mat
+      value: 
+      objectReference: {fileID: 2100000, guid: b275748777af7b24e905781cadf7eddc, type: 2}
     - target: {fileID: 6210434594045527336, guid: 053f007d75c6cb64d8e61bae0a84e876, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -3757,6 +3769,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 19.576
       objectReference: {fileID: 0}
+    - target: {fileID: 1581270155305086941, guid: fd58271d8028f68499111a073e946c1e, type: 3}
+      propertyPath: mat
+      value: 
+      objectReference: {fileID: 2100000, guid: b275748777af7b24e905781cadf7eddc, type: 2}
     - target: {fileID: 1815132093153204597, guid: fd58271d8028f68499111a073e946c1e, type: 3}
       propertyPath: m_Name
       value: cube
@@ -3827,6 +3843,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 554996859}
     m_Modifications:
+    - target: {fileID: 5883209809017435515, guid: 053f007d75c6cb64d8e61bae0a84e876, type: 3}
+      propertyPath: mat
+      value: 
+      objectReference: {fileID: 2100000, guid: b275748777af7b24e905781cadf7eddc, type: 2}
     - target: {fileID: 6210434594045527336, guid: 053f007d75c6cb64d8e61bae0a84e876, type: 3}
       propertyPath: m_RootOrder
       value: 3
