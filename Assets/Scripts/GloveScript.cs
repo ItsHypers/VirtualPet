@@ -55,7 +55,7 @@ public class GloveScript : MonoBehaviour
     {
         if(RHbool)
         {
-            randomInt = Random.Range(0, righthand.Length - 1);
+            randomInt = Random.Range(0, righthand.Length);
             ChangeHand(randomInt);
         }
         else
