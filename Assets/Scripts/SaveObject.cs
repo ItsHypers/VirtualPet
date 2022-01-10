@@ -1,3 +1,6 @@
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using UnityEngine;
 [System.Serializable]
 
 public class SaveObject
@@ -13,4 +16,6 @@ public class SaveObject
     public int rightHand;
     public int leftFoot;
     public int rightFoot;
+
+    public Dictionary<string, int> upgrades = new Dictionary<string, int>();
 }

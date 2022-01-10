@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.IO;
+using Newtonsoft.Json;
 
 public static class SaveManager
 {
@@ -13,7 +14,8 @@ public static class SaveManager
         if (!Directory.Exists(dir))
             Directory.CreateDirectory(dir);
 
-        string json = JsonUtility.ToJson(so, true);
+        //string json = JsonUtility.ToJson(so, true);
+        string json = JsonConvert.SerializeObject(so, Formatting.Indented);
         File.WriteAllText(dir + fileName, json);
     }
     public static SaveObject Load()

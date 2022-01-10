@@ -72,6 +72,9 @@ public class SaveTest : MonoBehaviour
                 else
                     so.leftFoot = FS.currentLF;
             }
+            so.upgrades["sim"] = 1;
+            so.upgrades["card"] = 0;
+            so.upgrades["hello"] = 1;
             SaveManager.Save(so);
             manualSave = false;
         }
