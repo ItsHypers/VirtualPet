@@ -12,6 +12,12 @@ public class SaveTest : MonoBehaviour
     public GloveScript[] gs;
     public FeetScript[] FootS;
 
+    public bool manualSave;
+
+    public int autoSaveTimer = 10; // Second count
+    [SerializeField]
+    protected float Timer;
+
     private void Start()
     {
         so.health = survival.Health;
@@ -39,8 +45,11 @@ public class SaveTest : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+
+        Timer += Time.deltaTime;
+        if (Timer >= autoSaveTimer || manualSave)
         {
+            Timer = 0f;
             so.health = survival.Health;
             so.hunger = survival.Hunger;
             so.happiness = survival.Happiness;
@@ -64,8 +73,9 @@ public class SaveTest : MonoBehaviour
                     so.leftFoot = FS.currentLF;
             }
             SaveManager.Save(so);
+            manualSave = false;
         }
-        if(Input.GetKeyDown(KeyCode.W))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             so = SaveManager.Load();
             survival.Health = so.health;
@@ -88,10 +98,6 @@ public class SaveTest : MonoBehaviour
                 else
                     FS.ChangeFoot(so.leftFoot);
             }
-
-
-
-
         }
     }
 }
