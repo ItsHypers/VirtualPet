@@ -6,25 +6,20 @@ public class HatScript : MonoBehaviour
 {
     public Sprite[] hats;
     private int randomInt;
+    public int currentHat;
     private SpriteRenderer sr;
+    public SaveObject so;
 
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
-        if (PlayerPrefs.HasKey("currentHat"))
-        {
-            sr.sprite = hats[PlayerPrefs.GetInt("currentHat")];
-        }
-        else
-        {
-            sr.sprite = hats[0];
-        }
+        sr.sprite = hats[so.hat];
     }
 
-    private void ChangeHat(int hat)
+    public void ChangeHat(int hat)
     {
         sr.sprite = hats[hat];
-        PlayerPrefs.SetInt("currentHat", hat);
+        currentHat = hat;
     }
 
     public void RandomHat()

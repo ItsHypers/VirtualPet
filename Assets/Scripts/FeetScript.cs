@@ -7,47 +7,36 @@ public class FeetScript : MonoBehaviour
     public Sprite[] rightfoot;
     public Sprite[] leftfoot;
     private int randomInt;
+    public int currentRF;
+    public int currentLF;
     private SpriteRenderer sr;
     public bool RFbool;
+    public SaveObject so;
 
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
         if (RFbool)
         {
-            if (PlayerPrefs.HasKey("currentRF"))
-            {
-                sr.sprite = rightfoot[PlayerPrefs.GetInt("currentRF")];
-            }
-            else
-            {
-                sr.sprite = rightfoot[0];
-            }
+            sr.sprite = rightfoot[so.rightFoot];
         }
         else
         {
-            if (PlayerPrefs.HasKey("currentLF"))
-            {
-                sr.sprite = leftfoot[PlayerPrefs.GetInt("currentLF")];
-            }
-            else
-            {
-                sr.sprite = leftfoot[0];
-            }
+            sr.sprite = leftfoot[so.leftFoot];
         }
     }
 
-    private void ChangeFoot(int foot)
+    public void ChangeFoot(int foot)
     {
         if (RFbool)
         {
             sr.sprite = rightfoot[foot];
-            PlayerPrefs.SetInt("currentRF", foot);
+            currentRF = foot;
         }
         else
         {
             sr.sprite = leftfoot[foot];
-            PlayerPrefs.SetInt("currentLF", foot);
+            currentLF = foot;
         }
     }
 

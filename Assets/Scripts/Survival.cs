@@ -7,27 +7,27 @@ public class Survival : MonoBehaviour
 {
     [Header("Player Health")]
     public float MaxHealth = 100f;
-    public float Health = 0f;
+    public float Health = 100f;
     public float healthDecrease;
     public Slider HealthSlider;
 
     [Header("Player Hunger")]
     public float maxHunter = 100f;
-    public float Hunger = 0f;
+    public float Hunger = 100f;
     public float hungerDecrease;
     public float hungerDecreaseSave;
     public Slider HungerSlider;
 
     [Header("Player Happiness")]
     public float maxHappiness = 100f;
-    public float Happiness = 0f;
+    public float Happiness = 100f;
     public float happinessDecrease;
     public float happinessDecreaseSave;
     public Slider HappinessSlider;
+    public SaveObject so;
 
     private void Start()
     {
-        Health = MaxHealth;
         happinessDecrease = happinessDecreaseSave;
         hungerDecrease = hungerDecreaseSave;
     }
@@ -58,6 +58,9 @@ public class Survival : MonoBehaviour
         Hunger = Hunger - hungerDecrease * Time.deltaTime;
         Health = Health - healthDecrease * Time.deltaTime;
         Happiness = Happiness - happinessDecrease * Time.deltaTime;
+        so.hunger = Hunger;
+        so.health = Health;
+        so.happiness = Happiness;
 
         HealthSlider.value = Health / MaxHealth;
         HungerSlider.value = Hunger / maxHunter;

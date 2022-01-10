@@ -6,48 +6,37 @@ public class GloveScript : MonoBehaviour
 {
     public Sprite[] righthand;
     public Sprite[] lefthand;
+    public int currentRH;
+    public int currentLH;
     private int randomInt;
     private SpriteRenderer sr;
     public bool RHbool;
+    public SaveObject so;
 
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
         if (RHbool)
         {
-            if (PlayerPrefs.HasKey("currentRF"))
-            {
-                sr.sprite = righthand[PlayerPrefs.GetInt("currentRF")];
-            }
-            else
-            {
-                sr.sprite = righthand[0];
-            }
+            sr.sprite = righthand[so.rightHand];
         }
         else
         {
-            if (PlayerPrefs.HasKey("currentLF"))
-            {
-                sr.sprite = lefthand[PlayerPrefs.GetInt("currentLF")];
-            }
-            else
-            {
-                sr.sprite = lefthand[0];
-            }
+            sr.sprite = lefthand[so.leftHand];
         }
     }
 
-    private void ChangeHand(int hand)
+    public void ChangeHand(int hand)
     {
         if (RHbool)
         {
             sr.sprite = righthand[hand];
-            PlayerPrefs.SetInt("currentRF", hand);
+            currentRH = hand;
         }
         else
         {
             sr.sprite = lefthand[hand];
-            PlayerPrefs.SetInt("currentLF", hand);
+            currentLH = hand;
         }
     }
 

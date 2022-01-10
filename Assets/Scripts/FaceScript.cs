@@ -6,25 +6,20 @@ public class FaceScript : MonoBehaviour
 {
     public Sprite[] faces;
     private int randomInt;
+    public int currentFace;
     private SpriteRenderer sr;
+    public SaveObject so;
 
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
-        if (PlayerPrefs.HasKey("currentFace"))
-        {
-            sr.sprite = faces[PlayerPrefs.GetInt("currentFace")];
-        }
-        else
-        {
-            sr.sprite = faces[0];
-        }
+        sr.sprite = faces[so.face];
     }
 
-    private void ChangeFace(int face)
+    public void ChangeFace(int face)
     {
         sr.sprite = faces[face];
-        PlayerPrefs.SetInt("currentFace", face);
+        currentFace = face;
     }
 
     public void RandomFace()

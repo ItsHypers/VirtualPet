@@ -8,9 +8,11 @@ public class Bank : MonoBehaviour
     public float Money;
     public TMP_Text text;
     private string currency;
+    public SaveObject so;
 
     private void Start()
     {
+        Money = so.money;
         if(!PlayerPrefs.HasKey("currency"))
         {
             PlayerPrefs.SetString("currency", "£");

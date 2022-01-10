@@ -1110,6 +1110,7 @@ GameObject:
   - component: {fileID: 394247132}
   - component: {fileID: 394247130}
   - component: {fileID: 394247135}
+  - component: {fileID: 394247136}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1256,6 +1257,39 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &394247136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394247129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c72f55c0fa48b2b459c4148394f0c3c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  so:
+    health: 0
+    hunger: 0
+    happiness: 0
+    money: 0
+    hat: 0
+    face: 0
+    leftHand: 0
+    rightHand: 0
+    leftFoot: 0
+    rightFoot: 0
+  survival: {fileID: 1958156607}
+  bs: {fileID: 1958156609}
+  hs: {fileID: 1670920556}
+  fs: {fileID: 1096147049}
+  gs:
+  - {fileID: 484080590}
+  - {fileID: 917671316}
+  FootS:
+  - {fileID: 2111567502}
+  - {fileID: 1409366639}
 --- !u!1 &425384001
 GameObject:
   m_ObjectHideFlags: 0
@@ -1591,14 +1625,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   righthand:
   - {fileID: 0}
-  - {fileID: 21300000, guid: 16838187a32727847a958b284d357fe5, type: 3}
-  - {fileID: 21300000, guid: 451a87564741520469cd1b20a2356df2, type: 3}
   - {fileID: 21300000, guid: 163a3fd5746c558489e96a6fa1054ae9, type: 3}
+  - {fileID: 21300000, guid: 451a87564741520469cd1b20a2356df2, type: 3}
+  - {fileID: 21300000, guid: 16838187a32727847a958b284d357fe5, type: 3}
   lefthand:
   - {fileID: 0}
   - {fileID: 21300000, guid: f31009f3361d84648bfe986a4e78015b, type: 3}
   - {fileID: 21300000, guid: 7fc7afa872d535b49b9f2344515a9a25, type: 3}
+  currentRH: 0
+  currentLH: 0
   RHbool: 1
+  so:
+    health: 0
+    hunger: 0
+    happiness: 0
+    money: 0
+    hat: 0
+    face: 0
+    leftHand: 0
+    rightHand: 0
+    leftFoot: 0
+    rightFoot: 0
 --- !u!1 &519143535
 GameObject:
   m_ObjectHideFlags: 0
@@ -2842,14 +2889,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   righthand:
   - {fileID: 0}
-  - {fileID: 21300000, guid: 16838187a32727847a958b284d357fe5, type: 3}
-  - {fileID: 21300000, guid: 451a87564741520469cd1b20a2356df2, type: 3}
   - {fileID: 21300000, guid: 163a3fd5746c558489e96a6fa1054ae9, type: 3}
+  - {fileID: 21300000, guid: 451a87564741520469cd1b20a2356df2, type: 3}
+  - {fileID: 21300000, guid: 16838187a32727847a958b284d357fe5, type: 3}
   lefthand:
   - {fileID: 0}
   - {fileID: 21300000, guid: f31009f3361d84648bfe986a4e78015b, type: 3}
   - {fileID: 21300000, guid: 7fc7afa872d535b49b9f2344515a9a25, type: 3}
+  currentRH: 0
+  currentLH: 0
   RHbool: 0
+  so:
+    health: 0
+    hunger: 0
+    happiness: 0
+    money: 0
+    hat: 0
+    face: 0
+    leftHand: 0
+    rightHand: 0
+    leftFoot: 0
+    rightFoot: 0
 --- !u!1 &999235828
 GameObject:
   m_ObjectHideFlags: 0
@@ -3371,6 +3431,18 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7f2407875fe280c46aec5c092c4d6282, type: 3}
   - {fileID: 21300000, guid: e27e19779d3d40b4e8e2053dfb5d89ff, type: 3}
   - {fileID: 21300000, guid: 61ed705bc6acecc4797ae554dc93baa8, type: 3}
+  currentFace: 0
+  so:
+    health: 0
+    hunger: 0
+    happiness: 0
+    money: 0
+    hat: 0
+    face: 0
+    leftHand: 0
+    rightHand: 0
+    leftFoot: 0
+    rightFoot: 0
 --- !u!1 &1108712861
 GameObject:
   m_ObjectHideFlags: 0
@@ -4030,7 +4102,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 007a02b49808ae64bb00902d42302713, type: 3}
   - {fileID: 21300000, guid: 9b0a7c600dca8554c9f5639c1a967268, type: 3}
   - {fileID: 21300000, guid: da8dadb2540e7d84fb226da871927aa4, type: 3}
+  currentRF: 0
+  currentLF: 0
   RFbool: 0
+  so:
+    health: 0
+    hunger: 0
+    happiness: 0
+    money: 0
+    hat: 0
+    face: 0
+    leftHand: 0
+    rightHand: 0
+    leftFoot: 0
+    rightFoot: 0
 --- !u!1 &1409836499
 GameObject:
   m_ObjectHideFlags: 0
@@ -5123,6 +5208,18 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7159b60844e956e4fb1b569d1f15986e, type: 3}
   - {fileID: 21300000, guid: 423fc10bb122d4949adf9a262f239d1e, type: 3}
   - {fileID: 21300000, guid: 3b66d398f0fc98c4fa490342dadf524d, type: 3}
+  currentHat: 0
+  so:
+    health: 0
+    hunger: 0
+    happiness: 0
+    money: 0
+    hat: 0
+    face: 0
+    leftHand: 0
+    rightHand: 0
+    leftFoot: 0
+    rightFoot: 0
 --- !u!1 &1790520056
 GameObject:
   m_ObjectHideFlags: 0
@@ -5750,6 +5847,17 @@ MonoBehaviour:
   happinessDecrease: 0.1
   happinessDecreaseSave: 0.06
   HappinessSlider: {fileID: 1593069490}
+  so:
+    health: 0
+    hunger: 0
+    happiness: 0
+    money: 0
+    hat: 0
+    face: 0
+    leftHand: 0
+    rightHand: 0
+    leftFoot: 0
+    rightFoot: 0
 --- !u!195 &1958156608
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5786,6 +5894,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Money: 0
   text: {fileID: 1946515974}
+  so:
+    health: 0
+    hunger: 0
+    happiness: 0
+    money: 0
+    hat: 0
+    face: 0
+    leftHand: 0
+    rightHand: 0
+    leftFoot: 0
+    rightFoot: 0
 --- !u!114 &1958156610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6018,7 +6137,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 007a02b49808ae64bb00902d42302713, type: 3}
   - {fileID: 21300000, guid: 9b0a7c600dca8554c9f5639c1a967268, type: 3}
   - {fileID: 21300000, guid: da8dadb2540e7d84fb226da871927aa4, type: 3}
+  currentRF: 0
+  currentLF: 0
   RFbool: 1
+  so:
+    health: 0
+    hunger: 0
+    happiness: 0
+    money: 0
+    hat: 0
+    face: 0
+    leftHand: 0
+    rightHand: 0
+    leftFoot: 0
+    rightFoot: 0
 --- !u!1 &2112568759
 GameObject:
   m_ObjectHideFlags: 0
