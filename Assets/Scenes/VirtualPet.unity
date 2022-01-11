@@ -7091,7 +7091,7 @@ MonoBehaviour:
   fitType: 3
   rows: 1
   columns: 4
-  cellSize: {x: 467.4655, y: 59.380005}
+  cellSize: {x: 467.4655, y: 419.38}
   spacing: {x: 3.03, y: 0}
   fitX: 1
   fitY: 1
