@@ -7,6 +7,12 @@ public class PauseMenu : MonoBehaviour
     public bool inShop;
     public GameObject Tabs;
     public GameObject Shop;
+
+    private void Start()
+    {
+        LeanTween.scale(Tabs, new Vector3(0, 0, 0), 0.4f);
+        LeanTween.scale(Shop, new Vector3(0, 0, 0), 0.4f).setOnComplete(setActive);
+    }
     public void openShop()
     {
         if (inShop)
@@ -30,10 +36,6 @@ public class PauseMenu : MonoBehaviour
             Tabs.SetActive(false);
             Shop.SetActive(false);
             inShop = false;
-        }
-        else
-        {
-
         }
     }
 }

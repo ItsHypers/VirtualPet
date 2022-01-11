@@ -14,6 +14,24 @@ public class TabGroup : MonoBehaviour
     private int currentObject;
 
     public PanelGroup panelGroup;
+
+
+    private void Start()
+    {
+        currentObject = 1;
+        foreach(GameObject obj in objectsToSwap)
+        {
+            if (currentObject == 1)
+            {
+                obj.transform.localScale = new Vector3(1, 1, 0);
+                currentObject++;
+            }
+            else
+            {
+                obj.transform.localScale = new Vector3(0, 0, 0);
+            }
+        }
+    }
     public void Subscribe(TabButton button)
     {
         if(tabButtons == null)
