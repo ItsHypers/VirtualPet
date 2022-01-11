@@ -11,6 +11,7 @@ public class TabGroup : MonoBehaviour
     public Sprite tabActive;
     public TabButton selectedTab;
     public List<GameObject> objectsToSwap;
+    private int currentObject;
 
     public PanelGroup panelGroup;
     public void Subscribe(TabButton button)
@@ -51,10 +52,12 @@ public class TabGroup : MonoBehaviour
             if (i == index - 1)
             {
                 objectsToSwap[i].SetActive(true);
+                LeanTween.scale(objectsToSwap[i], new Vector3(1, 1, 0), 0.4f);
             }
             else
             {
-                objectsToSwap[i].SetActive(false);
+                currentObject = i;
+                LeanTween.scale(objectsToSwap[i], new Vector3(0, 0, 0), 0.4f).setOnComplete(SetActive);
             }
         }
         if(panelGroup != null)
@@ -70,5 +73,9 @@ public class TabGroup : MonoBehaviour
             if(selectedTab!=null && button == selectedTab) { continue; }
             button.background.sprite = tabIdle;
         }
+    }
+    public void SetActive()
+    {
+        objectsToSwap[currentObject].SetActive(false);
     }
 }
