@@ -70,12 +70,12 @@ public class TabGroup : MonoBehaviour
             if (i == index - 1)
             {
                 objectsToSwap[i].SetActive(true);
-                LeanTween.scale(objectsToSwap[i], new Vector3(1, 1, 0), 0.6f);
+                LeanTween.scale(objectsToSwap[i], new Vector3(1, 1, 0), 0.2f);
             }
             else
             {
                 currentObject = i;
-                LeanTween.scale(objectsToSwap[i], new Vector3(0, 0, 0), 0.6f).setOnComplete(SetActive);
+                LeanTween.scale(objectsToSwap[i], new Vector3(0, 0, 0), 0.2f).setOnComplete(SetActive);
             }
         }
         if(panelGroup != null)
