@@ -18,19 +18,21 @@ public class TabGroup : MonoBehaviour
 
     private void Start()
     {
-        currentObject = 1;
-        foreach(GameObject obj in objectsToSwap)
+        //currentObject = 1;
+        /*foreach(GameObject obj in objectsToSwap)
         {
             if (currentObject == 1)
             {
                 obj.transform.localScale = new Vector3(1, 1, 0);
                 currentObject++;
+                Debug.Log(currentObject);
             }
             else
             {
                 obj.transform.localScale = new Vector3(0, 0, 0);
+                Debug.Log(currentObject);
             }
-        }
+        }*/
     }
     public void Subscribe(TabButton button)
     {
@@ -67,7 +69,7 @@ public class TabGroup : MonoBehaviour
         int index = button.transform.GetSiblingIndex();
         for(int i=0; i<objectsToSwap.Count; i++)
         {
-            if (i == index - 1)
+            if (i == index)
             {
                 objectsToSwap[i].SetActive(true);
                 LeanTween.scale(objectsToSwap[i], new Vector3(1, 1, 0), 0.35f);
