@@ -17,15 +17,15 @@ public class PauseMenu : MonoBehaviour
     {
         if (inShop)
         {
-            LeanTween.scale(Tabs, new Vector3(0, 0, 0), 0.3f);
-            LeanTween.scale(Shop, new Vector3(0, 0, 0), 0.3f).setOnComplete(setActive);
+            LeanTween.scale(Tabs, new Vector3(0, 0, 0), 0.6f);
+            LeanTween.scale(Shop, new Vector3(0, 0, 0), 0.6f).setOnComplete(setActive);
         }
         else
         {
             Tabs.SetActive(true);
             Shop.SetActive(true);
-            LeanTween.scale(Tabs, new Vector3(1, 1, 0), 0.3f);
-            LeanTween.scale(Shop, new Vector3(1, 1, 0), 0.3f);
+            LeanTween.scale(Tabs, new Vector3(1, 1, 0), 0.6f);
+            LeanTween.scale(Shop, new Vector3(1, 1, 0), 0.6f);
             inShop = true;
         }
     }
