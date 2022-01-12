@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SaveTest : MonoBehaviour
+public class SaveScript : MonoBehaviour
 {
     public SaveObject so;
     public Survival survival;
@@ -11,6 +11,9 @@ public class SaveTest : MonoBehaviour
     public FaceScript fs;
     public GloveScript[] gs;
     public FeetScript[] FootS;
+    public GloveBuyScript GBS;
+    public ShoeBuyScript SBS;
+    public HatsBuyScript HBS;
 
     public bool manualSave;
 
@@ -18,7 +21,7 @@ public class SaveTest : MonoBehaviour
     [SerializeField]
     protected float Timer;
 
-    private void Start()
+    /*private void Start()
     {
         so.health = survival.Health;
         so.hunger = survival.Hunger;
@@ -26,6 +29,14 @@ public class SaveTest : MonoBehaviour
         so.money = bs.Money;
         so.hat = hs.currentHat;
         so.face = fs.currentFace;
+
+        so.RGlovesUnlocked = GBS.RGlovesUnlocked;
+        so.LGlovesUnlocked = GBS.LGlovesUnlocked;
+
+        so.RShoeUnlocked = SBS.RShoeUnlocked;
+        so.LShoeUnlocked = SBS.LShoeUnlocked;
+
+        so.HatsUnlocked = HBS.hatsUnlocked;
 
         foreach (GloveScript HS in gs)
         {
@@ -42,7 +53,7 @@ public class SaveTest : MonoBehaviour
             else
                 so.leftHand = FS.currentLF;
         }
-    }
+    }*/
     private void Update()
     {
 
@@ -60,7 +71,9 @@ public class SaveTest : MonoBehaviour
             foreach (GloveScript HS in gs)
             {
                 if (HS.RHbool)
+                {
                     so.rightHand = HS.currentRH;
+                }
                 else
                     so.leftHand = HS.currentLH;
             }

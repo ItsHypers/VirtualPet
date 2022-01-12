@@ -31,6 +31,9 @@ public class Survival : MonoBehaviour
     {
         happinessDecrease = happinessDecreaseSave;
         hungerDecrease = hungerDecreaseSave;
+        so.hunger = Hunger;
+        so.health = Health;
+        so.happiness = Happiness;
     }
     private void Update()
     {
@@ -59,9 +62,6 @@ public class Survival : MonoBehaviour
         Hunger = Hunger - hungerDecrease * Time.deltaTime;
         Health = Health - healthDecrease * Time.deltaTime;
         Happiness = Happiness - happinessDecrease * Time.deltaTime;
-        so.hunger = Hunger;
-        so.health = Health;
-        so.happiness = Happiness;
 
         HealthText.text = (Health / MaxHealth * 100).ToString("F0") + "%";
         HungerText.text = (Hunger / maxHunter * 100).ToString("F0") + "%";

@@ -17,5 +17,12 @@ public class SaveObject
     public int leftFoot;
     public int rightFoot;
 
+    public bool[] RGlovesUnlocked;
+    public bool[] LGlovesUnlocked;
+
+    public bool[] RShoeUnlocked;
+    public bool[] LShoeUnlocked;
+
+    public bool[] HatsUnlocked;
     public Dictionary<string, int> upgrades = new Dictionary<string, int>();
 }

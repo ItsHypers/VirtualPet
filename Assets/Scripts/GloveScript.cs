@@ -53,4 +53,9 @@ public class GloveScript : MonoBehaviour
             ChangeHand(randomInt);
         }
     }
+
+    public void Buy()
+    {
+
+    }
 }
