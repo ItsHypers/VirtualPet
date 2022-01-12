@@ -12,7 +12,6 @@ public class Bank : MonoBehaviour
 
     private void Start()
     {
-        Money = so.money;
         if(!PlayerPrefs.HasKey("currency"))
         {
             PlayerPrefs.SetString("currency", "£");

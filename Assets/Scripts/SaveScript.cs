@@ -21,39 +21,14 @@ public class SaveScript : MonoBehaviour
     [SerializeField]
     protected float Timer;
 
-    /*private void Start()
+    private void Start()
     {
-        so.health = survival.Health;
-        so.hunger = survival.Hunger;
-        so.happiness = survival.Happiness;
-        so.money = bs.Money;
-        so.hat = hs.currentHat;
-        so.face = fs.currentFace;
-
-        so.RGlovesUnlocked = GBS.RGlovesUnlocked;
-        so.LGlovesUnlocked = GBS.LGlovesUnlocked;
-
-        so.RShoeUnlocked = SBS.RShoeUnlocked;
-        so.LShoeUnlocked = SBS.LShoeUnlocked;
-
-        so.HatsUnlocked = HBS.hatsUnlocked;
-
-        foreach (GloveScript HS in gs)
-        {
-            if (HS.RHbool)
-                so.rightHand = HS.currentRH;
-            else
-                so.leftHand = HS.currentLH;
-        }
-
-        foreach (FeetScript FS in FootS)
-        {
-            if (FS.RFbool)
-                so.rightHand = FS.currentRF;
-            else
-                so.leftHand = FS.currentLF;
-        }
-    }*/
+        so = SaveManager.Load();
+        survival.Health = so.health;
+        survival.Hunger = so.hunger;
+        survival.Happiness = so.happiness;
+        bs.Money = so.money;
+    }
     private void Update()
     {
 
