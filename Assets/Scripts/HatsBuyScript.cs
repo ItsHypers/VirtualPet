@@ -15,7 +15,22 @@ public class HatsBuyScript : MonoBehaviour
     public Bank BS;
     public HatScript HS;
     public SaveObject so;
-
+    public int hatTimer = 5;
+    [SerializeField]
+    protected float Timer;
+    private void Start()
+    {
+        foreach (int i in HatInts)
+        {
+            if (i != 0)
+            {
+                if (hatsUnlocked[i])
+                {
+                    Text[i].text = HatNames[i] + "-" + Environment.NewLine + "Bought!";
+                }
+            }
+        }
+    }
     public void BuyHat(int Array)
     {
         foreach (int HatInts in HatInts)

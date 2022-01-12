@@ -28,6 +28,7 @@ public class SaveScript : MonoBehaviour
         survival.Hunger = so.hunger;
         survival.Happiness = so.happiness;
         bs.Money = so.money;
+        HBS.hatsUnlocked = so.HatsUnlocked;
     }
     private void Update()
     {
@@ -40,6 +41,7 @@ public class SaveScript : MonoBehaviour
             so.hunger = survival.Hunger;
             so.happiness = survival.Happiness;
             so.money = bs.Money;
+
             so.hat = hs.currentHat;
             so.face = fs.currentFace;
 
@@ -60,6 +62,15 @@ public class SaveScript : MonoBehaviour
                 else
                     so.leftFoot = FS.currentLF;
             }
+
+            so.HatsUnlocked = HBS.hatsUnlocked;
+
+            so.LGlovesUnlocked = GBS.LGlovesUnlocked;
+            so.RGlovesUnlocked = GBS.RGlovesUnlocked;
+
+            so.RShoeUnlocked = SBS.RShoeUnlocked;
+            so.LShoeUnlocked = SBS.LShoeUnlocked;
+
             so.upgrades["sim"] = 1;
             so.upgrades["card"] = 0;
             so.upgrades["hello"] = 1;

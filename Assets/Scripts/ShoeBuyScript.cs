@@ -24,6 +24,30 @@ public class ShoeBuyScript : MonoBehaviour
     public FeetScript RSS;
     public FeetScript LSS;
 
+    private void Start()
+    {
+        foreach (int i in RSInts)
+        {
+            if (i != 0)
+            {
+                if (RShoeUnlocked[i])
+                {
+                    RightText[i].text = RSNames[i] + "-" + Environment.NewLine + "Bought!";
+                }
+            }
+        }
+
+        foreach (int i in LSInts)
+        {
+            if (i != 0)
+            {
+                if (LShoeUnlocked[i])
+                {
+                    LeftText[i].text = LSNames[i] + "-" + Environment.NewLine + "Bought!";
+                }
+            }
+        }
+    }
     public void RightShoeClick(int Array)
     {
         foreach (int gloveInts in RSInts)

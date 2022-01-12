@@ -2,7 +2,6 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using UnityEngine;
 [System.Serializable]
-
 public class SaveObject
 {
     public float health;
@@ -17,12 +16,11 @@ public class SaveObject
     public int leftFoot;
     public int rightFoot;
 
-    public bool[] RGlovesUnlocked;
-    public bool[] LGlovesUnlocked;
+    public bool[] RGlovesUnlocked = { true, false, false, false, false, false, false };
+    public bool[] LGlovesUnlocked = { true, false, false, false, false, false, false };
 
-    public bool[] RShoeUnlocked;
-    public bool[] LShoeUnlocked;
-
-    public bool[] HatsUnlocked;
+    public bool[] RShoeUnlocked = { true, false, false, false, false, false, false };
+    public bool[] LShoeUnlocked = { true, false, false, false, false, false, false };
+    public bool[] HatsUnlocked = { true, false, false, false, false, false, false, false, false, false };
     public Dictionary<string, int> upgrades = new Dictionary<string, int>();
 }

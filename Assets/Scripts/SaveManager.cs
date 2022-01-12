@@ -30,7 +30,17 @@ public static class SaveManager
         }
         else
         {
-            Debug.Log("Save file does not exist");
+            so.health = 100;
+            so.hunger = 100;
+            so.happiness = 100;
+            so.money = 0;
+            so.hat = 0;
+            so.face = 0;
+            so.leftHand = 0;
+            so.rightHand = 0;
+            so.rightFoot = 0;
+            so.leftFoot = 0;
+            Debug.Log("Loaded Default Stuff");
         }
         return so;
     }

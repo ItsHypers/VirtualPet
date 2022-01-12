@@ -16,14 +16,6 @@ public class FeetScript : MonoBehaviour
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
-        if (RFbool)
-        {
-            sr.sprite = rightfoot[so.rightFoot];
-        }
-        else
-        {
-            sr.sprite = leftfoot[so.leftFoot];
-        }
     }
 
     public void ChangeFoot(int foot)
