@@ -7,7 +7,7 @@ using System;
 public class GloveBuyScript : MonoBehaviour
 {
     [Header("Right Gloves")]
-    public bool[] RGlovesUnlocked = new bool[7] { true, false, false, false, false, false, false };
+    public bool[] RGlovesUnlocked;
     public TMP_Text[] RightText;
     public string[] RGNames;
     public int[] RGloveInts;
@@ -15,7 +15,7 @@ public class GloveBuyScript : MonoBehaviour
 
     [Space(10)]
     [Header("Left Gloves")]
-    public bool[] LGlovesUnlocked = new bool[7] { true, false, false, false, false, false, false };
+    public bool[] LGlovesUnlocked;
     public TMP_Text[] LeftText;
     public string[] LGNames;
     public int[] LGloveInts;
@@ -25,6 +25,30 @@ public class GloveBuyScript : MonoBehaviour
     public GloveScript RGS;
     public GloveScript LGS;
 
+    private void Start()
+    {
+        foreach (int i in RGloveInts)
+        {
+            if (i != 0)
+            {
+                if (RGlovesUnlocked[i])
+                {
+                    RightText[i].text = RGNames[i] + "-" + Environment.NewLine + "Bought!";
+                }
+            }
+        }
+
+        foreach (int i in LGloveInts)
+        {
+            if (i != 0)
+            {
+                if (LGlovesUnlocked[i])
+                {
+                    LeftText[i].text = LGNames[i] + "-" + Environment.NewLine + "Bought!";
+                }
+            }
+        }
+    }
     public void RightGloveClick(int Array)
     {
         foreach(int gloveInts in RGloveInts)

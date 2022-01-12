@@ -13,7 +13,7 @@ public class FeetScript : MonoBehaviour
     public bool RFbool;
     public SaveObject so;
 
-    private void Start()
+    private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
     }

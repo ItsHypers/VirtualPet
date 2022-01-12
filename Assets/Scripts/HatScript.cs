@@ -10,10 +10,9 @@ public class HatScript : MonoBehaviour
     private SpriteRenderer sr;
     public SaveObject so;
 
-    private void Start()
+    private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
-        sr.sprite = hats[so.hat];
     }
 
     public void ChangeHat(int hat)

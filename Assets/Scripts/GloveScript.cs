@@ -13,17 +13,9 @@ public class GloveScript : MonoBehaviour
     public bool RHbool;
     public SaveObject so;
 
-    private void Start()
+    private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
-        if (RHbool)
-        {
-            sr.sprite = righthand[so.rightHand];
-        }
-        else
-        {
-            sr.sprite = lefthand[so.leftHand];
-        }
     }
 
     public void ChangeHand(int hand)

@@ -15,9 +15,6 @@ public class HatsBuyScript : MonoBehaviour
     public Bank BS;
     public HatScript HS;
     public SaveObject so;
-    public int hatTimer = 5;
-    [SerializeField]
-    protected float Timer;
     private void Start()
     {
         foreach (int i in HatInts)

@@ -14,6 +14,7 @@ public class SaveScript : MonoBehaviour
     public GloveBuyScript GBS;
     public ShoeBuyScript SBS;
     public HatsBuyScript HBS;
+    public FaceBuyScript FBS;
 
     public bool manualSave;
 
@@ -28,9 +29,36 @@ public class SaveScript : MonoBehaviour
         survival.Hunger = so.hunger;
         survival.Happiness = so.happiness;
         bs.Money = so.money;
+
+        hs.ChangeHat(so.hat);
+        fs.ChangeFace(so.face);
+
+        foreach (GloveScript HS in gs)
+        {
+            if (HS.RHbool)
+            {
+                HS.ChangeHand(so.rightHand);
+            }
+            else
+                HS.ChangeHand(so.leftFoot);
+        }
+
+        foreach (FeetScript FS in FootS)
+        {
+            if (FS.RFbool)
+                FS.ChangeFoot(so.rightFoot);
+            else
+                FS.ChangeFoot(so.leftFoot);
+        }
+
         HBS.hatsUnlocked = so.HatsUnlocked;
+        FBS.faceUnlocked = so.FaceUnlocked;
+
         SBS.RShoeUnlocked = so.RShoeUnlocked;
         SBS.LShoeUnlocked = so.LShoeUnlocked;
+
+        GBS.RGlovesUnlocked = so.RGlovesUnlocked;
+        GBS.LGlovesUnlocked = so.LGlovesUnlocked;
     }
     private void Update()
     {
@@ -66,6 +94,7 @@ public class SaveScript : MonoBehaviour
             }
 
             so.HatsUnlocked = HBS.hatsUnlocked;
+            so.FaceUnlocked = FBS.faceUnlocked;
 
             so.LGlovesUnlocked = GBS.LGlovesUnlocked;
             so.RGlovesUnlocked = GBS.RGlovesUnlocked;
@@ -78,30 +107,6 @@ public class SaveScript : MonoBehaviour
             so.upgrades["hello"] = 1;
             SaveManager.Save(so);
             manualSave = false;
-        }
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            so = SaveManager.Load();
-            survival.Health = so.health;
-            survival.Hunger = so.hunger;
-            survival.Happiness = so.happiness;
-            bs.Money = so.money;
-            hs.ChangeHat(so.hat);
-            fs.ChangeFace(so.face);
-            foreach (GloveScript HS in gs)
-            {
-                if (HS.RHbool)
-                    HS.ChangeHand(so.rightHand);
-                else
-                    HS.ChangeHand(so.leftHand);
-            }
-            foreach (FeetScript FS in FootS)
-            {
-                if (FS.RFbool)
-                    FS.ChangeFoot(so.rightFoot);
-                else
-                    FS.ChangeFoot(so.leftFoot);
-            }
         }
     }
 }

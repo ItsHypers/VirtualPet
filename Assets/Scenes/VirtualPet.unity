@@ -2090,7 +2090,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1146684958}
+        m_TargetAssemblyTypeName: FaceBuyScript, Assembly-CSharp
+        m_MethodName: BuyFace
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &119940054
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3311,7 +3323,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1146684958}
+        m_TargetAssemblyTypeName: FaceBuyScript, Assembly-CSharp
+        m_MethodName: BuyFace
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &258397811
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5769,6 +5793,7 @@ MonoBehaviour:
     RShoeUnlocked: 
     LShoeUnlocked: 
     HatsUnlocked: 
+    FaceUnlocked: 01000000000000000000
   survival: {fileID: 1958156607}
   bs: {fileID: 1958156609}
   hs: {fileID: 1670920556}
@@ -5782,6 +5807,7 @@ MonoBehaviour:
   GBS: {fileID: 1171846395}
   SBS: {fileID: 1512404429}
   HBS: {fileID: 1250684304}
+  FBS: {fileID: 1146684958}
   manualSave: 0
   autoSaveTimer: 10
   Timer: 0
@@ -6660,7 +6686,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1146684958}
+        m_TargetAssemblyTypeName: FaceBuyScript, Assembly-CSharp
+        m_MethodName: BuyFace
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &458107088
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7118,6 +7156,7 @@ MonoBehaviour:
     RShoeUnlocked: 
     LShoeUnlocked: 
     HatsUnlocked: 
+    FaceUnlocked: 01000000000000000000
 --- !u!1 &490236926
 GameObject:
   m_ObjectHideFlags: 0
@@ -10798,7 +10837,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1146684958}
+        m_TargetAssemblyTypeName: FaceBuyScript, Assembly-CSharp
+        m_MethodName: BuyFace
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &784447905
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12307,7 +12358,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1146684958}
+        m_TargetAssemblyTypeName: FaceBuyScript, Assembly-CSharp
+        m_MethodName: BuyFace
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &880026661
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12794,6 +12857,7 @@ MonoBehaviour:
     RShoeUnlocked: 
     LShoeUnlocked: 
     HatsUnlocked: 
+    FaceUnlocked: 01000000000000000000
 --- !u!1 &922842046
 GameObject:
   m_ObjectHideFlags: 0
@@ -14348,7 +14412,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1146684958}
+        m_TargetAssemblyTypeName: FaceBuyScript, Assembly-CSharp
+        m_MethodName: BuyFace
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 9
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1044791471
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15559,6 +15635,7 @@ MonoBehaviour:
     RShoeUnlocked: 
     LShoeUnlocked: 
     HatsUnlocked: 
+    FaceUnlocked: 01000000000000000000
 --- !u!1 &1096252069
 GameObject:
   m_ObjectHideFlags: 0
@@ -15956,6 +16033,7 @@ GameObject:
   - component: {fileID: 1146684957}
   - component: {fileID: 1146684956}
   - component: {fileID: 1146684955}
+  - component: {fileID: 1146684958}
   m_Layer: 5
   m_Name: Faces
   m_TagString: Untagged
@@ -16055,6 +16133,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1146684953}
   m_CullTransparentMesh: 1
+--- !u!114 &1146684958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146684953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f5474d67551138409d4c977536450e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceUnlocked: 01000000000000000000
+  Text:
+  - {fileID: 0}
+  - {fileID: 1162794127}
+  - {fileID: 1121162028}
+  - {fileID: 416231216}
+  - {fileID: 1098539373}
+  - {fileID: 319456593}
+  - {fileID: 2135962058}
+  - {fileID: 943411490}
+  - {fileID: 1530509426}
+  - {fileID: 2067035574}
+  FaceNames:
+  - 
+  - Blush Face
+  - Eye Patch
+  - Glasses
+  - Mustache
+  - Tears
+  - 3D Glasses
+  - Blood
+  - Clown Nose
+  - Whiskers
+  FaceInts: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
+  FacePrice:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  BS: {fileID: 1958156609}
+  FS: {fileID: 1096147049}
+  so:
+    health: 0
+    hunger: 0
+    happiness: 0
+    money: 0
+    hat: 0
+    face: 0
+    leftHand: 0
+    rightHand: 0
+    leftFoot: 0
+    rightFoot: 0
+    RGlovesUnlocked: 01000000000000
+    LGlovesUnlocked: 01000000000000
+    RShoeUnlocked: 01000000000000
+    LShoeUnlocked: 01000000000000
+    HatsUnlocked: 01000000000000000000
+    FaceUnlocked: 01000000000000000000
 --- !u!1 &1153626125
 GameObject:
   m_ObjectHideFlags: 0
@@ -17308,7 +17452,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1146684958}
+        m_TargetAssemblyTypeName: FaceBuyScript, Assembly-CSharp
+        m_MethodName: BuyFace
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1247982923
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17637,8 +17793,7 @@ MonoBehaviour:
     RShoeUnlocked: 
     LShoeUnlocked: 
     HatsUnlocked: 
-  hatTimer: 5
-  Timer: 0
+    FaceUnlocked: 01000000000000000000
 --- !u!1 &1254467036
 GameObject:
   m_ObjectHideFlags: 0
@@ -19211,7 +19366,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 13
-  m_Sprite: {fileID: 21300000, guid: 9b0a7c600dca8554c9f5639c1a967268, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -19219,7 +19374,7 @@ SpriteRenderer:
   m_Size: {x: 1.86, y: 2.4048483}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1409366639
@@ -19269,6 +19424,7 @@ MonoBehaviour:
     RShoeUnlocked: 
     LShoeUnlocked: 
     HatsUnlocked: 
+    FaceUnlocked: 01000000000000000000
 --- !u!1 &1409836499
 GameObject:
   m_ObjectHideFlags: 0
@@ -22236,7 +22392,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1146684958}
+        m_TargetAssemblyTypeName: FaceBuyScript, Assembly-CSharp
+        m_MethodName: BuyFace
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1635634133
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23112,6 +23280,7 @@ MonoBehaviour:
     RShoeUnlocked: 
     LShoeUnlocked: 
     HatsUnlocked: 
+    FaceUnlocked: 01000000000000000000
 --- !u!1 &1674738817
 GameObject:
   m_ObjectHideFlags: 0
@@ -24120,7 +24289,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1146684958}
+        m_TargetAssemblyTypeName: FaceBuyScript, Assembly-CSharp
+        m_MethodName: BuyFace
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1779453343
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26237,6 +26418,7 @@ MonoBehaviour:
     RShoeUnlocked: 
     LShoeUnlocked: 
     HatsUnlocked: 
+    FaceUnlocked: 01000000000000000000
 --- !u!195 &1958156608
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -26289,6 +26471,7 @@ MonoBehaviour:
     RShoeUnlocked: 
     LShoeUnlocked: 
     HatsUnlocked: 
+    FaceUnlocked: 01000000000000000000
 --- !u!114 &1958156610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28088,7 +28271,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 9f588dce60bebd4499b08064b0a4bf14, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -28096,7 +28279,7 @@ SpriteRenderer:
   m_Size: {x: 1.89375, y: 2.3999999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &2111567502
@@ -28146,6 +28329,7 @@ MonoBehaviour:
     RShoeUnlocked: 
     LShoeUnlocked: 
     HatsUnlocked: 
+    FaceUnlocked: 01000000000000000000
 --- !u!1 &2112568759
 GameObject:
   m_ObjectHideFlags: 0

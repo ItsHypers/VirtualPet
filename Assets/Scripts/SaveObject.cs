@@ -21,6 +21,8 @@ public class SaveObject
 
     public bool[] RShoeUnlocked = { true, false, false, false, false, false, false };
     public bool[] LShoeUnlocked = { true, false, false, false, false, false, false };
+
     public bool[] HatsUnlocked = { true, false, false, false, false, false, false, false, false, false };
+    public bool[] FaceUnlocked = { true, false, false, false, false, false, false, false, false, false };
     public Dictionary<string, int> upgrades = new Dictionary<string, int>();
 }

@@ -10,10 +10,9 @@ public class FaceScript : MonoBehaviour
     private SpriteRenderer sr;
     public SaveObject so;
 
-    private void Start()
+    private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
-        sr.sprite = faces[so.face];
     }
 
     public void ChangeFace(int face)
