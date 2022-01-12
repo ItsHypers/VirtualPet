@@ -35,6 +35,10 @@ public class GloveBuyScript : MonoBehaviour
                 {
                     RightText[i].text = RGNames[i] + "-" + Environment.NewLine + "Bought!";
                 }
+                else
+                {
+                    RightText[i].text = RGNames[i] + "-" + Environment.NewLine + "$" + RGlovePrice[i];
+                }
             }
         }
 
@@ -45,6 +49,10 @@ public class GloveBuyScript : MonoBehaviour
                 if (LGlovesUnlocked[i])
                 {
                     LeftText[i].text = LGNames[i] + "-" + Environment.NewLine + "Bought!";
+                }
+                else
+                {
+                    LeftText[i].text = LGNames[i] + "-" + Environment.NewLine + "$" + LGlovePrice[i];
                 }
             }
         }

@@ -25,6 +25,10 @@ public class FaceBuyScript : MonoBehaviour
                 {
                     Text[i].text = FaceNames[i] + "-" + Environment.NewLine + "Bought!";
                 }
+                else
+                {
+                    Text[i].text = FaceNames[i] + "-" + Environment.NewLine + "$" + FacePrice[i];
+                }
             }
         }
     }

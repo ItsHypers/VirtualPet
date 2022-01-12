@@ -34,6 +34,10 @@ public class ShoeBuyScript : MonoBehaviour
                 {
                     RightText[i].text = RSNames[i] + "-" + Environment.NewLine + "Bought!";
                 }
+                else
+                {
+                    RightText[i].text = RSNames[i] + "-" + Environment.NewLine + "$" + RSPrice[i];
+                }
             }
         }
 
@@ -44,6 +48,10 @@ public class ShoeBuyScript : MonoBehaviour
                 if (LShoeUnlocked[i])
                 {
                     LeftText[i].text = LSNames[i] + "-" + Environment.NewLine + "Bought!";
+                }
+                else
+                {
+                    LeftText[i].text = LSNames[i] + "-" + Environment.NewLine + "$" + LSPrice[i];
                 }
             }
         }

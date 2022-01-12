@@ -25,6 +25,10 @@ public class HatsBuyScript : MonoBehaviour
                 {
                     Text[i].text = HatNames[i] + "-" + Environment.NewLine + "Bought!";
                 }
+                else
+                {
+                    Text[i].text = HatNames[i] + "-" + Environment.NewLine + "$" + HatPrice[i];
+                }
             }
         }
     }
