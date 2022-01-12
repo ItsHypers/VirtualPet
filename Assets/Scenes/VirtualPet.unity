@@ -17637,6 +17637,8 @@ MonoBehaviour:
     RShoeUnlocked: 
     LShoeUnlocked: 
     HatsUnlocked: 
+  hatTimer: 5
+  Timer: 0
 --- !u!1 &1254467036
 GameObject:
   m_ObjectHideFlags: 0
@@ -22506,7 +22508,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1646490549}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1250684304}
+        m_TargetAssemblyTypeName: HatsBuyScript, Assembly-CSharp
+        m_MethodName: SetText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1646490549
 MonoBehaviour:
   m_ObjectHideFlags: 0

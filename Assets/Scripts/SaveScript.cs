@@ -29,6 +29,8 @@ public class SaveScript : MonoBehaviour
         survival.Happiness = so.happiness;
         bs.Money = so.money;
         HBS.hatsUnlocked = so.HatsUnlocked;
+        SBS.RShoeUnlocked = so.RShoeUnlocked;
+        SBS.LShoeUnlocked = so.LShoeUnlocked;
     }
     private void Update()
     {
