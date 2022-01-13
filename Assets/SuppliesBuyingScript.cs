@@ -11,18 +11,7 @@ public class SuppliesBuyingScript : MonoBehaviour
     public GameObject[] locations;
     GameObject currentPoint;
     int index;
-    int i = 0;
     public int ballsSpawned;
-    private void Update()
-    {
-        while (i < ballsSpawned && i <= 2000)
-        {
-            index = Random.Range(0, locations.Length);
-            currentPoint = locations[index];
-            i++;
-            Instantiate(ball, currentPoint.transform.position, Quaternion.identity);
-        }
-    }
     public void BallBuy()
     {
         if (bs.Money >= ballPrice)

@@ -10,9 +10,26 @@ public class Bank : MonoBehaviour
     private string currency;
     public SaveObject so;
 
+    GameObject[] locations;
+    int ballsSpawned;
+    GameObject currentPoint;
+    public GameObject ball;
+
+    int index;
+    int i = 0;
+
     private void Start()
     {
-        if(!PlayerPrefs.HasKey("currency"))
+        ballsSpawned = so.ballsSpawned;
+        locations = GameObject.FindGameObjectsWithTag("location");
+        while (i < ballsSpawned && i <= 2000)
+        {
+            index = Random.Range(0, locations.Length);
+            currentPoint = locations[index];
+            i++;
+            Instantiate(ball, currentPoint.transform.position, Quaternion.identity);
+        }
+        if (!PlayerPrefs.HasKey("currency"))
         {
             PlayerPrefs.SetString("currency", "£");
         }
