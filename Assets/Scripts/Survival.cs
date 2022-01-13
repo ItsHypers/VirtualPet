@@ -87,7 +87,7 @@ public class Survival : MonoBehaviour
             {
                 healthDecrease = 0f;
             }
-            if (Hunger > 70 && Happiness > 70)
+            if (Hunger > 75 && Happiness > 75)
             {
                 if (Health >= 100)
                 {
