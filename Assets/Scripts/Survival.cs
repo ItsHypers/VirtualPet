@@ -73,19 +73,30 @@ public class Survival : MonoBehaviour
 
             if (Hunger <= 0f && Happiness <= 0f)
             {
-                healthDecrease = 0.15f;
+                healthDecrease = 0.3f;
             }
             else if (Hunger <= 0f)
             {
-                healthDecrease = 0.05f;
+                healthDecrease = 0.1f;
             }
             else if (Happiness <= 0f)
             {
-                healthDecrease = 0.05f;
+                healthDecrease = 0.1f;
             }
             else
             {
                 healthDecrease = 0f;
+            }
+            if (Hunger > 70 && Happiness > 70)
+            {
+                if (Health >= 100)
+                {
+                    healthDecrease = 0f;
+                }
+                else
+                {
+                    healthDecrease = -0.2f;
+                }
             }
         }
     }
