@@ -41,6 +41,18 @@ public class Survival : MonoBehaviour
     {
         if (!paused)
         {
+            if(Health > 100)
+            {
+                Health = 100;
+            }
+            if(Hunger > 100)
+            {
+                Hunger = 100;
+            }
+            if(Happiness > 100)
+            {
+                Happiness = 100;
+            }
             if (Hunger <= 0f)
             {
                 hungerDecrease = 0f;
