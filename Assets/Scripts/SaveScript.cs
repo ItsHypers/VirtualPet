@@ -15,6 +15,7 @@ public class SaveScript : MonoBehaviour
     public ShoeBuyScript SBS;
     public HatsBuyScript HBS;
     public FaceBuyScript FBS;
+    public SuppliesBuyingScript SUBS;
 
     public bool manualSave;
 
@@ -32,6 +33,7 @@ public class SaveScript : MonoBehaviour
 
         hs.ChangeHat(so.hat);
         fs.ChangeFace(so.face);
+        SUBS.ballsSpawned = so.ballsSpawned;
 
         foreach (GloveScript HS in gs)
         {
@@ -72,6 +74,7 @@ public class SaveScript : MonoBehaviour
             so.happiness = survival.Happiness;
             so.money = bs.Money;
 
+            so.ballsSpawned = SUBS.ballsSpawned;
             so.hat = hs.currentHat;
             so.face = fs.currentFace;
 

@@ -2352,7 +2352,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &153425630
 GameObject:
@@ -5208,120 +5208,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359597158}
   m_CullTransparentMesh: 1
---- !u!1 &369621575
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 369621576}
-  - component: {fileID: 369621579}
-  - component: {fileID: 369621578}
-  - component: {fileID: 369621577}
-  - component: {fileID: 369621580}
-  m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &369621576
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369621575}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.64, y: 6.4399996, z: 11.77}
-  m_LocalScale: {x: 3.21, y: 0.74, z: 2.81}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &369621577
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369621575}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &369621578
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369621575}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &369621579
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369621575}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &369621580
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369621575}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &370208310
 GameObject:
   m_ObjectHideFlags: 0
@@ -6087,7 +5973,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 22.82, y: 0, z: 0}
 --- !u!114 &394247135
 MonoBehaviour:
@@ -6178,6 +6064,7 @@ MonoBehaviour:
     LShoeUnlocked: 
     HatsUnlocked: 
     FaceUnlocked: 01000000000000000000
+    ballsSpawned: 0
   survival: {fileID: 1958156607}
   bs: {fileID: 1958156609}
   hs: {fileID: 1670920556}
@@ -6192,6 +6079,7 @@ MonoBehaviour:
   SBS: {fileID: 1512404429}
   HBS: {fileID: 1250684304}
   FBS: {fileID: 1146684958}
+  SUBS: {fileID: 931653662}
   manualSave: 0
   autoSaveTimer: 10
   Timer: 0
@@ -7035,7 +6923,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 451847416}
-  m_LocalRotation: {x: 0, y: 0, z: -0.9973294, w: 0.07303421}
+  m_LocalRotation: {x: 0, y: 0, z: -0.9973295, w: 0.07303416}
   m_LocalPosition: {x: 0.227, y: -0.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7598,6 +7486,7 @@ MonoBehaviour:
     LShoeUnlocked: 
     HatsUnlocked: 
     FaceUnlocked: 01000000000000000000
+    ballsSpawned: 0
 --- !u!1 &490236926
 GameObject:
   m_ObjectHideFlags: 0
@@ -8285,7 +8174,7 @@ Transform:
   - {fileID: 1539239881}
   - {fileID: 665516422}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &556734184
 GameObject:
@@ -12356,7 +12245,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 846870149}
-  m_LocalRotation: {x: 0, y: 0, z: 0.99954367, w: 0.030207142}
+  m_LocalRotation: {x: 0, y: 0, z: 0.99954367, w: 0.030207139}
   m_LocalPosition: {x: 0.225, y: 0.231, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -12388,7 +12277,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851212955}
-  m_LocalRotation: {x: -0, y: -0, z: 0.6157007, w: 0.78798014}
+  m_LocalRotation: {x: -0, y: -0, z: 0.6157007, w: 0.7879801}
   m_LocalPosition: {x: 0.53678125, y: -0.0000006023084, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -13523,6 +13412,7 @@ MonoBehaviour:
     LShoeUnlocked: 
     HatsUnlocked: 
     FaceUnlocked: 01000000000000000000
+    ballsSpawned: 0
 --- !u!1 &922842046
 GameObject:
   m_ObjectHideFlags: 0
@@ -13828,6 +13718,7 @@ MonoBehaviour:
   - {fileID: 304863987}
   - {fileID: 370208310}
   - {fileID: 1921648439}
+  ballsSpawned: 0
 --- !u!1 &943411488
 GameObject:
   m_ObjectHideFlags: 0
@@ -15077,7 +14968,7 @@ RectTransform:
   - {fileID: 950679242}
   - {fileID: 2115575273}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -15373,7 +15264,7 @@ MonoBehaviour:
   - {fileID: 48980711}
   - {fileID: 1566346583}
   m_Bounds:
-    m_Center: {x: -0.0054243803, y: 0.40969348, z: 0}
+    m_Center: {x: -0.0054243803, y: 0.4096936, z: 0}
     m_Extent: {x: 1.54515, y: 1.2272692, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -16195,6 +16086,7 @@ MonoBehaviour:
     LShoeUnlocked: 
     HatsUnlocked: 
     FaceUnlocked: 01000000000000000000
+    ballsSpawned: 0
 --- !u!1 &1096252069
 GameObject:
   m_ObjectHideFlags: 0
@@ -16685,7 +16577,7 @@ RectTransform:
   m_GameObject: {fileID: 1146684953}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 458107086}
@@ -16834,6 +16726,7 @@ MonoBehaviour:
     LShoeUnlocked: 01000000000000
     HatsUnlocked: 01000000000000000000
     FaceUnlocked: 01000000000000000000
+    ballsSpawned: 0
 --- !u!1 &1153626125
 GameObject:
   m_ObjectHideFlags: 0
@@ -18062,7 +17955,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246949404}
-  m_LocalRotation: {x: 0, y: 0, z: -0.00000018437754, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.00000015644156, w: 1}
   m_LocalPosition: {x: 0.65996504, y: 0.000000078828464, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -18497,6 +18390,7 @@ MonoBehaviour:
     LShoeUnlocked: 
     HatsUnlocked: 
     FaceUnlocked: 01000000000000000000
+    ballsSpawned: 0
 --- !u!1 &1254915470
 GameObject:
   m_ObjectHideFlags: 0
@@ -19272,7 +19166,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1320851649
 GameObject:
@@ -20056,6 +19950,7 @@ MonoBehaviour:
     LShoeUnlocked: 
     HatsUnlocked: 
     FaceUnlocked: 01000000000000000000
+    ballsSpawned: 0
 --- !u!1 &1418300699
 GameObject:
   m_ObjectHideFlags: 0
@@ -22770,7 +22665,7 @@ Transform:
   - {fileID: 370208311}
   - {fileID: 1921648440}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1604988402
 GameObject:
@@ -23579,6 +23474,7 @@ MonoBehaviour:
     LShoeUnlocked: 
     HatsUnlocked: 
     FaceUnlocked: 01000000000000000000
+    ballsSpawned: 0
 --- !u!1 &1674738817
 GameObject:
   m_ObjectHideFlags: 0
@@ -25508,7 +25404,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878387063}
-  m_LocalRotation: {x: 0, y: 0, z: 0.0000005331751, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.00000053270946, w: 1}
   m_LocalPosition: {x: 0.6976724, y: -0.00000059271656, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -26743,7 +26639,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958156600}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.64, y: 8.9, z: 11.77}
+  m_LocalPosition: {x: 31.64, y: 1.61, z: 30.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26751,7 +26647,7 @@ Transform:
   - {fileID: 999235829}
   - {fileID: 1555024128}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1958156602
 MonoBehaviour:
@@ -26780,7 +26676,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958156600}
   serializedVersion: 2
-  m_Mass: 5
+  m_Mass: 100
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -26809,7 +26705,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958156600}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3ea969dc5080ec4583da7ab6e910f17, type: 3}
   m_Name: 
@@ -26817,6 +26713,7 @@ MonoBehaviour:
   state: 0
   radius: 28.12
   timer: 5
+  destination: 0
   movement: 3
   lastSeen: {x: 0, y: 0, z: 0}
   destinationReachedTreshold: 0.7
@@ -26864,6 +26761,7 @@ MonoBehaviour:
     LShoeUnlocked: 
     HatsUnlocked: 
     FaceUnlocked: 01000000000000000000
+    ballsSpawned: 0
   paused: 0
 --- !u!195 &1958156608
 NavMeshAgent:
@@ -26872,7 +26770,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958156600}
-  m_Enabled: 0
+  m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1.49
   m_Speed: 5.55
@@ -26918,6 +26816,7 @@ MonoBehaviour:
     LShoeUnlocked: 
     HatsUnlocked: 
     FaceUnlocked: 01000000000000000000
+    ballsSpawned: 0
 --- !u!114 &1958156610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28828,6 +28727,7 @@ MonoBehaviour:
     LShoeUnlocked: 
     HatsUnlocked: 
     FaceUnlocked: 01000000000000000000
+    ballsSpawned: 0
 --- !u!1 &2112568759
 GameObject:
   m_ObjectHideFlags: 0

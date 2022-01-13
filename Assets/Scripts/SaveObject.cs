@@ -9,6 +9,7 @@ public class SaveObject
     public float happiness;
     public float money;
 
+    public int ballsSpawned;
     public int hat;
     public int face;
     public int leftHand;

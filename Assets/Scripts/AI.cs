@@ -10,7 +10,7 @@ public class AI : MonoBehaviour
     private NavMeshAgent nav;
     public float radius;
     public float timer = 5f;
-    private bool destination;
+    public bool destination;
     public float movement = 7f;
     public Vector3 lastSeen;
     [SerializeField] float destinationReachedTreshold;
