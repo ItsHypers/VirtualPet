@@ -15,7 +15,7 @@ public class SuppliesBuyingScript : MonoBehaviour
     public int ballsSpawned;
     private void Update()
     {
-        while (i < ballsSpawned)
+        while (i < ballsSpawned && i <= 2000)
         {
             index = Random.Range(0, locations.Length);
             currentPoint = locations[index];
