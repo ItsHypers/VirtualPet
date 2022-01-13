@@ -26419,6 +26419,7 @@ MonoBehaviour:
     LShoeUnlocked: 
     HatsUnlocked: 
     FaceUnlocked: 01000000000000000000
+  paused: 0
 --- !u!195 &1958156608
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -26487,6 +26488,7 @@ MonoBehaviour:
   bs: {fileID: 1958156609}
   DelayAmount: 1
   increment: 1
+  surv: {fileID: 1958156607}
 --- !u!1 &1978073137
 GameObject:
   m_ObjectHideFlags: 0

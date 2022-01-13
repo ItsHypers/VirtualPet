@@ -9,6 +9,7 @@ public class ClickerScript : MonoBehaviour
     public int DelayAmount = 1; // Second count
     protected float Timer;
     public float increment;
+    public Survival surv;
     private void Start()
     {
         if (PlayerPrefs.GetInt("FIRSTTIMEOPENING", 1) == 1)
@@ -19,11 +20,14 @@ public class ClickerScript : MonoBehaviour
     }
     private void Update()
     {
-        Timer += Time.deltaTime;
-        if (Timer >= DelayAmount)
+        if (!surv.paused)
         {
-            Timer = 0f;
-            bs.Money = bs.Money + increment;
+            Timer += Time.deltaTime;
+            if (Timer >= DelayAmount)
+            {
+                Timer = 0f;
+                bs.Money = bs.Money + increment;
+            }
         }
     }
 
