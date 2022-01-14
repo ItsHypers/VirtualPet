@@ -40,6 +40,7 @@ public static class SaveManager
             so.rightHand = 0;
             so.rightFoot = 0;
             so.leftFoot = 0;
+            so.ballsSpawned = 0;
             Debug.Log("Loaded Default Stuff");
         }
         return so;

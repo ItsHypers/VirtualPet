@@ -11,7 +11,7 @@ public class Bank : MonoBehaviour
     public SaveObject so;
 
     GameObject[] locations;
-    int ballsSpawned;
+    public int ballsSpawned;
     GameObject currentPoint;
     public GameObject ball;
 
@@ -20,8 +20,11 @@ public class Bank : MonoBehaviour
 
     private void Start()
     {
-        ballsSpawned = so.ballsSpawned;
         locations = GameObject.FindGameObjectsWithTag("location");
+    }
+    private void Update()
+    {
+        text.text = PlayerPrefs.GetString("currency") + Money.ToString();
         while (i < ballsSpawned && i <= 2000)
         {
             index = Random.Range(0, locations.Length);
@@ -29,13 +32,5 @@ public class Bank : MonoBehaviour
             i++;
             Instantiate(ball, currentPoint.transform.position, Quaternion.identity);
         }
-        if (!PlayerPrefs.HasKey("currency"))
-        {
-            PlayerPrefs.SetString("currency", "£");
-        }
-    }
-    private void Update()
-    {
-        text.text = PlayerPrefs.GetString("currency") + Money.ToString();
     }
 }

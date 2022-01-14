@@ -30,6 +30,7 @@ public class SaveScript : MonoBehaviour
         survival.Hunger = so.hunger;
         survival.Happiness = so.happiness;
         bs.Money = so.money;
+        bs.ballsSpawned = so.ballsSpawned;
 
         hs.ChangeHat(so.hat);
         fs.ChangeFace(so.face);
