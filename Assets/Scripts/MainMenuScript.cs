@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.IO;
-using UnityEditor;
-
+using UnityEngine.UI;
+using UnityEngine.Audio;
+using TMPro;
 public class MainMenuScript : MonoBehaviour
 {
     public static string directory = "/SaveData/";
@@ -12,7 +13,33 @@ public class MainMenuScript : MonoBehaviour
     public SaveObject so;
     public GameObject ngWarning;
     public AudioSource error;
+    public AudioMixer master;
+    public AudioMixer sfx;
+    public TMP_Dropdown dropdown;
 
+    Resolution[] resolutions;
+    private void Start()
+    {
+        resolutions = Screen.resolutions;
+        dropdown.ClearOptions();
+        List<string> options = new List<string>();
+
+        int currentResolutionIndex = 0;
+
+        for(int i = 0; i < resolutions.Length; i++)
+        {
+            string option = resolutions[i].width + " x " + resolutions[i].height;
+            options.Add(option);
+
+            if(resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
+            {
+                currentResolutionIndex = i;
+            }
+        }
+        dropdown.AddOptions(options);
+        dropdown.value = currentResolutionIndex;
+        dropdown.RefreshShownValue();
+    }
 
     public void Continue()
     {
@@ -53,5 +80,29 @@ public class MainMenuScript : MonoBehaviour
         {
             ngWarning.SetActive(false);
         }
+    }
+
+    public void SetMasterVolume(float volume)
+    {
+        master.SetFloat("master", volume);
+    }
+    public void SetSFXVolume(float volume)
+    {
+        sfx.SetFloat("sfx", volume);
+    }
+
+    public void SetQuality(int index)
+    {
+        QualitySettings.SetQualityLevel(index);
+    }
+    public void SetFullScreen(bool isFullScreen)
+    {
+        Screen.fullScreen = isFullScreen;
+    }
+
+    public void SetResolution(int resolutionIndex)
+    {
+        Resolution resolution = resolutions[resolutionIndex];
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
 }
