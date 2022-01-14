@@ -9720,6 +9720,7 @@ GameObject:
   - component: {fileID: 622150086}
   - component: {fileID: 622150085}
   - component: {fileID: 622150084}
+  - component: {fileID: 622150087}
   m_Layer: 5
   m_Name: PlayerHealth
   m_TagString: Untagged
@@ -9814,6 +9815,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 622150082}
   m_CullTransparentMesh: 1
+--- !u!114 &622150087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622150082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d73db7a2d3bf564ca1d522a26200fa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hungerSprites:
+  - {fileID: 21300000, guid: 56acec4e85d7807438f7b321c8541375, type: 3}
+  - {fileID: 21300000, guid: c5e673ffadd6a3143bad21f78695c8a5, type: 3}
+  - {fileID: 21300000, guid: fd5627bdefd1b6f4f906049e79aff945, type: 3}
+  happinessSprites:
+  - {fileID: 21300000, guid: 68cfdf38fb5286747b7e703c61d70a25, type: 3}
+  - {fileID: 21300000, guid: 2bead2165587a914e9e2b9b38442815d, type: 3}
+  - {fileID: 21300000, guid: 16d6928c30726f640ad8d3ce391f43b8, type: 3}
+  surv: {fileID: 1958156607}
+  hunger: {fileID: 1285058918}
+  happiness: {fileID: 721217182}
 --- !u!1 &630917641
 GameObject:
   m_ObjectHideFlags: 0
@@ -31106,6 +31130,10 @@ PrefabInstance:
     - target: {fileID: 1815132093153204597, guid: fd58271d8028f68499111a073e946c1e, type: 3}
       propertyPath: m_Name
       value: cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815132093153204597, guid: fd58271d8028f68499111a073e946c1e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd58271d8028f68499111a073e946c1e, type: 3}
