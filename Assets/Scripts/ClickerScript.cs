@@ -31,7 +31,7 @@ public class ClickerScript : MonoBehaviour
         }
     }
 
-    private void Upgrade(float amount)
+    public void Upgrade(float amount)
     {
         increment = increment + amount;
     }

@@ -16,6 +16,7 @@ public class MainMenuScript : MonoBehaviour
     public AudioMixer master;
     public AudioMixer sfx;
     public TMP_Dropdown dropdown;
+    public GameObject Settings;
 
     Resolution[] resolutions;
     private void Start()
@@ -60,10 +61,21 @@ public class MainMenuScript : MonoBehaviour
     }
     public void NewGameWarning()
     {
-        ngWarning.SetActive(true);
+        LeanTween.scale(ngWarning, new Vector3(1, 1, 1), 0.3f);
         error.Play();
     }
+    public void OpenSettings(bool open)
+    {
+        if(open)
+            LeanTween.scale(Settings, new Vector3(1, 1, 1), 0.3f);
+        else
+            LeanTween.scale(Settings, new Vector3(0, 0, 0), 0.3f);
+    }
 
+    public void Exit()
+    {
+        Application.Quit();
+    }
     public void LoadNewGame(bool answer)
     {
         if (answer)
@@ -78,7 +90,7 @@ public class MainMenuScript : MonoBehaviour
         }
         else
         {
-            ngWarning.SetActive(false);
+            LeanTween.scale(ngWarning, new Vector3(0, 0, 0), 0.3f);
         }
     }
 

@@ -252,7 +252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5035306
 RectTransform:
   m_ObjectHideFlags: 0
@@ -639,6 +639,7 @@ GameObject:
   - component: {fileID: 16377891}
   - component: {fileID: 16377893}
   - component: {fileID: 16377892}
+  - component: {fileID: 16377894}
   m_Layer: 5
   m_Name: Polymorphic Virus
   m_TagString: Untagged
@@ -663,10 +664,10 @@ RectTransform:
   m_Father: {fileID: 764725671}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 449.0551, y: -420.61334}
-  m_SizeDelta: {x: 286.03674, y: 267.07556}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &16377892
 MonoBehaviour:
@@ -711,7 +712,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 16377894}
+        m_TargetAssemblyTypeName: UpgradeItem, Assembly-CSharp
+        m_MethodName: OnPurchase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &16377893
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -720,6 +733,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 16377890}
   m_CullTransparentMesh: 1
+--- !u!114 &16377894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16377890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c698735d442134699846ccc4a10b7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrade: {fileID: 11400000, guid: 2ca6260ecca84034ea28bc80d95f0aa2, type: 2}
+  text: {fileID: 843951484}
+  bs: {fileID: 1958156609}
+  cs: {fileID: 1958156610}
+  player: {fileID: 1958156600}
 --- !u!1 &24060302
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,6 +762,7 @@ GameObject:
   - component: {fileID: 24060305}
   - component: {fileID: 24060304}
   - component: {fileID: 24060306}
+  - component: {fileID: 24060307}
   m_Layer: 5
   m_Name: WebScripting
   m_TagString: Untagged
@@ -757,10 +788,10 @@ RectTransform:
   m_Father: {fileID: 764725671}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 163.01837, y: -153.53778}
-  m_SizeDelta: {x: 286.03674, y: 267.07556}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &24060304
 MonoBehaviour:
@@ -805,7 +836,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 24060307}
+        m_TargetAssemblyTypeName: UpgradeItem, Assembly-CSharp
+        m_MethodName: OnPurchase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &24060305
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -834,6 +877,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &24060307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24060302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c698735d442134699846ccc4a10b7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrade: {fileID: 11400000, guid: e9a16a2f5d165ab4596e8b7705551543, type: 2}
+  text: {fileID: 1080384157}
+  bs: {fileID: 1958156609}
+  cs: {fileID: 1958156610}
+  player: {fileID: 1958156600}
 --- !u!1 &25511901
 GameObject:
   m_ObjectHideFlags: 0
@@ -2234,6 +2294,7 @@ GameObject:
   - component: {fileID: 116174971}
   - component: {fileID: 116174973}
   - component: {fileID: 116174972}
+  - component: {fileID: 116174974}
   m_Layer: 5
   m_Name: AI upgrade
   m_TagString: Untagged
@@ -2306,7 +2367,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 116174974}
+        m_TargetAssemblyTypeName: UpgradeItem, Assembly-CSharp
+        m_MethodName: OnPurchase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &116174973
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2315,6 +2388,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116174970}
   m_CullTransparentMesh: 1
+--- !u!114 &116174974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116174970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c698735d442134699846ccc4a10b7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrade: {fileID: 11400000, guid: 2ec97eb88c896664bbe0a5b716a4981a, type: 2}
+  text: {fileID: 1738462399}
+  bs: {fileID: 1958156609}
+  cs: {fileID: 1958156610}
+  player: {fileID: 1958156600}
 --- !u!1 &119940051
 GameObject:
   m_ObjectHideFlags: 0
@@ -2350,10 +2440,10 @@ RectTransform:
   m_Father: {fileID: 1146684954}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 593.0779, y: -379.15582}
-  m_SizeDelta: {x: 378.7186, y: 236.10387}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &119940053
 MonoBehaviour:
@@ -2751,6 +2841,7 @@ GameObject:
   - component: {fileID: 161742229}
   - component: {fileID: 161742232}
   - component: {fileID: 161742230}
+  - component: {fileID: 161742233}
   m_Layer: 5
   m_Name: BrowserHijacker
   m_TagString: Untagged
@@ -2775,10 +2866,10 @@ RectTransform:
   m_Father: {fileID: 764725671}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 449.0551, y: -153.53778}
-  m_SizeDelta: {x: 286.03674, y: 267.07556}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &161742230
 MonoBehaviour:
@@ -2823,7 +2914,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 161742233}
+        m_TargetAssemblyTypeName: UpgradeItem, Assembly-CSharp
+        m_MethodName: OnPurchase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &161742232
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2832,6 +2935,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 161742228}
   m_CullTransparentMesh: 1
+--- !u!114 &161742233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161742228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c698735d442134699846ccc4a10b7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrade: {fileID: 11400000, guid: af0181ae257afdc468e72b4f78cf4689, type: 2}
+  text: {fileID: 340434995}
+  bs: {fileID: 1958156609}
+  cs: {fileID: 1958156610}
+  player: {fileID: 1958156600}
 --- !u!1 &162370498
 GameObject:
   m_ObjectHideFlags: 0
@@ -3653,10 +3773,10 @@ RectTransform:
   m_Father: {fileID: 1146684954}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 976.7965, y: -379.15582}
-  m_SizeDelta: {x: 378.7186, y: 236.10387}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &258397810
 MonoBehaviour:
@@ -6324,6 +6444,16 @@ MonoBehaviour:
   FootS:
   - {fileID: 2111567502}
   - {fileID: 1409366639}
+  upgrades:
+  - {fileID: 11400000, guid: e9a16a2f5d165ab4596e8b7705551543, type: 2}
+  - {fileID: 11400000, guid: af0181ae257afdc468e72b4f78cf4689, type: 2}
+  - {fileID: 11400000, guid: af8456b082c5aa14a8785c2dacbcdf8f, type: 2}
+  - {fileID: 11400000, guid: 50aca253e9107a14d808ec3923b0b852, type: 2}
+  - {fileID: 11400000, guid: e0943c86a615f794c93721e3741fd221, type: 2}
+  - {fileID: 11400000, guid: 2ca6260ecca84034ea28bc80d95f0aa2, type: 2}
+  - {fileID: 11400000, guid: 1b51d3cb5ad456846a097193eb13f3b2, type: 2}
+  - {fileID: 11400000, guid: db44d96b82627c24d820fa67220bdb4d, type: 2}
+  - {fileID: 11400000, guid: 2ec97eb88c896664bbe0a5b716a4981a, type: 2}
   GBS: {fileID: 1171846395}
   SBS: {fileID: 1512404429}
   HBS: {fileID: 1250684304}
@@ -7216,10 +7346,10 @@ RectTransform:
   m_Father: {fileID: 1146684954}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 209.3593, y: -138.05194}
-  m_SizeDelta: {x: 378.7186, y: 236.10387}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &458107087
 MonoBehaviour:
@@ -9912,7 +10042,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &663903290
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11071,10 +11201,10 @@ RectTransform:
   m_Father: {fileID: 1088455590}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 156.01947, y: -45.55838}
-  m_SizeDelta: {x: 288.03894, y: 75.11676}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &751490217
 MonoBehaviour:
@@ -11533,10 +11663,10 @@ RectTransform:
   m_Father: {fileID: 1146684954}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 209.3593, y: -379.15582}
-  m_SizeDelta: {x: 378.7186, y: 236.10387}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &784447904
 MonoBehaviour:
@@ -12215,6 +12345,7 @@ GameObject:
   - component: {fileID: 822669852}
   - component: {fileID: 822669854}
   - component: {fileID: 822669853}
+  - component: {fileID: 822669855}
   m_Layer: 5
   m_Name: Direct Action
   m_TagString: Untagged
@@ -12239,10 +12370,10 @@ RectTransform:
   m_Father: {fileID: 764725671}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 735.09186, y: -420.61334}
-  m_SizeDelta: {x: 286.03674, y: 267.07556}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &822669853
 MonoBehaviour:
@@ -12287,7 +12418,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 822669855}
+        m_TargetAssemblyTypeName: UpgradeItem, Assembly-CSharp
+        m_MethodName: OnPurchase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &822669854
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12296,6 +12439,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822669851}
   m_CullTransparentMesh: 1
+--- !u!114 &822669855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822669851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c698735d442134699846ccc4a10b7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrade: {fileID: 11400000, guid: 1b51d3cb5ad456846a097193eb13f3b2, type: 2}
+  text: {fileID: 1906861526}
+  bs: {fileID: 1958156609}
+  cs: {fileID: 1958156610}
+  player: {fileID: 1958156600}
 --- !u!1 &826790565
 GameObject:
   m_ObjectHideFlags: 0
@@ -12547,6 +12707,7 @@ GameObject:
   - component: {fileID: 851862144}
   - component: {fileID: 851862146}
   - component: {fileID: 851862145}
+  - component: {fileID: 851862147}
   m_Layer: 5
   m_Name: Boot Sector
   m_TagString: Untagged
@@ -12571,10 +12732,10 @@ RectTransform:
   m_Father: {fileID: 764725671}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1021.1286, y: -420.61334}
-  m_SizeDelta: {x: 286.03674, y: 267.07556}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &851862145
 MonoBehaviour:
@@ -12619,7 +12780,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851862147}
+        m_TargetAssemblyTypeName: UpgradeItem, Assembly-CSharp
+        m_MethodName: OnPurchase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &851862146
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12628,6 +12801,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851862143}
   m_CullTransparentMesh: 1
+--- !u!114 &851862147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851862143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c698735d442134699846ccc4a10b7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrade: {fileID: 11400000, guid: db44d96b82627c24d820fa67220bdb4d, type: 2}
+  text: {fileID: 602694021}
+  bs: {fileID: 1958156609}
+  cs: {fileID: 1958156610}
+  player: {fileID: 1958156600}
 --- !u!1 &854964195
 GameObject:
   m_ObjectHideFlags: 0
@@ -13115,10 +13305,10 @@ RectTransform:
   m_Father: {fileID: 1146684954}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 593.0779, y: -620.25964}
-  m_SizeDelta: {x: 378.7186, y: 236.10387}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &880026660
 MonoBehaviour:
@@ -14838,10 +15028,10 @@ RectTransform:
   m_Father: {fileID: 1088455590}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1035.1362, y: -45.55838}
-  m_SizeDelta: {x: 288.03894, y: 75.11676}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1010111526
 MonoBehaviour:
@@ -15284,10 +15474,10 @@ RectTransform:
   m_Father: {fileID: 1146684954}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 976.7965, y: -620.25964}
-  m_SizeDelta: {x: 378.7186, y: 236.10387}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1044791470
 MonoBehaviour:
@@ -18259,10 +18449,10 @@ RectTransform:
   m_Father: {fileID: 1146684954}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 593.0779, y: -138.05194}
-  m_SizeDelta: {x: 378.7186, y: 236.10387}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1247982922
 MonoBehaviour:
@@ -18364,10 +18554,10 @@ RectTransform:
   m_Father: {fileID: 1088455590}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 742.09735, y: -45.55838}
-  m_SizeDelta: {x: 288.03894, y: 75.11676}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1250155293
 MonoBehaviour:
@@ -22440,6 +22630,7 @@ GameObject:
   - component: {fileID: 1544293889}
   - component: {fileID: 1544293891}
   - component: {fileID: 1544293890}
+  - component: {fileID: 1544293892}
   m_Layer: 5
   m_Name: MacroVirus
   m_TagString: Untagged
@@ -22464,10 +22655,10 @@ RectTransform:
   m_Father: {fileID: 764725671}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1021.1286, y: -153.53778}
-  m_SizeDelta: {x: 286.03674, y: 267.07556}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1544293890
 MonoBehaviour:
@@ -22512,7 +22703,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1544293892}
+        m_TargetAssemblyTypeName: UpgradeItem, Assembly-CSharp
+        m_MethodName: OnPurchase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1544293891
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22521,6 +22724,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1544293888}
   m_CullTransparentMesh: 1
+--- !u!114 &1544293892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544293888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c698735d442134699846ccc4a10b7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrade: {fileID: 11400000, guid: 50aca253e9107a14d808ec3923b0b852, type: 2}
+  text: {fileID: 2143682097}
+  bs: {fileID: 1958156609}
+  cs: {fileID: 1958156610}
+  player: {fileID: 1958156600}
 --- !u!1 &1549517917
 GameObject:
   m_ObjectHideFlags: 0
@@ -23129,10 +23349,10 @@ RectTransform:
   m_Father: {fileID: 1146684954}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 976.7965, y: -138.05194}
-  m_SizeDelta: {x: 378.7186, y: 236.10387}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1635634132
 MonoBehaviour:
@@ -23234,10 +23454,10 @@ RectTransform:
   m_Father: {fileID: 1088455590}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 449.0584, y: -45.55838}
-  m_SizeDelta: {x: 288.03894, y: 75.11676}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1646490548
 MonoBehaviour:
@@ -24831,10 +25051,10 @@ RectTransform:
   m_Father: {fileID: 1146684954}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 209.3593, y: -620.25964}
-  m_SizeDelta: {x: 378.7186, y: 236.10387}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1779453342
 MonoBehaviour:
@@ -28481,6 +28701,7 @@ GameObject:
   - component: {fileID: 2031093031}
   - component: {fileID: 2031093033}
   - component: {fileID: 2031093032}
+  - component: {fileID: 2031093034}
   m_Layer: 5
   m_Name: File Encrypter
   m_TagString: Untagged
@@ -28505,10 +28726,10 @@ RectTransform:
   m_Father: {fileID: 764725671}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 735.09186, y: -153.53778}
-  m_SizeDelta: {x: 286.03674, y: 267.07556}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2031093032
 MonoBehaviour:
@@ -28553,7 +28774,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2031093034}
+        m_TargetAssemblyTypeName: UpgradeItem, Assembly-CSharp
+        m_MethodName: OnPurchase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &2031093033
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28562,6 +28795,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031093030}
   m_CullTransparentMesh: 1
+--- !u!114 &2031093034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031093030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c698735d442134699846ccc4a10b7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrade: {fileID: 11400000, guid: af8456b082c5aa14a8785c2dacbcdf8f, type: 2}
+  text: {fileID: 703902387}
+  bs: {fileID: 1958156609}
+  cs: {fileID: 1958156610}
+  player: {fileID: 1958156600}
 --- !u!1 &2032597932
 GameObject:
   m_ObjectHideFlags: 0
@@ -28862,6 +29112,7 @@ GameObject:
   - component: {fileID: 2092522030}
   - component: {fileID: 2092522032}
   - component: {fileID: 2092522031}
+  - component: {fileID: 2092522033}
   m_Layer: 5
   m_Name: ResidentVirus
   m_TagString: Untagged
@@ -28886,10 +29137,10 @@ RectTransform:
   m_Father: {fileID: 764725671}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 163.01837, y: -420.61334}
-  m_SizeDelta: {x: 286.03674, y: 267.07556}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2092522031
 MonoBehaviour:
@@ -28934,7 +29185,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2092522033}
+        m_TargetAssemblyTypeName: UpgradeItem, Assembly-CSharp
+        m_MethodName: OnPurchase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &2092522032
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28943,6 +29206,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2092522029}
   m_CullTransparentMesh: 1
+--- !u!114 &2092522033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092522029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c698735d442134699846ccc4a10b7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrade: {fileID: 11400000, guid: e0943c86a615f794c93721e3741fd221, type: 2}
+  text: {fileID: 599790932}
+  bs: {fileID: 1958156609}
+  cs: {fileID: 1958156610}
+  player: {fileID: 1958156600}
 --- !u!1 &2098394193
 GameObject:
   m_ObjectHideFlags: 0

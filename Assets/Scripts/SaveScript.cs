@@ -11,6 +11,7 @@ public class SaveScript : MonoBehaviour
     public FaceScript fs;
     public GloveScript[] gs;
     public FeetScript[] FootS;
+    public Upgrade[] upgrades;
     public GloveBuyScript GBS;
     public ShoeBuyScript SBS;
     public HatsBuyScript HBS;
@@ -106,9 +107,11 @@ public class SaveScript : MonoBehaviour
             so.RShoeUnlocked = SBS.RShoeUnlocked;
             so.LShoeUnlocked = SBS.LShoeUnlocked;
 
-            so.upgrades["sim"] = 1;
-            so.upgrades["card"] = 0;
-            so.upgrades["hello"] = 1;
+            foreach (Upgrade upgrade in upgrades)
+            {
+                int boolInt = upgrade.unlocked ? 1 : 0;
+                so.upgrades[upgrade.upgradeName] = boolInt;
+            }
             SaveManager.Save(so);
             manualSave = false;
         }
