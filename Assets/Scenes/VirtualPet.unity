@@ -27956,7 +27956,7 @@ MonoBehaviour:
   maxHappiness: 100
   Happiness: 100
   happinessDecrease: 0.1
-  happinessDecreaseSave: 0.06
+  happinessDecreaseSave: 0.1
   HappinessText: {fileID: 395825104}
   so:
     playerName: 
