@@ -11,6 +11,7 @@ public class MainMenuScript : MonoBehaviour
     public static string fileName = "SavedData.json";
     public SaveObject so;
     public GameObject ngWarning;
+    public AudioSource error;
 
 
     public void Continue()
@@ -22,9 +23,7 @@ public class MainMenuScript : MonoBehaviour
         string fullPath = Application.persistentDataPath + directory + fileName;
         if (File.Exists(fullPath))
         {
-
-            File.Delete(fullPath);
-            SceneManager.LoadScene(1);
+            NewGameWarning();
         }
         else
         {
@@ -35,5 +34,24 @@ public class MainMenuScript : MonoBehaviour
     public void NewGameWarning()
     {
         ngWarning.SetActive(true);
+        error.Play();
+    }
+
+    public void LoadNewGame(bool answer)
+    {
+        if (answer)
+        {
+            string fullPath = Application.persistentDataPath + directory + fileName;
+            if (File.Exists(fullPath))
+            {
+
+                File.Delete(fullPath);
+                SceneManager.LoadScene(1);
+            }
+        }
+        else
+        {
+            ngWarning.SetActive(false);
+        }
     }
 }
