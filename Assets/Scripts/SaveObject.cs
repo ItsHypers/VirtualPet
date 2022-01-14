@@ -4,6 +4,8 @@ using UnityEngine;
 [System.Serializable]
 public class SaveObject
 {
+    public string playerName;
+    
     public float health;
     public float hunger;
     public float happiness;

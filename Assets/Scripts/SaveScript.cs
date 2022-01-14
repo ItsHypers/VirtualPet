@@ -17,7 +17,7 @@ public class SaveScript : MonoBehaviour
     public HatsBuyScript HBS;
     public FaceBuyScript FBS;
     public SuppliesBuyingScript SUBS;
-
+    public TypeScript ts;
     public bool manualSave;
 
     public int autoSaveTimer = 10; // Second count
@@ -27,6 +27,7 @@ public class SaveScript : MonoBehaviour
     private void Start()
     {
         so = SaveManager.Load();
+        ts.playerName = so.playerName;
         survival.Health = so.health;
         survival.Hunger = so.hunger;
         survival.Happiness = so.happiness;
