@@ -41,7 +41,14 @@ public static class SaveManager
             so.rightFoot = 0;
             so.leftFoot = 0;
             so.ballsSpawned = 0;
+            Upgrade[] allUpgrades = (Upgrade[])Resources.FindObjectsOfTypeAll(typeof(Upgrade));
+
+            foreach(Upgrade upgrades in allUpgrades)
+            {
+                upgrades.unlocked = false;
+            }
             Debug.Log("Loaded Default Stuff");
+            Save(so);
         }
         return so;
     }

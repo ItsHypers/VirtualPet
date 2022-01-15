@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6007cd341524cba40835833735b4fb8f, type: 3}
   m_Name: 1
   m_EditorClassIdentifier: 
-  cost: 1
-  increase: 1
+  cost: 100
+  increase: 4
   upgradeName: Web Scripting
   scaleAmount: 0.2
+  unlocked: 0

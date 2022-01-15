@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6007cd341524cba40835833735b4fb8f, type: 3}
   m_Name: 8
   m_EditorClassIdentifier: 
-  cost: 1
-  increase: 1
+  cost: 270000
+  increase: 400
   upgradeName: Boot Sector
   scaleAmount: 0.5
+  unlocked: 0

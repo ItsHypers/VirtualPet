@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6007cd341524cba40835833735b4fb8f, type: 3}
   m_Name: 7
   m_EditorClassIdentifier: 
-  cost: 1
-  increase: 1
+  cost: 80000
+  increase: 250
   upgradeName: Direct Action
   scaleAmount: 0.5
   unlocked: 1

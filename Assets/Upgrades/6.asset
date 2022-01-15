@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6007cd341524cba40835833735b4fb8f, type: 3}
   m_Name: 6
   m_EditorClassIdentifier: 
-  cost: 1
-  increase: 1
+  cost: 25000
+  increase: 120
   upgradeName: Polymorphic Virus
   scaleAmount: 0.5
   unlocked: 1

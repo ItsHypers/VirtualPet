@@ -12,7 +12,7 @@ public class UpgradeItem : MonoBehaviour
     public GameObject player;
 
 
-    private void Start()
+    private void Awake()
     {
         if(upgrade.unlocked)
         {
@@ -21,7 +21,7 @@ public class UpgradeItem : MonoBehaviour
     }
     public void OnPurchase()
     {
-        if (bs.Money >= upgrade.cost)
+        if (bs.Money >= upgrade.cost && !upgrade.unlocked)
         {
             text.text = upgrade.upgradeName + " -" + Environment.NewLine + "Bought!";
             cs.Upgrade(upgrade.increase);
