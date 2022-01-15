@@ -48,7 +48,7 @@ public class VirusGUI : MonoBehaviour {
 		}
 
 		if(window.popupVariables.spazWindow) {
-			if(window.popupVariables.spazTime < 1) {
+			if(window.popupVariables.spazTime < 3) {
 				window.popupVariables.spazTime += Time.deltaTime * window.popupVariables.spazSpeed;
 			}
 			else {
