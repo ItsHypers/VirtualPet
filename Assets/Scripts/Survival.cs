@@ -79,10 +79,6 @@ public class Survival : MonoBehaviour
             Health = Health - healthDecrease * Time.deltaTime;
             Happiness = Happiness - happinessDecrease * Time.deltaTime;
 
-            HealthText.text = (Health / MaxHealth * 100).ToString("F0") + "%";
-            HungerText.text = (Hunger / maxHunter * 100).ToString("F0") + "%";
-            HappinessText.text = (Happiness / maxHappiness * 100).ToString("F0") + "%";
-
             if (Hunger <= 0f && Happiness <= 0f)
             {
                 healthDecrease = 0.3f;
@@ -111,5 +107,8 @@ public class Survival : MonoBehaviour
                 }
             }
         }
+        HealthText.text = (Health / MaxHealth * 100).ToString("F0") + "%";
+        HungerText.text = (Hunger / maxHunter * 100).ToString("F0") + "%";
+        HappinessText.text = (Happiness / maxHappiness * 100).ToString("F0") + "%";
     }
 }

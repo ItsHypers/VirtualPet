@@ -10,6 +10,7 @@ public class UpgradeItem : MonoBehaviour
     public Bank bs;
     public ClickerScript cs;
     public GameObject player;
+    public EndingSeq es;
 
 
     private void Awake()
@@ -27,6 +28,10 @@ public class UpgradeItem : MonoBehaviour
             cs.Upgrade(upgrade.increase);
             player.transform.localScale += new Vector3(upgrade.scaleAmount, upgrade.scaleAmount, upgrade.scaleAmount);
             upgrade.unlocked = true;
+            if (upgrade.upgradeName == "AI")
+            {
+                es.EndGameStart();
+            }
         }
     }
 }
