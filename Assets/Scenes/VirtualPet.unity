@@ -6618,7 +6618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83c72477ab8173b43a45a56e35c4a377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inStartScreen: 1
+  inStartScreen: 0
   written: 
   typedLength: 0
   text: {fileID: 25511903}
