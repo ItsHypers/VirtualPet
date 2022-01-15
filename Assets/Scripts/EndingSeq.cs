@@ -1,7 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Video;
 
 public class EndingSeq : MonoBehaviour
@@ -24,6 +22,8 @@ public class EndingSeq : MonoBehaviour
     AudioSource Audios;
     bool popUpCrash = false;
     int i = 0;
+    public GameObject laughing;
+    AudioSource laugh;
 
     private void Start()
     {
@@ -80,6 +80,7 @@ public class EndingSeq : MonoBehaviour
         VirusGUI.PopupWindow window = new VirusGUI.PopupWindow(vars, new Vector2(Screen.width * .5f - 125, Screen.height * .5f - 75));
         window.popupVariables.closeButton = false;
         Audios.PlayOneShot(popUpEffect);
+        cam.SetTrigger("Glitch");
     }
     public void WindowWarning()
     {
@@ -90,6 +91,8 @@ public class EndingSeq : MonoBehaviour
         VirusGUI.MultiWindow multi = new VirusGUI.MultiWindow(1, 5, vars);
         multi.popupVariables.closeButton = false;
         Audios.PlayOneShot(popUpEffect);
+        cam.SetTrigger("Glitch");
+
     }
     public void WindowSpam()
     {
@@ -100,6 +103,8 @@ public class EndingSeq : MonoBehaviour
         VirusGUI.MultiWindow multi = new VirusGUI.MultiWindow(1, 5, vars);
         multi.popupVariables.closeButton = false;
         Audios.PlayOneShot(popUpEffect);
+        cam.SetTrigger("Glitch");
+
     }
 
     public void CantCatchMe()
@@ -109,6 +114,8 @@ public class EndingSeq : MonoBehaviour
         multi.popupVariables.closeButton = false; 
         multi.popupVariables.spazWindow = false;
         Audios.PlayOneShot(popUpEffect);
+        cam.SetTrigger("Glitch");
+
     }
     public void RemoveVirus()
     {
@@ -119,6 +126,8 @@ public class EndingSeq : MonoBehaviour
             multi.popupVariables.runFromCursor = true;
             multi.popupVariables.closeButton = false;
             Audios.PlayOneShot(popUpEffect);
+            cam.SetTrigger("Glitch");
+
         }
         else
         {
@@ -127,6 +136,8 @@ public class EndingSeq : MonoBehaviour
             multi.popupVariables.runFromCursor = true;
             multi.popupVariables.closeButton = false;
             Audios.PlayOneShot(popUpEffect);
+            cam.SetTrigger("Glitch");
+
         }
     }
     public void LastOne()
@@ -138,6 +149,8 @@ public class EndingSeq : MonoBehaviour
             multi.popupVariables.runFromCursor = true;
             multi.popupVariables.closeButton = false;
             Audios.PlayOneShot(popUpEffect);
+            cam.SetTrigger("Glitch");
+
         }
         else
         {
@@ -146,6 +159,8 @@ public class EndingSeq : MonoBehaviour
             multi.popupVariables.runFromCursor = true;
             multi.popupVariables.closeButton = false;
             Audios.PlayOneShot(popUpEffect);
+            cam.SetTrigger("Glitch");
+
         }
     }
 
@@ -155,6 +170,8 @@ public class EndingSeq : MonoBehaviour
         VirusGUI.MultiWindow multi = new VirusGUI.MultiWindow(1, 5, vars);
         multi.popupVariables.closeButton = false;
         Audios.PlayOneShot(popUpEffect);
+        cam.SetTrigger("Glitch");
+
     }
     public void Kill()
     {
@@ -162,20 +179,26 @@ public class EndingSeq : MonoBehaviour
         VirusGUI.MultiWindow multi = new VirusGUI.MultiWindow(1, 5, vars);
         multi.popupVariables.closeButton = false;
         Audios.PlayOneShot(popUpEffect);
+        cam.SetTrigger("Glitch");
+
     }
 
     public void PopupCrash()
     {
-        popUpCrash = true;
-        VirusGUI.PopupVariables vars = new VirusGUI.PopupVariables("HAHAHAHA", "HAHAHAHAHAHAHAHAHA", gameObject, "", "", "", "");
-        VirusGUI.MultiWindow multi = new VirusGUI.MultiWindow(1, 5, vars);
-        multi.popupVariables.closeButton = false;
-        Audios.PlayOneShot(popUpEffect, 0.2f);
-        if(i > 19)
+        if (i > 19)
         {
             CancelWindow();
             popUpCrash = false;
             KillSwitch();
+        }
+        else
+        {
+            popUpCrash = true;
+            VirusGUI.PopupVariables vars = new VirusGUI.PopupVariables("HAHAHAHA", "HAHAHAHAHAHAHAHAHA", gameObject, "", "", "", "");
+            VirusGUI.MultiWindow multi = new VirusGUI.MultiWindow(1, 5, vars);
+            multi.popupVariables.closeButton = false;
+            cam.SetTrigger("Glitch");
+
         }
     }
     public void KillSwitch()
@@ -184,7 +207,18 @@ public class EndingSeq : MonoBehaviour
         //scaryEnd.Stop(); 
         VideoPlayer.SetActive(true);
         vp.Play();
+        StartCoroutine(Laughing());
 
+    }
+    IEnumerator Laughing()
+    {
+        yield return new WaitForSeconds(6);
+        LeanTween.scale(laughing, new Vector3(1.5f, 1.5f, 1.5f), 7f);
+        laugh = laughing.GetComponent<AudioSource>();
+        laugh.Play();
+        yield return new WaitForSeconds(9);
+        laughing.SetActive(false);
+        laugh.Stop();
     }
 
     public void CancelWindow()
