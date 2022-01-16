@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using UnityEngine.Audio;
 using TMPro;
 using System;
+using UnityEngine.EventSystems;
 
 public class MainMenuScript : MonoBehaviour
 {
@@ -19,8 +20,14 @@ public class MainMenuScript : MonoBehaviour
     public AudioMixer sfx;
     public TMP_Dropdown dropdown;
     public GameObject Settings;
-
+    private int StringtoInt;
+    private bool inInput;
     Resolution[] resolutions;
+
+    public TMP_InputField saveInterval;
+    public Toggle saveToggle;
+    public Toggle fullscreen;
+    public Toggle streamerMode;
     private void Start()
     {
         resolutions = Screen.resolutions;
@@ -42,8 +49,56 @@ public class MainMenuScript : MonoBehaviour
         dropdown.AddOptions(options);
         dropdown.value = currentResolutionIndex;
         dropdown.RefreshShownValue();
+
+        saveInterval.text = PlayerPrefs.GetInt("autoSaveTimer", 10).ToString();
+        saveToggle.isOn = PlayerPrefs.GetInt("AutoSave", 1) != 0;
+        fullscreen.isOn = PlayerPrefs.GetInt("fullscreen", 1) != 0;
+        streamerMode.isOn = PlayerPrefs.GetInt("StreamerMode", 1) != 0;
     }
 
+    private void Update()
+    {
+        if (inInput)
+        {
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
+            {
+                EventSystem.current.SetSelectedGameObject(null);
+            }
+        }
+    }
+    public void AutoSave(bool save)
+    {
+        if (save)
+        {
+            var i = Convert.ToInt32(save);
+            PlayerPrefs.SetInt("AutoSave", i);
+        }
+        else
+        {
+            var i = Convert.ToInt32(save);
+            PlayerPrefs.SetInt("AutoSave", i);
+        }
+    }
+    public void SaveIntevalChange(string timer)
+    {
+        StringtoInt = int.Parse(timer);
+        if (StringtoInt == 0)
+        {
+            StringtoInt = 1;
+        }
+        PlayerPrefs.SetInt("autoSaveTimer", StringtoInt);
+    }
+    public void IsInInput(bool IsIn)
+    {
+        if (IsIn)
+        {
+            inInput = false;
+        }
+        else
+        {
+            inInput = true;
+        }
+    }
     public void StreamerMode(bool on)
     {
         var i = Convert.ToInt32(on);
