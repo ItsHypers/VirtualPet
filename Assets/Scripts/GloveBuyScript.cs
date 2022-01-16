@@ -12,6 +12,7 @@ public class GloveBuyScript : MonoBehaviour
     public string[] RGNames;
     public int[] RGloveInts;
     public float[] RGlovePrice;
+    public float[] RGaddedIncrement;
 
     [Space(10)]
     [Header("Left Gloves")]
@@ -20,6 +21,7 @@ public class GloveBuyScript : MonoBehaviour
     public string[] LGNames;
     public int[] LGloveInts;
     public float[] LGlovePrice;
+    public float[] LGaddedIncrement;
 
     public Bank BS;
     public GloveScript RGS;
@@ -33,11 +35,11 @@ public class GloveBuyScript : MonoBehaviour
             {
                 if (RGlovesUnlocked[i])
                 {
-                    RightText[i].text = RGNames[i] + "-" + Environment.NewLine + "Bought!";
+                    RightText[i].text = RGNames[i] + "-" + Environment.NewLine + "Bought!" + " + " + RGaddedIncrement[i] + "/s";
                 }
                 else
                 {
-                    RightText[i].text = RGNames[i] + "-" + Environment.NewLine + "$" + RGlovePrice[i];
+                    RightText[i].text = RGNames[i] + "-" + Environment.NewLine + "$" + RGlovePrice[i] + " + " + RGaddedIncrement[i] + "/s";
                 }
             }
         }
@@ -48,11 +50,11 @@ public class GloveBuyScript : MonoBehaviour
             {
                 if (LGlovesUnlocked[i])
                 {
-                    LeftText[i].text = LGNames[i] + "-" + Environment.NewLine + "Bought!";
+                    LeftText[i].text = LGNames[i] + "-" + Environment.NewLine + "Bought!" + " + " + LGaddedIncrement[i] + "/s";
                 }
                 else
                 {
-                    LeftText[i].text = LGNames[i] + "-" + Environment.NewLine + "$" + LGlovePrice[i];
+                    LeftText[i].text = LGNames[i] + "-" + Environment.NewLine + "$" + LGlovePrice[i] + " + " + LGaddedIncrement[i] + "/s";
                 }
             }
         }
@@ -67,7 +69,7 @@ public class GloveBuyScript : MonoBehaviour
                 {
                     if (BS.Money > RGlovePrice[Array])
                     {
-                        RightText[Array].text = RGNames[Array] + "-" + Environment.NewLine + "Bought!";
+                        RightText[Array].text = RGNames[Array] + "-" + Environment.NewLine + "Bought!" + " + " + RGaddedIncrement[Array] + "/s";
                         BS.Money -= RGlovePrice[Array];
                         RGlovesUnlocked[Array] = true;
                         RGS.ChangeHand(Array);
@@ -91,7 +93,7 @@ public class GloveBuyScript : MonoBehaviour
                 {
                     if (BS.Money > LGlovePrice[Array])
                     {
-                        LeftText[Array].text = LGNames[Array] + "-" + Environment.NewLine + "Bought!";
+                        LeftText[Array].text = LGNames[Array] + "-" + Environment.NewLine + "Bought!" + " + " + LGaddedIncrement[Array] + "/s";
                         BS.Money -= LGlovePrice[Array];
                         LGlovesUnlocked[Array] = true;
                         LGS.ChangeHand(Array);

@@ -16,7 +16,7 @@ MonoBehaviour:
   increase: 20
   upgradeName: Macro Virus
   scaleAmount: 0.5
-  unlocked: 1
+  unlocked: 0
   description: Macro Virus is a virus that forces Microsoft Office Files to run macros.
     These macros can be used to download additional malware or run malicious code.
     Macro viruses deliver a payload when the file is opened, and the macro runs.

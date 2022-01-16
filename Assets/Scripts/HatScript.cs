@@ -9,6 +9,9 @@ public class HatScript : MonoBehaviour
     public int currentHat;
     private SpriteRenderer sr;
     public SaveObject so;
+    public ClickerScript cs;
+    public HatsBuyScript hbs;
+    private float previousIncrement;
 
     private void Awake()
     {
@@ -19,6 +22,14 @@ public class HatScript : MonoBehaviour
     {
         sr.sprite = hats[hat];
         currentHat = hat;
+        AddIncrement(hat);
+    }
+
+    public void AddIncrement(int face)
+    {
+        cs.Downgrade(previousIncrement);
+        cs.Upgrade(hbs.addedIncrement[face]);
+        previousIncrement = hbs.addedIncrement[face];
     }
 
     public void RandomHat()

@@ -11,6 +11,7 @@ public class HatsBuyScript : MonoBehaviour
     public string[] HatNames;
     public int[] HatInts;
     public float[] HatPrice;
+    public float[] addedIncrement;
 
     public Bank BS;
     public HatScript HS;
@@ -23,11 +24,11 @@ public class HatsBuyScript : MonoBehaviour
             {
                 if (hatsUnlocked[i])
                 {
-                    Text[i].text = HatNames[i] + "-" + Environment.NewLine + "Bought!";
+                    Text[i].text = HatNames[i] + "-" + Environment.NewLine + "Bought!" + " + " + addedIncrement[i] + "/s";
                 }
                 else
                 {
-                    Text[i].text = HatNames[i] + "-" + Environment.NewLine + "$" + HatPrice[i];
+                    Text[i].text = HatNames[i] + "-" + Environment.NewLine + "$" + HatPrice[i] + " + " + addedIncrement[i] + "/s";
                 }
             }
         }
@@ -42,7 +43,7 @@ public class HatsBuyScript : MonoBehaviour
                 {
                     if (BS.Money > HatPrice[Array])
                     {
-                        Text[Array].text = HatNames[Array] + "-" + Environment.NewLine + "Bought!";
+                        Text[Array].text = HatNames[Array] + "-" + Environment.NewLine + "Bought!" + " + " + addedIncrement[Array] + "/s";
                         BS.Money -= HatPrice[Array];
                         hatsUnlocked[Array] = true;
                         HS.ChangeHat(Array);

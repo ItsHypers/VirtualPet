@@ -2502,7 +2502,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 50000
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3127,7 +3127,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 250000
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3712,7 +3712,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 7500
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3924,7 +3924,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 100000
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4255,7 +4255,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 50000
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4390,7 +4390,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 500
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6336,7 +6336,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 50000
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7794,7 +7794,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 7500
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -8166,7 +8166,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 250
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -8302,7 +8302,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 500
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -8482,7 +8482,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 50000
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -8650,7 +8650,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &483012082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8889,6 +8889,8 @@ MonoBehaviour:
     LShoeUnlocked: 
     HatsUnlocked: 
     FaceUnlocked: 01000000000000000000
+  cs: {fileID: 1958156610}
+  gbs: {fileID: 1171846395}
 --- !u!1 &490236926
 GameObject:
   m_ObjectHideFlags: 0
@@ -9132,7 +9134,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 25000
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9393,7 +9395,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 50000
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9528,7 +9530,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 25000
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -11342,7 +11344,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 7500
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -11380,7 +11382,7 @@ RectTransform:
   m_GameObject: {fileID: 663903289}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2000678909}
@@ -12410,7 +12412,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 800000
+          m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -12514,7 +12516,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2000
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -12618,7 +12620,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 15000
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -13185,7 +13187,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 30000
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -14536,7 +14538,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 30000
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -14853,7 +14855,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 400000
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -15347,6 +15349,8 @@ MonoBehaviour:
     LShoeUnlocked: 
     HatsUnlocked: 
     FaceUnlocked: 01000000000000000000
+  cs: {fileID: 1958156610}
+  gbs: {fileID: 1171846395}
 --- !u!1 &922842046
 GameObject:
   m_ObjectHideFlags: 0
@@ -15573,7 +15577,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2000
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -15612,7 +15616,7 @@ RectTransform:
   m_GameObject: {fileID: 931653660}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1389992533}
@@ -15889,7 +15893,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 250
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -16126,7 +16130,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 15000
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -16230,7 +16234,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 25000
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -17172,7 +17176,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 100000
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -17275,6 +17279,7 @@ GameObject:
   - component: {fileID: 1038171173}
   - component: {fileID: 1038171172}
   - component: {fileID: 1038171171}
+  - component: {fileID: 1038171179}
   - component: {fileID: 1038171175}
   - component: {fileID: 1038171176}
   - component: {fileID: 1038171177}
@@ -17562,6 +17567,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!225 &1038171179
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038171170}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1044791468
 GameObject:
   m_ObjectHideFlags: 0
@@ -17653,7 +17670,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 800000
+          m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -18719,6 +18736,8 @@ MonoBehaviour:
     LShoeUnlocked: 
     HatsUnlocked: 
     FaceUnlocked: 01000000000000000000
+  cs: {fileID: 1958156610}
+  fbs: {fileID: 1146684958}
 --- !u!1 &1096252069
 GameObject:
   m_ObjectHideFlags: 0
@@ -19329,16 +19348,27 @@ MonoBehaviour:
   - Whiskers
   FaceInts: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
   FacePrice:
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
+  - 500
+  - 500
+  - 4000
+  - 15000
+  - 30000
+  - 50000
+  - 100000
+  - 250000
+  - 400000
+  - 800000
+  addedIncrement:
+  - 0
+  - 2
+  - 5
+  - 10
+  - 20
+  - 40
+  - 80
+  - 120
+  - 160
+  - 200
   BS: {fileID: 1958156609}
   FS: {fileID: 1096147049}
   so:
@@ -19966,13 +19996,21 @@ MonoBehaviour:
   - Paws
   RGloveInts: 00000000010000000200000003000000040000000500000006000000
   RGlovePrice:
+  - 250
+  - 250
+  - 2000
+  - 7500
+  - 15000
+  - 25000
+  - 50000
+  RGaddedIncrement:
   - 0
   - 1
-  - 2
-  - 3
-  - 4
+  - 2.5
   - 5
-  - 6
+  - 10
+  - 20
+  - 40
   LGlovesUnlocked: 01000000000000
   LeftText:
   - {fileID: 0}
@@ -19992,13 +20030,21 @@ MonoBehaviour:
   - Paws
   LGloveInts: 00000000010000000200000003000000040000000500000006000000
   LGlovePrice:
+  - 250
+  - 250
+  - 2000
+  - 7500
+  - 15000
+  - 25000
+  - 50000
+  LGaddedIncrement:
   - 0
   - 1
-  - 2
-  - 3
-  - 4
+  - 2.5
   - 5
-  - 6
+  - 10
+  - 20
+  - 40
   BS: {fileID: 1958156609}
   RGS: {fileID: 484080590}
   LGS: {fileID: 917671316}
@@ -20234,7 +20280,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4000
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -20552,7 +20598,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 400000
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -20689,7 +20735,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4000
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -20994,16 +21040,27 @@ MonoBehaviour:
   - Headphones
   HatInts: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
   HatPrice:
+  - 500
+  - 500
+  - 4000
+  - 15000
+  - 30000
+  - 50000
+  - 100000
+  - 250000
+  - 400000
+  - 800000
+  addedIncrement:
   - 0
-  - 1
   - 2
-  - 2
-  - 2
-  - 2
-  - 2
-  - 2
-  - 2
-  - 2
+  - 5
+  - 10
+  - 20
+  - 40
+  - 80
+  - 120
+  - 160
+  - 200
   BS: {fileID: 1958156609}
   HS: {fileID: 1670920556}
   so:
@@ -22454,7 +22511,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2000
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -22634,7 +22691,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 25000
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -23285,6 +23342,8 @@ MonoBehaviour:
     LShoeUnlocked: 
     HatsUnlocked: 
     FaceUnlocked: 01000000000000000000
+  cs: {fileID: 1958156610}
+  sbs: {fileID: 1512404429}
 --- !u!1 &1411831492
 GameObject:
   m_ObjectHideFlags: 0
@@ -24589,7 +24648,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 15000
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -25214,13 +25273,21 @@ MonoBehaviour:
   - Slippers
   RSInts: 00000000010000000200000003000000040000000500000006000000
   RSPrice:
+  - 250
+  - 250
+  - 2000
+  - 7500
+  - 15000
+  - 25000
+  - 50000
+  RSaddedIncrement:
   - 0
   - 1
-  - 2
-  - 3
-  - 4
+  - 2.5
   - 5
-  - 6
+  - 10
+  - 20
+  - 40
   LShoeUnlocked: 01000000000000
   LeftText:
   - {fileID: 0}
@@ -25240,13 +25307,21 @@ MonoBehaviour:
   - Slippers
   LSInts: 00000000010000000200000003000000040000000500000006000000
   LSPrice:
+  - 250
+  - 250
+  - 2000
+  - 7500
+  - 15000
+  - 25000
+  - 50000
+  LSaddedIncrement:
   - 0
   - 1
-  - 2
-  - 3
-  - 4
+  - 2.5
   - 5
-  - 6
+  - 10
+  - 20
+  - 40
   BS: {fileID: 1958156609}
   RSS: {fileID: 2111567502}
   LSS: {fileID: 1409366639}
@@ -26156,7 +26231,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 15000
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -26782,7 +26857,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 15000
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -27330,7 +27405,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 50000
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -27471,6 +27546,8 @@ MonoBehaviour:
     LShoeUnlocked: 
     HatsUnlocked: 
     FaceUnlocked: 01000000000000000000
+  cs: {fileID: 1958156610}
+  hbs: {fileID: 1250684304}
 --- !u!1 &1674738817
 GameObject:
   m_ObjectHideFlags: 0
@@ -28020,7 +28097,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2000
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -28124,7 +28201,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 250
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -28887,7 +28964,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 250000
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -29356,7 +29433,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 250
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -30187,7 +30264,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 15000
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -34019,6 +34096,8 @@ MonoBehaviour:
     LShoeUnlocked: 
     HatsUnlocked: 
     FaceUnlocked: 01000000000000000000
+  cs: {fileID: 1958156610}
+  sbs: {fileID: 1512404429}
 --- !u!1 &2112568759
 GameObject:
   m_ObjectHideFlags: 0
@@ -34464,7 +34543,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 7500
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -35216,15 +35295,19 @@ PrefabInstance:
       objectReference: {fileID: 1038171175}
     - target: {fileID: 4936029369161703118, guid: e9736cc7e15655b4491beec2b22e3eae, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4936029369161703118, guid: e9736cc7e15655b4491beec2b22e3eae, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4936029369180056646, guid: e9736cc7e15655b4491beec2b22e3eae, type: 3}
       propertyPath: m_Name
       value: Settings
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936029369180056646, guid: e9736cc7e15655b4491beec2b22e3eae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4936029369180056647, guid: e9736cc7e15655b4491beec2b22e3eae, type: 3}
       propertyPath: m_Pivot.x
@@ -35320,15 +35403,15 @@ PrefabInstance:
       objectReference: {fileID: 1038171175}
     - target: {fileID: 4936029370159095228, guid: e9736cc7e15655b4491beec2b22e3eae, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4936029370159095228, guid: e9736cc7e15655b4491beec2b22e3eae, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4936029370159095228, guid: e9736cc7e15655b4491beec2b22e3eae, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4936029370310929909, guid: e9736cc7e15655b4491beec2b22e3eae, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -35336,23 +35419,23 @@ PrefabInstance:
       objectReference: {fileID: 1038171175}
     - target: {fileID: 4936029370323863557, guid: e9736cc7e15655b4491beec2b22e3eae, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4936029370323863557, guid: e9736cc7e15655b4491beec2b22e3eae, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4936029370448154791, guid: e9736cc7e15655b4491beec2b22e3eae, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4936029370448154791, guid: e9736cc7e15655b4491beec2b22e3eae, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4936029370448154791, guid: e9736cc7e15655b4491beec2b22e3eae, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4936029370737406753, guid: e9736cc7e15655b4491beec2b22e3eae, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target

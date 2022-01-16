@@ -36,4 +36,9 @@ public class ClickerScript : MonoBehaviour
     {
         increment = increment + amount;
     }
+
+    public void Downgrade(float amount)
+    {
+        increment = increment - amount;
+    }
 }

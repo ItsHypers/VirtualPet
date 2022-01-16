@@ -11,6 +11,7 @@ public class FaceBuyScript : MonoBehaviour
     public string[] FaceNames;
     public int[] FaceInts;
     public float[] FacePrice;
+    public float[] addedIncrement;
 
     public Bank BS;
     public FaceScript FS;
@@ -23,11 +24,11 @@ public class FaceBuyScript : MonoBehaviour
             {
                 if (faceUnlocked[i])
                 {
-                    Text[i].text = FaceNames[i] + "-" + Environment.NewLine + "Bought!";
+                    Text[i].text = FaceNames[i] + "-" + Environment.NewLine + "Bought!" + " + " + addedIncrement[i] + "/s";
                 }
                 else
                 {
-                    Text[i].text = FaceNames[i] + "-" + Environment.NewLine + "$" + FacePrice[i];
+                    Text[i].text = FaceNames[i] + "-" + Environment.NewLine + "$" + FacePrice[i] +  " + " + addedIncrement[i] + "/s";
                 }
             }
         }
@@ -42,7 +43,7 @@ public class FaceBuyScript : MonoBehaviour
                 {
                     if (BS.Money > FacePrice[Array])
                     {
-                        Text[Array].text = FaceNames[Array] + "-" + Environment.NewLine + "Bought!";
+                        Text[Array].text = FaceNames[Array] + "-" + Environment.NewLine + "Bought!" + " + " + addedIncrement[Array] + "/s";
                         BS.Money -= FacePrice[Array];
                         faceUnlocked[Array] = true;
                         FS.ChangeFace(Array);

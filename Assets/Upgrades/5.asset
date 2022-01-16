@@ -16,7 +16,7 @@ MonoBehaviour:
   increase: 40
   upgradeName: Resident Virus
   scaleAmount: 0.5
-  unlocked: 1
+  unlocked: 0
   description: Resident Virus is a virus that can access computer memory, it can
     then infect any file ran by the computer, including anti-virus software. This
     malware may stay dormant until a specific date, time, or until the user performs

@@ -16,7 +16,7 @@ MonoBehaviour:
   increase: 10
   upgradeName: File Encrypter
   scaleAmount: 0.4
-  unlocked: 1
+  unlocked: 0
   description: File Encypter is a virus that persist on the victims system, the virus
     uses an infector to inject malicious code into critical files that run the operating
     system or important programs. When the system boots or the program runs, the

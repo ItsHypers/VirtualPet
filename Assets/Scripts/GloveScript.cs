@@ -12,6 +12,10 @@ public class GloveScript : MonoBehaviour
     private SpriteRenderer sr;
     public bool RHbool;
     public SaveObject so;
+    public ClickerScript cs;
+    public GloveBuyScript gbs;
+    private float RpreviousIncrement;
+    private float LpreviousIncrement;
 
     private void Awake()
     {
@@ -24,11 +28,29 @@ public class GloveScript : MonoBehaviour
         {
             sr.sprite = righthand[hand];
             currentRH = hand;
+            AddIncrement(hand);
         }
         else
         {
             sr.sprite = lefthand[hand];
             currentLH = hand;
+            AddIncrement(hand);
+        }
+    }
+
+    public void AddIncrement(int hand)
+    {
+        if (RHbool)
+        {
+            cs.Downgrade(RpreviousIncrement);
+            cs.Upgrade(gbs.RGaddedIncrement[hand]);
+            RpreviousIncrement = gbs.RGaddedIncrement[hand];
+        }
+        else
+        {
+            cs.Downgrade(LpreviousIncrement);
+            cs.Upgrade(gbs.LGaddedIncrement[hand]);
+            LpreviousIncrement = gbs.LGaddedIncrement[hand];
         }
     }
 

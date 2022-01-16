@@ -16,7 +16,7 @@ MonoBehaviour:
   increase: 5
   upgradeName: Browser Hijacker
   scaleAmount: 0.3
-  unlocked: 1
+  unlocked: 0
   description: Browser Hijacking is a virus that can change the settings on the victims
     browser, this will hijack browser favorites, the home page URL, your search preferences
     and redirect you to a malicious site. The site could be a phishing site or an

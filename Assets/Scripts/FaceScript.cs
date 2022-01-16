@@ -9,6 +9,9 @@ public class FaceScript : MonoBehaviour
     public int currentFace;
     private SpriteRenderer sr;
     public SaveObject so;
+    public ClickerScript cs;
+    public FaceBuyScript fbs;
+    private float previousIncrement;
 
     private void Awake()
     {
@@ -19,6 +22,13 @@ public class FaceScript : MonoBehaviour
     {
         sr.sprite = faces[face];
         currentFace = face;
+        AddIncrement(face);
+    }
+    public void AddIncrement(int face)
+    {
+        cs.Downgrade(previousIncrement);
+        cs.Upgrade(fbs.addedIncrement[face]);
+        previousIncrement = fbs.addedIncrement[face];
     }
 
     public void RandomFace()

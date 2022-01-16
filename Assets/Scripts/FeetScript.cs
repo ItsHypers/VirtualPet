@@ -12,6 +12,10 @@ public class FeetScript : MonoBehaviour
     private SpriteRenderer sr;
     public bool RFbool;
     public SaveObject so;
+    public ClickerScript cs;
+    public ShoeBuyScript sbs;
+    private float RpreviousIncrement;
+    private float LpreviousIncrement;
 
     private void Awake()
     {
@@ -24,11 +28,28 @@ public class FeetScript : MonoBehaviour
         {
             sr.sprite = rightfoot[foot];
             currentRF = foot;
+            AddIncrement(foot);
         }
         else
         {
             sr.sprite = leftfoot[foot];
             currentLF = foot;
+            AddIncrement(foot);
+        }
+    }
+    public void AddIncrement(int foot)
+    {
+        if (RFbool)
+        {
+            cs.Downgrade(RpreviousIncrement);
+            cs.Upgrade(sbs.RSaddedIncrement[foot]);
+            RpreviousIncrement = sbs.RSaddedIncrement[foot];
+        }
+        else
+        {
+            cs.Downgrade(LpreviousIncrement);
+            cs.Upgrade(sbs.LSaddedIncrement[foot]);
+            LpreviousIncrement = sbs.LSaddedIncrement[foot];
         }
     }
 

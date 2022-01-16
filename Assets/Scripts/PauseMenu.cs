@@ -161,12 +161,14 @@ public class PauseMenu : MonoBehaviour
     {
         if (!SettingsIsOpen)
         {
+            Settings.SetActive(true);
             LeanTween.scale(Settings, new Vector3(1, 1, 1), 0.3f);
             SettingsIsOpen = true;
         }
         else
         {
             LeanTween.scale(Settings, new Vector3(0, 0, 0), 0.3f);
+            Settings.SetActive(false);
             SettingsIsOpen = false;
         }
     }
