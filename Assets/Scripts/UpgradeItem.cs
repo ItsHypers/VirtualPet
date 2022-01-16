@@ -11,6 +11,7 @@ public class UpgradeItem : MonoBehaviour
     public ClickerScript cs;
     public GameObject player;
     public EndingSeq es;
+    public SuppliesBuyingScript sbs;
 
 
     private void Awake()
@@ -19,6 +20,7 @@ public class UpgradeItem : MonoBehaviour
         {
             cs.Upgrade(upgrade.increase);
             text.text = upgrade.upgradeName + " Bought!";
+            player.transform.localScale += new Vector3(upgrade.scaleAmount, upgrade.scaleAmount, upgrade.scaleAmount);
         }
     }
     public void OnPurchase()
@@ -33,6 +35,7 @@ public class UpgradeItem : MonoBehaviour
             {
                 es.EndGameStart();
             }
+            sbs.UpdatePrice();
         }
     }
 }

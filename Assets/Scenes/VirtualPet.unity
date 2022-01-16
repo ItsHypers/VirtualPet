@@ -753,6 +753,7 @@ MonoBehaviour:
   cs: {fileID: 1958156610}
   player: {fileID: 1958156600}
   es: {fileID: 1038171176}
+  sbs: {fileID: 931653662}
 --- !u!1 &24060302
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,6 +899,7 @@ MonoBehaviour:
   cs: {fileID: 1958156610}
   player: {fileID: 1958156600}
   es: {fileID: 1038171176}
+  sbs: {fileID: 931653662}
 --- !u!1 &25511901
 GameObject:
   m_ObjectHideFlags: 0
@@ -2411,6 +2413,7 @@ MonoBehaviour:
   cs: {fileID: 1958156610}
   player: {fileID: 1958156600}
   es: {fileID: 1038171176}
+  sbs: {fileID: 931653662}
 --- !u!1 &119940051
 GameObject:
   m_ObjectHideFlags: 0
@@ -3036,6 +3039,7 @@ MonoBehaviour:
   cs: {fileID: 1958156610}
   player: {fileID: 1958156600}
   es: {fileID: 1038171176}
+  sbs: {fileID: 931653662}
 --- !u!1 &162370498
 GameObject:
   m_ObjectHideFlags: 0
@@ -10698,7 +10702,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 931653662}
+        m_TargetAssemblyTypeName: SuppliesBuyingScript, Assembly-CSharp
+        m_MethodName: CreditCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &607330505
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13926,6 +13942,7 @@ MonoBehaviour:
   cs: {fileID: 1958156610}
   player: {fileID: 1958156600}
   es: {fileID: 1038171176}
+  sbs: {fileID: 931653662}
 --- !u!114 &825559199 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3678325790203339777, guid: e9736cc7e15655b4491beec2b22e3eae, type: 3}
@@ -14312,6 +14329,7 @@ MonoBehaviour:
   cs: {fileID: 1958156610}
   player: {fileID: 1958156600}
   es: {fileID: 1038171176}
+  sbs: {fileID: 931653662}
 --- !u!1 &854964195
 GameObject:
   m_ObjectHideFlags: 0
@@ -15643,13 +15661,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballPrice: 5
-  ballRefilled: 5
+  ballRefilled: 20
   ballText: {fileID: 1895059780}
   JunkMailPrice: 5
-  JunkMailRefilled: 5
+  JunkMailRefilled: 20
   MailText: {fileID: 1393433008}
   CreditCardPrice: 20
-  CreditCardRefilled: 20
+  CreditCardRefilled: 50
   CreditCardText: {fileID: 1694929750}
   ball: {fileID: 2260184145085630686, guid: a64a2512be743f1448faaf1bf53e2d40, type: 3}
   surv: {fileID: 1958156607}
@@ -15664,7 +15682,18 @@ MonoBehaviour:
   - {fileID: 304863987}
   - {fileID: 370208310}
   - {fileID: 1921648439}
+  allUpgrades:
+  - {fileID: 11400000, guid: e9a16a2f5d165ab4596e8b7705551543, type: 2}
+  - {fileID: 11400000, guid: af0181ae257afdc468e72b4f78cf4689, type: 2}
+  - {fileID: 11400000, guid: af8456b082c5aa14a8785c2dacbcdf8f, type: 2}
+  - {fileID: 11400000, guid: 50aca253e9107a14d808ec3923b0b852, type: 2}
+  - {fileID: 11400000, guid: e0943c86a615f794c93721e3741fd221, type: 2}
+  - {fileID: 11400000, guid: 2ca6260ecca84034ea28bc80d95f0aa2, type: 2}
+  - {fileID: 11400000, guid: 1b51d3cb5ad456846a097193eb13f3b2, type: 2}
+  - {fileID: 11400000, guid: db44d96b82627c24d820fa67220bdb4d, type: 2}
+  - {fileID: 11400000, guid: 2ec97eb88c896664bbe0a5b716a4981a, type: 2}
   ballsSpawned: 0
+  ac: {fileID: 1958156611}
 --- !u!1 &943411488
 GameObject:
   m_ObjectHideFlags: 0
@@ -26005,6 +26034,7 @@ MonoBehaviour:
   cs: {fileID: 1958156610}
   player: {fileID: 1958156600}
   es: {fileID: 1038171176}
+  sbs: {fileID: 931653662}
 --- !u!1 &1549517917
 GameObject:
   m_ObjectHideFlags: 0
@@ -31491,6 +31521,7 @@ GameObject:
   - component: {fileID: 1958156607}
   - component: {fileID: 1958156609}
   - component: {fileID: 1958156610}
+  - component: {fileID: 1958156611}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -31631,6 +31662,7 @@ MonoBehaviour:
     HatsUnlocked: 
     FaceUnlocked: 01000000000000000000
   paused: 0
+  playerAnim: {fileID: 1074548926}
 --- !u!195 &1958156608
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -31705,6 +31737,19 @@ MonoBehaviour:
   DelayAmount: 1
   increment: 1
   surv: {fileID: 1958156607}
+--- !u!114 &1958156611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958156600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32a8029bad1fd3e4e8992131f8ff3187, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAnim: {fileID: 1074548926}
 --- !u!1 &1973674094
 GameObject:
   m_ObjectHideFlags: 0
@@ -33279,6 +33324,7 @@ MonoBehaviour:
   cs: {fileID: 1958156610}
   player: {fileID: 1958156600}
   es: {fileID: 1038171176}
+  sbs: {fileID: 931653662}
 --- !u!1 &2032597932
 GameObject:
   m_ObjectHideFlags: 0
@@ -33826,6 +33872,7 @@ MonoBehaviour:
   cs: {fileID: 1958156610}
   player: {fileID: 1958156600}
   es: {fileID: 1038171176}
+  sbs: {fileID: 931653662}
 --- !u!1 &2098394193
 GameObject:
   m_ObjectHideFlags: 0

@@ -28,6 +28,7 @@ public class Survival : MonoBehaviour
     public TMP_Text HappinessText;
     public SaveObject so;
     public bool paused;
+    public Animator playerAnim;
 
     private void Start()
     {
@@ -106,9 +107,21 @@ public class Survival : MonoBehaviour
                     healthDecrease = -0.2f;
                 }
             }
+            if(Health <= 0)
+            {
+                playerAnim.SetTrigger("Death");
+                playerAnim.SetBool("action", true);
+                DeathScene();
+
+            }
         }
         HealthText.text = (Health / MaxHealth * 100).ToString("F0") + "%";
         HungerText.text = (Hunger / maxHunter * 100).ToString("F0") + "%";
         HappinessText.text = (Happiness / maxHappiness * 100).ToString("F0") + "%";
+    }
+
+    public void DeathScene()
+    {
+        Debug.Log("Death");
     }
 }

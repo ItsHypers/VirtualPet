@@ -181,7 +181,7 @@ public class PauseMenu : MonoBehaviour
     {
         if(save)
         {
-            SaveManager.Save(so);
+            ss.manualSave = true;
             SceneManager.LoadScene(0);
         }
         else
