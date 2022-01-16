@@ -22,3 +22,6 @@ MonoBehaviour:
     viruses make it more difficult for an antivirus to detect and remove them. Making
     it much harder to remove from your device. Use this to gain +120 more money a
     second!"
+  clickerUpgrades: 100
+  tier1shop: 24000
+  tier2shop: 40000

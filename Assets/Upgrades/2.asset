@@ -22,3 +22,6 @@ MonoBehaviour:
     and redirect you to a malicious site. The site could be a phishing site or an
     adware page used to steal data or make money for the attacker. Use this to earn
     +5 more money a second!
+  clickerUpgrades: 5
+  tier1shop: 1500
+  tier2shop: 2500

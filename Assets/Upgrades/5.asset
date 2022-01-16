@@ -21,3 +21,6 @@ MonoBehaviour:
     then infect any file ran by the computer, including anti-virus software. This
     malware may stay dormant until a specific date, time, or until the user performs
     a specific action. Use this to earn 40+ more money a second!
+  clickerUpgrades: 40
+  tier1shop: 12000
+  tier2shop: 20000

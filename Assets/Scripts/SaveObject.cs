@@ -13,6 +13,9 @@ public class SaveObject
     public float money;
 
     public int ballsSpawned;
+    public int teddySpawned;
+    public int gameBoySpawned;
+
     public int hat;
     public int face;
     public int leftHand;

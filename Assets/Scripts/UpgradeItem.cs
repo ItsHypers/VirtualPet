@@ -21,6 +21,8 @@ public class UpgradeItem : MonoBehaviour
             cs.Upgrade(upgrade.increase);
             text.text = upgrade.upgradeName + " Bought!";
             player.transform.localScale += new Vector3(upgrade.scaleAmount, upgrade.scaleAmount, upgrade.scaleAmount);
+            sbs.UpdatePrice(upgrade.tier1shop, upgrade.tier2shop, upgrade.tier3shop);
+            cs.UpdateButton(upgrade.clickerUpgrades);
         }
     }
     public void OnPurchase()
@@ -35,7 +37,8 @@ public class UpgradeItem : MonoBehaviour
             {
                 es.EndGameStart();
             }
-            sbs.UpdatePrice();
+            sbs.UpdatePrice(upgrade.tier1shop, upgrade.tier2shop, upgrade.tier3shop);
+            cs.UpdateButton(upgrade.clickerUpgrades);
         }
     }
 }

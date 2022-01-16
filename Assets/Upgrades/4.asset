@@ -21,3 +21,6 @@ MonoBehaviour:
     These macros can be used to download additional malware or run malicious code.
     Macro viruses deliver a payload when the file is opened, and the macro runs.
     Use this to earn +20 More money a second!
+  clickerUpgrades: 20
+  tier1shop: 6000
+  tier2shop: 10000

@@ -22,3 +22,6 @@ MonoBehaviour:
     system or important programs. When the system boots or the program runs, the
     virus is activated. It will then lock the victim out of the files until a ransom
     is paid. Use this to earn +10 More money a second!
+  clickerUpgrades: 10
+  tier1shop: 3000
+  tier2shop: 5000

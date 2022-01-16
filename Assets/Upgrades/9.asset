@@ -20,3 +20,6 @@ MonoBehaviour:
   description: AI is a very complicated system, using a wide-ranging branch of computer
     science, the aim is the make computers create their own intelligence, similar
     to what humans have. Use this to gain +650 more money a second!
+  clickerUpgrades: 750
+  tier1shop: 200000
+  tier2shop: 300000

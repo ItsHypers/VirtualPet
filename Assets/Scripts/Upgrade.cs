@@ -11,4 +11,10 @@ public class Upgrade : ScriptableObject
     public float scaleAmount;
     public bool unlocked;
     public string description;
+
+    public float clickerUpgrades;
+
+    public int tier1shop;
+    public int tier2shop;
+    public int tier3shop;
 }

@@ -126,6 +126,25 @@ public class MainMenuScript : MonoBehaviour
         LeanTween.scale(ngWarning, new Vector3(1, 1, 1), 0.3f);
         error.Play();
     }
+    public void LoadNewGame(bool answer)
+    {
+        if (answer)
+        {
+            string fullPath = Application.persistentDataPath + directory + fileName;
+            if (File.Exists(fullPath))
+            {
+
+                File.Delete(fullPath);
+                PlayerPrefs.SetInt("StartScreen", 1);
+                SceneManager.LoadScene(1);
+            }
+        }
+        else
+        {
+            LeanTween.scale(ngWarning, new Vector3(0, 0, 0), 0.3f);
+        }
+    }
+
     public void OpenSettings(bool open)
     {
         if(open)
@@ -137,23 +156,6 @@ public class MainMenuScript : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
-    }
-    public void LoadNewGame(bool answer)
-    {
-        if (answer)
-        {
-            string fullPath = Application.persistentDataPath + directory + fileName;
-            if (File.Exists(fullPath))
-            {
-
-                File.Delete(fullPath);
-                SceneManager.LoadScene(1);
-            }
-        }
-        else
-        {
-            LeanTween.scale(ngWarning, new Vector3(0, 0, 0), 0.3f);
-        }
     }
 
     public void SetMasterVolume(float volume)

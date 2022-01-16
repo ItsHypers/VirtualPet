@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using System;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 public class TypeScript : MonoBehaviour
 {
     public bool inStartScreen;
@@ -18,14 +19,20 @@ public class TypeScript : MonoBehaviour
     public TMP_InputField input;
     public string playerName;
     public SaveObject so;
+    public AudioSource background;
+    public AudioSource typeScript;
     // Update is called once per frame
 
     private void Start()
     {
         displayStr = "public class VirusCreation" + Environment.NewLine + "{" + Environment.NewLine + "   public string name = \"               \";" + Environment.NewLine + "   public int Age = 0;" + Environment.NewLine + "   public SpriteRenderer virusMan;" + Environment.NewLine + Environment.NewLine + "   public void Explanation:" + Environment.NewLine + "   {" + Environment.NewLine + "      string Reason = \"Creating a Virus to create passive income\";" + Environment.NewLine + "      string Upgrades = \"Upgrade the Virus to create more passive income per second\";" + Environment.NewLine + "      string Cosmetics = \"Decorate your Virus with custom clothes\";" + Environment.NewLine + "      string Food = \"Keep your virus alive by feeding it... computer food\";" + Environment.NewLine + "      string Happiness = \"Keep your virus happy by buying it toys from the shop\";" + Environment.NewLine + "      Instantiate(virusMan);" + Environment.NewLine + "      Initiate Program? (Y/N);" + Environment.NewLine + "   }" + Environment.NewLine + "}";
         progress = true;
-        if(inStartScreen)
+        if (PlayerPrefs.GetInt("StartScreen", 1) != 0)
+        {
             pc.SetActive(true);
+            background.Stop();
+            typeScript.Play();
+        }
         else
             pc.SetActive(false);
 
@@ -39,7 +46,7 @@ public class TypeScript : MonoBehaviour
 
     void Update()
     {
-        if (inStartScreen)
+        if (PlayerPrefs.GetInt("StartScreen", 1) != 0)
         {
             surv.paused = true;
             if(typedLength == 56)
@@ -65,9 +72,15 @@ public class TypeScript : MonoBehaviour
             }
             if(typedLength == displayStr.Length && Input.GetKeyDown(KeyCode.Y))
             {
-                inStartScreen = false;
+                PlayerPrefs.SetInt("StartScreen", 0);
                 surv.paused = false;
                 pc.SetActive(false);
+                background.Play();
+                typeScript.Stop();
+            }
+            if (typedLength == displayStr.Length && Input.GetKeyDown(KeyCode.N))
+            {
+                SceneManager.LoadScene(0);
             }
         }
     }

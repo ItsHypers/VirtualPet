@@ -85,6 +85,8 @@ public class SaveScript : MonoBehaviour
             so.money = bs.Money;
 
             so.ballsSpawned = SUBS.ballsSpawned;
+            so.teddySpawned = SUBS.teddySpawned;
+            so.gameBoySpawned = SUBS.gameBoySpawned;
             so.hat = hs.currentHat;
             so.face = fs.currentFace;
 
@@ -137,6 +139,8 @@ public class SaveScript : MonoBehaviour
         hs.ChangeHat(so.hat);
         fs.ChangeFace(so.face);
         SUBS.ballsSpawned = so.ballsSpawned;
+        SUBS.teddySpawned = so.teddySpawned;
+        SUBS.gameBoySpawned = so.gameBoySpawned;
 
         foreach (GloveScript HS in gs)
         {
