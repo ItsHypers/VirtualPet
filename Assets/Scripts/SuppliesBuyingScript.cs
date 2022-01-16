@@ -49,10 +49,40 @@ public class SuppliesBuyingScript : MonoBehaviour
         {
             surv.Happiness += ballRefilled;
             bs.Money -= ballPrice;
+            if (ballsSpawned < 2000)
+            {
+                index = UnityEngine.Random.Range(0, locations.Length);
+                currentPoint = locations[index];
+                Instantiate(ball, currentPoint.transform.position, Quaternion.identity);
+                ballsSpawned++;
+            }
+        }
+    }
+
+    public void ManualBallSpawn()
+    {
+        Debug.Log("balls script ran");
+        int spawned = 0;
+        GameObject[] balls;
+        balls = GameObject.FindGameObjectsWithTag("ball");
+        foreach (GameObject ball in balls)
+        {
+            spawned++;
+        }
+        if(spawned > ballsSpawned)
+        {
+            foreach(GameObject ball in balls)
+            {
+                Destroy(ball);
+            }
+            spawned = 0;
+        }
+        while (spawned < ballsSpawned)
+        {
             index = UnityEngine.Random.Range(0, locations.Length);
             currentPoint = locations[index];
             Instantiate(ball, currentPoint.transform.position, Quaternion.identity);
-            ballsSpawned++;
+            spawned++;
         }
     }
 

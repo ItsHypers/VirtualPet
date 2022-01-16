@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
 public class EndingSeq : MonoBehaviour
 {
@@ -17,10 +18,12 @@ public class EndingSeq : MonoBehaviour
     public GameObject VideoPlayer;
     public VideoPlayer vp;
     public AudioSource background;
-    public AudioSource scaryEnd;
+    public AudioClip scaryEnd;
     public AudioClip popUpEffect;
     AudioSource Audios;
+    public GameObject shop;
     bool popUpCrash = false;
+    public bool StreamerMode;
     int i = 0;
     public GameObject laughing;
     AudioSource laugh;
@@ -28,44 +31,52 @@ public class EndingSeq : MonoBehaviour
     private void Start()
     {
         Audios = GetComponent<AudioSource>();
+        StreamerMode = PlayerPrefs.GetInt("StreamerMode", 0) != 0;
     }
     private void Update()
-    { 
-        Timer += Time.deltaTime;
-        if (Timer >= 5 && !HealthStats)
+    {
+        if (EndStarted)
         {
-            HealthStats = true;
-            cam.SetTrigger("Glitch");
-        }
-        if (HealthStats && Timer >= 7)
-        {
-            surv.paused = true;
-            surv.Happiness = Random.Range(1, 999);
-            surv.Hunger = Random.Range(1, 999);
-            surv.Health = Random.Range(1, 999);
-            bs.Money = Random.Range(1, 999999);
-        }
-
-        if (Timer >= 10 && !Popups)
-        {
-            Popups = true;
-            cam.SetTrigger("Glitch");
-        }
-
-        if (Popups && Timer >= 12 && Popup1)
-        {
-            PopupsStart();
-            Popups = false;
-            Popup1 = false;
-        }
-        if (popUpCrash)
-        {
-            if (i < 20)
+            Timer += Time.deltaTime;
+            if (Timer >= 5 && !HealthStats)
             {
-                i++;
-                PopupCrash();
+                HealthStats = true;
+                cam.SetTrigger("Glitch");
+                background.clip = scaryEnd;
+                background.Play();
+                background.volume = 0.3f;
+                shop.SetActive(false);
+            }
+            if (HealthStats && Timer >= 7)
+            {
+                surv.paused = true;
+                surv.Happiness = Random.Range(1, 999);
+                surv.Hunger = Random.Range(1, 999);
+                surv.Health = Random.Range(1, 999);
+                bs.Money = Random.Range(1, 999999);
             }
 
+            if (Timer >= 10 && !Popups)
+            {
+                Popups = true;
+                cam.SetTrigger("Glitch");
+            }
+
+            if (Popups && Timer >= 12 && Popup1)
+            {
+                PopupsStart();
+                Popups = false;
+                Popup1 = false;
+            }
+            if (popUpCrash)
+            {
+                if (i < 20)
+                {
+                    i++;
+                    PopupCrash();
+                }
+
+            }
         }
     }
     public void EndGameStart()
@@ -142,7 +153,7 @@ public class EndingSeq : MonoBehaviour
     }
     public void LastOne()
     {
-        if (string.IsNullOrWhiteSpace(country.ip))
+        if (string.IsNullOrWhiteSpace(country.ip) || StreamerMode)
         {
             VirusGUI.PopupVariables vars = new VirusGUI.PopupVariables("ERROR", "SYSTEM ERROR: VIRUS TAKING OVER. ABORT?", gameObject, "TooLate", "", "Kill", "");
             VirusGUI.MultiWindow multi = new VirusGUI.MultiWindow(1, 5, vars);
@@ -197,6 +208,7 @@ public class EndingSeq : MonoBehaviour
             VirusGUI.PopupVariables vars = new VirusGUI.PopupVariables("HAHAHAHA", "HAHAHAHAHAHAHAHAHA", gameObject, "", "", "", "");
             VirusGUI.MultiWindow multi = new VirusGUI.MultiWindow(1, 5, vars);
             multi.popupVariables.closeButton = false;
+            Audios.PlayOneShot(popUpEffect, 0.3f);
             cam.SetTrigger("Glitch");
 
         }
@@ -219,6 +231,7 @@ public class EndingSeq : MonoBehaviour
         yield return new WaitForSeconds(9);
         laughing.SetActive(false);
         laugh.Stop();
+        SceneManager.LoadScene(0);
     }
 
     public void CancelWindow()

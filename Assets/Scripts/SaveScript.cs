@@ -17,10 +17,12 @@ public class SaveScript : MonoBehaviour
     public HatsBuyScript HBS;
     public FaceBuyScript FBS;
     public SuppliesBuyingScript SUBS;
+    public Animator autoSave;
     public TypeScript ts;
     public bool manualSave;
+    bool AutoSave;
 
-    public int autoSaveTimer = 10; // Second count
+    public int autoSaveTimer; // Second count
     [SerializeField]
     protected float Timer;
 
@@ -67,11 +69,16 @@ public class SaveScript : MonoBehaviour
     }
     private void Update()
     {
-
-        Timer += Time.deltaTime;
+        AutoSave = PlayerPrefs.GetInt("AutoSave", 1) != 0;
+        autoSaveTimer = PlayerPrefs.GetInt("autoSaveTimer", 10); 
+        if (AutoSave)
+        {
+            Timer += Time.deltaTime;
+        }
         if (Timer >= autoSaveTimer || manualSave)
         {
             Timer = 0f;
+            autoSave.SetTrigger("saved");
             so.health = survival.Health;
             so.hunger = survival.Hunger;
             so.happiness = survival.Happiness;
@@ -116,5 +123,46 @@ public class SaveScript : MonoBehaviour
             SaveManager.Save(so);
             manualSave = false;
         }
+    }
+    public void LoadGame()
+    {
+        so = SaveManager.Load();
+        ts.playerName = so.playerName;
+        survival.Health = so.health;
+        survival.Hunger = so.hunger;
+        survival.Happiness = so.happiness;
+        bs.Money = so.money;
+        bs.ballsSpawned = so.ballsSpawned;
+
+        hs.ChangeHat(so.hat);
+        fs.ChangeFace(so.face);
+        SUBS.ballsSpawned = so.ballsSpawned;
+
+        foreach (GloveScript HS in gs)
+        {
+            if (HS.RHbool)
+            {
+                HS.ChangeHand(so.rightHand);
+            }
+            else
+                HS.ChangeHand(so.leftFoot);
+        }
+
+        foreach (FeetScript FS in FootS)
+        {
+            if (FS.RFbool)
+                FS.ChangeFoot(so.rightFoot);
+            else
+                FS.ChangeFoot(so.leftFoot);
+        }
+
+        HBS.hatsUnlocked = so.HatsUnlocked;
+        FBS.faceUnlocked = so.FaceUnlocked;
+
+        SBS.RShoeUnlocked = so.RShoeUnlocked;
+        SBS.LShoeUnlocked = so.LShoeUnlocked;
+
+        GBS.RGlovesUnlocked = so.RGlovesUnlocked;
+        GBS.LGlovesUnlocked = so.LGlovesUnlocked;
     }
 }

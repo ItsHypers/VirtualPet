@@ -6,6 +6,8 @@ using System.IO;
 using UnityEngine.UI;
 using UnityEngine.Audio;
 using TMPro;
+using System;
+
 public class MainMenuScript : MonoBehaviour
 {
     public static string directory = "/SaveData/";
@@ -42,6 +44,11 @@ public class MainMenuScript : MonoBehaviour
         dropdown.RefreshShownValue();
     }
 
+    public void StreamerMode(bool on)
+    {
+        var i = Convert.ToInt32(on);
+        PlayerPrefs.SetInt("StreamerMode", i);
+    }
     public void Continue()
     {
         SceneManager.LoadScene(1);
