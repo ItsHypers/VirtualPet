@@ -10,4 +10,5 @@ public class Upgrade : ScriptableObject
     public string upgradeName;
     public float scaleAmount;
     public bool unlocked;
+    public string description;
 }

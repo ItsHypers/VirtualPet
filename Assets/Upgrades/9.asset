@@ -17,3 +17,6 @@ MonoBehaviour:
   upgradeName: AI
   scaleAmount: 1
   unlocked: 1
+  description: AI is a very complicated system, using a wide-ranging branch of computer
+    science, the aim is the make computers create their own intelligence, similar
+    to what humans have. Use this to gain +650 more money a second!

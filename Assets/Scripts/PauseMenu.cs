@@ -246,6 +246,13 @@ public class PauseMenu : MonoBehaviour
             inShop = true;
         }
     }
+
+    public void CloseTabs()
+    {
+        LeanTween.scale(Tabs, new Vector3(0, 0, 0), 0.3f);
+        LeanTween.scale(Shop, new Vector3(0, 0, 0), 0.3f);
+        LeanTween.scale(Settings, new Vector3(0, 0, 0), 0.3f);
+    }
     public void setActive()
     {
         if (inShop)

@@ -17,3 +17,8 @@ MonoBehaviour:
   upgradeName: Polymorphic Virus
   scaleAmount: 0.5
   unlocked: 1
+  description: "A Polymorphic virus is a virus that uses Polymorphic code (code that
+    can mutate) to change the program\u2019s footprint to avoid detection. Polymorphic
+    viruses make it more difficult for an antivirus to detect and remove them. Making
+    it much harder to remove from your device. Use this to gain +120 more money a
+    second!"

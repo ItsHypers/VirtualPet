@@ -14,6 +14,7 @@ public class Bank : MonoBehaviour
     public int ballsSpawned;
     GameObject currentPoint;
     public GameObject ball;
+    public float increment;
 
     int index;
     int i = 0;
@@ -24,7 +25,7 @@ public class Bank : MonoBehaviour
     }
     private void Update()
     {
-        text.text = PlayerPrefs.GetString("currency") + Money.ToString();
+        text.text = "$" + Money.ToString() + "- " + increment + "/s";
         while (i < ballsSpawned && i <= 2000)
         {
             index = Random.Range(0, locations.Length);

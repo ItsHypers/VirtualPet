@@ -17,3 +17,6 @@ MonoBehaviour:
   upgradeName: Web Scripting
   scaleAmount: 0.2
   unlocked: 0
+  description: Most browsers have defenses against malicious web scripts, but older,
+    unsupported browsers have vulnerabilities that allow an attacker to run code
+    on the local device. Use this to earn 4 dollars more a second!

@@ -17,3 +17,6 @@ MonoBehaviour:
   upgradeName: Direct Action
   scaleAmount: 0.5
   unlocked: 1
+  description: a Direct Action virus is a virus that attaches itself onto .exe or
+    .com files, once executed, the virus spreads to other existing files, rendering
+    them inaccessible.  Use this to gain 250+ more money a second!

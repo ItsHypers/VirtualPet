@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class EndingSeq : MonoBehaviour
 {
@@ -27,7 +28,8 @@ public class EndingSeq : MonoBehaviour
     int i = 0;
     public GameObject laughing;
     AudioSource laugh;
-
+    public GameObject settings;
+    public PauseMenu pm;
     private void Start()
     {
         Audios = GetComponent<AudioSource>();
@@ -46,6 +48,8 @@ public class EndingSeq : MonoBehaviour
                 background.Play();
                 background.volume = 0.3f;
                 shop.SetActive(false);
+                settings.SetActive(false);
+                pm.CloseTabs();
             }
             if (HealthStats && Timer >= 7)
             {
@@ -87,7 +91,7 @@ public class EndingSeq : MonoBehaviour
 
     public void PopupsStart()
     {
-        VirusGUI.PopupVariables vars = new VirusGUI.PopupVariables("Manual Over-ride Request", "Manual Over-ride Request receive, Scan threat?", gameObject, "WindowSpam", "", "WindowWarning", "");
+        VirusGUI.PopupVariables vars = new VirusGUI.PopupVariables("Manual Over-ride Request", "Manual Over-ride Request receive, Scan threat?", gameObject, "Kill", "", "Kill", "");
         VirusGUI.PopupWindow window = new VirusGUI.PopupWindow(vars, new Vector2(Screen.width * .5f - 125, Screen.height * .5f - 75));
         window.popupVariables.closeButton = false;
         Audios.PlayOneShot(popUpEffect);
@@ -225,12 +229,15 @@ public class EndingSeq : MonoBehaviour
     IEnumerator Laughing()
     {
         yield return new WaitForSeconds(6);
-        LeanTween.scale(laughing, new Vector3(1.5f, 1.5f, 1.5f), 7f);
+        laughing.SetActive(true);
+        Image image = laughing.GetComponent<Image>();
+        LeanTween.alpha(image.rectTransform, 1f, 7f).setEase(LeanTweenType.linear);
         laugh = laughing.GetComponent<AudioSource>();
         laugh.Play();
-        yield return new WaitForSeconds(9);
+        yield return new WaitForSeconds(7.5f);
         laughing.SetActive(false);
         laugh.Stop();
+        yield return new WaitForSeconds(2);
         SceneManager.LoadScene(0);
     }
 

@@ -27,6 +27,7 @@ public class ClickerScript : MonoBehaviour
             {
                 Timer = 0f;
                 bs.Money = bs.Money + increment;
+                bs.increment = increment;
             }
         }
     }

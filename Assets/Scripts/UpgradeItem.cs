@@ -18,13 +18,14 @@ public class UpgradeItem : MonoBehaviour
         if(upgrade.unlocked)
         {
             cs.Upgrade(upgrade.increase);
+            text.text = upgrade.upgradeName + " Bought!";
         }
     }
     public void OnPurchase()
     {
         if (bs.Money >= upgrade.cost && !upgrade.unlocked)
         {
-            text.text = upgrade.upgradeName + " -" + Environment.NewLine + "Bought!";
+            text.text = upgrade.upgradeName + " Bought!";
             cs.Upgrade(upgrade.increase);
             player.transform.localScale += new Vector3(upgrade.scaleAmount, upgrade.scaleAmount, upgrade.scaleAmount);
             upgrade.unlocked = true;
