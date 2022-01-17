@@ -41,6 +41,7 @@ public class AI : MonoBehaviour
         {
             destination = false;
             movementDirection = lastSeen.x - transform.position.x;
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
         if (destination)
         {

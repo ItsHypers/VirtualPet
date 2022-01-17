@@ -32309,12 +32309,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
-  radius: 28.12
+  radius: 32.38
   timer: 5
   destination: 0
   movement: 3
   lastSeen: {x: 0, y: 0, z: 0}
-  destinationReachedTreshold: 0.7
+  destinationReachedTreshold: 20
   anim: {fileID: 1074548926}
 --- !u!114 &1958156607
 MonoBehaviour:
