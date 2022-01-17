@@ -23,4 +23,5 @@ MonoBehaviour:
     files, or destroy all data. Use this to gain +400 more money a second!
   clickerUpgrades: 400
   tier1shop: 125000
-  tier2shop: 250000
+  tier2shop: 225000
+  tier3shop: 275000

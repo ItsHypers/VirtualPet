@@ -28,44 +28,7 @@ public class SaveScript : MonoBehaviour
 
     private void Start()
     {
-        so = SaveManager.Load();
-        ts.playerName = so.playerName;
-        survival.Health = so.health;
-        survival.Hunger = so.hunger;
-        survival.Happiness = so.happiness;
-        bs.Money = so.money;
-        bs.ballsSpawned = so.ballsSpawned;
-
-        hs.ChangeHat(so.hat);
-        fs.ChangeFace(so.face);
-        SUBS.ballsSpawned = so.ballsSpawned;
-
-        foreach (GloveScript HS in gs)
-        {
-            if (HS.RHbool)
-            {
-                HS.ChangeHand(so.rightHand);
-            }
-            else
-                HS.ChangeHand(so.leftFoot);
-        }
-
-        foreach (FeetScript FS in FootS)
-        {
-            if (FS.RFbool)
-                FS.ChangeFoot(so.rightFoot);
-            else
-                FS.ChangeFoot(so.leftFoot);
-        }
-
-        HBS.hatsUnlocked = so.HatsUnlocked;
-        FBS.faceUnlocked = so.FaceUnlocked;
-
-        SBS.RShoeUnlocked = so.RShoeUnlocked;
-        SBS.LShoeUnlocked = so.LShoeUnlocked;
-
-        GBS.RGlovesUnlocked = so.RGlovesUnlocked;
-        GBS.LGlovesUnlocked = so.LGlovesUnlocked;
+        LoadGame();
     }
     private void Update()
     {
@@ -87,6 +50,8 @@ public class SaveScript : MonoBehaviour
             so.ballsSpawned = SUBS.ballsSpawned;
             so.teddySpawned = SUBS.teddySpawned;
             so.gameBoySpawned = SUBS.gameBoySpawned;
+            so.toysSpawned = SUBS.toysSpawned;
+
             so.hat = hs.currentHat;
             so.face = fs.currentFace;
 
@@ -134,13 +99,18 @@ public class SaveScript : MonoBehaviour
         survival.Hunger = so.hunger;
         survival.Happiness = so.happiness;
         bs.Money = so.money;
+
         bs.ballsSpawned = so.ballsSpawned;
+        bs.teddySpawned = so.teddySpawned;
+        bs.gameBoySpawned = so.gameBoySpawned;
+        bs.toysSpawned = so.toysSpawned;
 
         hs.ChangeHat(so.hat);
         fs.ChangeFace(so.face);
         SUBS.ballsSpawned = so.ballsSpawned;
         SUBS.teddySpawned = so.teddySpawned;
         SUBS.gameBoySpawned = so.gameBoySpawned;
+        SUBS.toysSpawned = so.toysSpawned;
 
         foreach (GloveScript HS in gs)
         {

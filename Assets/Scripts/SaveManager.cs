@@ -41,6 +41,9 @@ public static class SaveManager
             so.rightFoot = 0;
             so.leftFoot = 0;
             so.ballsSpawned = 0;
+            so.teddySpawned = 0;
+            so.gameBoySpawned = 0;
+            so.toysSpawned = 0;
             Upgrade[] allUpgrades = (Upgrade[])Resources.FindObjectsOfTypeAll(typeof(Upgrade));
 
             foreach(Upgrade upgrades in allUpgrades)

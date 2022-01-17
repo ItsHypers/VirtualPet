@@ -14,6 +14,12 @@ public class Bank : MonoBehaviour
     public int ballsSpawned;
     public int teddySpawned;
     public int gameBoySpawned;
+    public int toysSpawned;
+
+    private int ballSpawn;
+    private int teddySpawn;
+    private int gameBoySpawn;
+
     GameObject currentPoint;
     public GameObject ball;
     public GameObject teddy;
@@ -30,26 +36,29 @@ public class Bank : MonoBehaviour
     private void Update()
     {
         text.text = "$" + Money.ToString() + "- " + increment + "/s";
-        while (i < ballsSpawned && i <= 2000)
+        if (i < 2000 && i < toysSpawned)
         {
             index = Random.Range(0, locations.Length);
             currentPoint = locations[index];
             i++;
-            Instantiate(ball, currentPoint.transform.position, Quaternion.identity);
-        }
-        while (i < teddySpawned && i <= 2000)
-        {
-            index = Random.Range(0, locations.Length);
-            currentPoint = locations[index];
-            i++;
-            Instantiate(teddy, currentPoint.transform.position, Quaternion.identity);
-        }
-        while (i < gameBoySpawned && i <= 2000)
-        {
-            index = Random.Range(0, locations.Length);
-            currentPoint = locations[index];
-            i++;
-            Instantiate(gameBoy, currentPoint.transform.position, Quaternion.identity);
+            if (ballSpawn < ballsSpawned)
+            {
+                Instantiate(ball, currentPoint.transform.position, Quaternion.identity);
+                ballSpawn++;
+                toysSpawned++;
+            }
+            if (teddySpawn < teddySpawned)
+            {
+                Instantiate(teddy, currentPoint.transform.position, Quaternion.identity);
+                teddySpawn++;
+                toysSpawned++;
+            }
+            if (gameBoySpawn < gameBoySpawned)
+            {
+                Instantiate(gameBoy, currentPoint.transform.position, Quaternion.identity);
+                gameBoySpawn++;
+                toysSpawned++;
+            }
         }
     }
 }

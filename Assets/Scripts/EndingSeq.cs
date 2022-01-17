@@ -91,7 +91,7 @@ public class EndingSeq : MonoBehaviour
 
     public void PopupsStart()
     {
-        VirusGUI.PopupVariables vars = new VirusGUI.PopupVariables("Manual Over-ride Request", "Manual Over-ride Request receive, Scan threat?", gameObject, "Kill", "", "Kill", "");
+        VirusGUI.PopupVariables vars = new VirusGUI.PopupVariables("Manual Over-ride Request", "Manual Over-ride Request receive, Scan threat?", gameObject, "WindowSpam", "", "WindowWarning", "");
         VirusGUI.PopupWindow window = new VirusGUI.PopupWindow(vars, new Vector2(Screen.width * .5f - 125, Screen.height * .5f - 75));
         window.popupVariables.closeButton = false;
         Audios.PlayOneShot(popUpEffect);

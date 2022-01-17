@@ -15,6 +15,7 @@ public class SaveObject
     public int ballsSpawned;
     public int teddySpawned;
     public int gameBoySpawned;
+    public int toysSpawned;
 
     public int hat;
     public int face;

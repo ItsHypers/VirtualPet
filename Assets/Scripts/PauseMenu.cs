@@ -56,7 +56,7 @@ public class PauseMenu : MonoBehaviour
 
         for (int i = 0; i < resolutions.Length; i++)
         {
-            string option = resolutions[i].width + " x " + resolutions[i].height;
+            string option = resolutions[i].width + " x " + resolutions[i].height + " x " + resolutions[i].refreshRate;
             options.Add(option);
 
             if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
@@ -137,14 +137,14 @@ public class PauseMenu : MonoBehaviour
     }
 
 
-    public void setBallCount(string ball)
+    public void setBallCount(string toys)
     {
-        balls = int.Parse(ball);
+        balls = int.Parse(toys);
         if (balls > 2000)
         {
             balls = 2000;
         }
-        sbs.ballsSpawned = balls;
+        sbs.toysSpawned = balls;
         Debug.Log("balls spawned");
         sbs.ManualBallSpawn();
     }
@@ -152,9 +152,21 @@ public class PauseMenu : MonoBehaviour
     {
         GameObject[] balls;
         balls = GameObject.FindGameObjectsWithTag("ball");
-        foreach(GameObject ball in balls)
+        GameObject[] teddys;
+        teddys = GameObject.FindGameObjectsWithTag("teddy");
+        GameObject[] gameBoy;
+        gameBoy = GameObject.FindGameObjectsWithTag("gameboy");
+        foreach (GameObject ball in balls)
         {
             Destroy(ball);
+        }
+        foreach (GameObject teddy in teddys)
+        {
+            Destroy(teddy);
+        }
+        foreach (GameObject game in gameBoy)
+        {
+            Destroy(game);
         }
     }
     public void OpenSettings(bool open)
@@ -236,15 +248,15 @@ public class PauseMenu : MonoBehaviour
     {
         if (inShop)
         {
-            LeanTween.scale(Tabs, new Vector3(0, 0, 0), 0.3f);
-            LeanTween.scale(Shop, new Vector3(0, 0, 0), 0.3f).setOnComplete(setActive);
+            LeanTween.scale(Tabs, new Vector3(0, 0, 0), 0.8f).setEaseInBounce();
+            LeanTween.scale(Shop, new Vector3(0, 0, 0), 0.8f).setEaseInBounce().setOnComplete(setActive);
         }
         else
         {
             Tabs.SetActive(true);
             Shop.SetActive(true);
-            LeanTween.scale(Tabs, new Vector3(1, 1, 0), 0.3f);
-            LeanTween.scale(Shop, new Vector3(1, 1, 0), 0.3f);
+            LeanTween.scale(Tabs, new Vector3(1, 1, 0), 0.8f).setEaseOutBounce();
+            LeanTween.scale(Shop, new Vector3(1, 1, 0), 0.8f).setEaseOutBounce();
             inShop = true;
         }
     }

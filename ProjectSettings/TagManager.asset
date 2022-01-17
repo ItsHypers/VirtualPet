@@ -8,6 +8,8 @@ TagManager:
   - toy
   - location
   - ball
+  - teddy
+  - gameboy
   layers:
   - Default
   - TransparentFX

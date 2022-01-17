@@ -30,6 +30,7 @@ public class UpgradeItem : MonoBehaviour
         if (bs.Money >= upgrade.cost && !upgrade.unlocked)
         {
             text.text = upgrade.upgradeName + " Bought!";
+            bs.Money -= upgrade.cost;
             cs.Upgrade(upgrade.increase);
             player.transform.localScale += new Vector3(upgrade.scaleAmount, upgrade.scaleAmount, upgrade.scaleAmount);
             upgrade.unlocked = true;

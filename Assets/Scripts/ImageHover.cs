@@ -19,7 +19,7 @@ public class ImageHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
         }
         else
         {
-            upgradePrice.text = "Price: " + "$" + upgrade.cost;
+            upgradePrice.text = "Price: " + "$" + upgrade.cost.ToString("n0");
         }
         upgradeNameText.text = upgrade.upgradeName;
         upgradeDescription.text = upgrade.description;

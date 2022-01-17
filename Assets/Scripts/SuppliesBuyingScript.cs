@@ -45,7 +45,7 @@ public class SuppliesBuyingScript : MonoBehaviour
     [Header("Scripts")]
     public GameObject ball;
     public GameObject teddy;
-    public GameObject gameBoy;
+    public GameObject gameBoyObject;
     public Survival surv;
     public Bank bs;
 
@@ -61,6 +61,7 @@ public class SuppliesBuyingScript : MonoBehaviour
     public int ballsSpawned;
     public int teddySpawned;
     public int gameBoySpawned;
+    public int toysSpawned;
 
     public AnimatorController ac;
     private int tier1;
@@ -90,8 +91,12 @@ public class SuppliesBuyingScript : MonoBehaviour
         NFTPrice = tier3;
 
         ballText.text = "Ball" + "-" + Environment.NewLine + "$" + ballPrice + "+" + ballRefilled;
+        teddyText.text = "Teddy" + "-" + Environment.NewLine + "$" + teddyPrice + "+" + teddyRefilled;
+        gameBoyText.text = "GameBoy" + "-" + Environment.NewLine + "$" + gameBoyPrice + "+" + gameBoyRefilled;
+
         MailText.text = "Junk Mail" + "-" + Environment.NewLine + "$" + JunkMailPrice + "+" + JunkMailRefilled;
         CreditCardText.text = "Credit Cards" + "-" + Environment.NewLine + "$" + CreditCardPrice + "+" + CreditCardRefilled;
+        NFTText.text = "Credit Cards" + "-" + Environment.NewLine + "$" + NFTPrice + "+" + NFTRefilled;
     }
     public void BallBuy()
     {
@@ -99,56 +104,108 @@ public class SuppliesBuyingScript : MonoBehaviour
         {
             surv.Happiness += ballRefilled;
             bs.Money -= ballPrice;
-            if (ballsSpawned < 2000)
+            if (toysSpawned < 2000)
             {
                 index = UnityEngine.Random.Range(0, locations.Length);
                 currentPoint = locations[index];
                 Instantiate(ball, currentPoint.transform.position, Quaternion.identity);
                 ballsSpawned++;
+                toysSpawned++;
             }
         }
     }
 
     public void TeddyBuy()
     {
-        if (bs.Money >= ballPrice)
+        if (bs.Money >= teddyPrice)
         {
-            surv.Happiness += ballRefilled;
-            bs.Money -= ballPrice;
-            if (ballsSpawned < 2000)
+            surv.Happiness += teddyRefilled;
+            bs.Money -= teddyPrice;
+            if (toysSpawned < 2000)
             {
                 index = UnityEngine.Random.Range(0, locations.Length);
                 currentPoint = locations[index];
-                Instantiate(ball, currentPoint.transform.position, Quaternion.identity);
-                ballsSpawned++;
+                Instantiate(teddy, currentPoint.transform.position, Quaternion.identity);
+                teddySpawned++;
+                toysSpawned++;
+            }
+        }
+    }
+
+    public void gameBoyBuy()
+    {
+        if (bs.Money >= gameBoyPrice)
+        {
+            surv.Happiness += gameBoyRefilled;
+            bs.Money -= gameBoyPrice;
+            if (toysSpawned < 2000)
+            {
+                index = UnityEngine.Random.Range(0, locations.Length);
+                currentPoint = locations[index];
+                Instantiate(gameBoyObject, currentPoint.transform.position, Quaternion.identity);
+                gameBoySpawned++;
+                toysSpawned++;
             }
         }
     }
 
     public void ManualBallSpawn()
     {
-        Debug.Log("balls script ran");
         int spawned = 0;
         GameObject[] balls;
         balls = GameObject.FindGameObjectsWithTag("ball");
+        GameObject[] teddys;
+        teddys = GameObject.FindGameObjectsWithTag("teddy");
+        GameObject[] gameBoy;
+        gameBoy = GameObject.FindGameObjectsWithTag("gameboy");
         foreach (GameObject ball in balls)
         {
             spawned++;
         }
-        if(spawned > ballsSpawned)
+        foreach (GameObject teddy in teddys)
+        {
+            spawned++;
+        }
+        foreach (GameObject gameboy in gameBoy)
+        {
+            spawned++;
+        }
+        if (spawned > toysSpawned)
         {
             foreach(GameObject ball in balls)
             {
                 Destroy(ball);
             }
+            foreach (GameObject teddy in teddys)
+            {
+                Destroy(teddy);
+            }
+            foreach (GameObject game in gameBoy)
+            {
+                Destroy(game);
+            }
             spawned = 0;
         }
-        while (spawned < ballsSpawned)
+        while (spawned < toysSpawned)
         {
             index = UnityEngine.Random.Range(0, locations.Length);
             currentPoint = locations[index];
-            Instantiate(ball, currentPoint.transform.position, Quaternion.identity);
-            spawned++;
+            int randomNumber = UnityEngine.Random.Range(0, 3);
+            if(randomNumber == 0)
+            {
+                Instantiate(ball, currentPoint.transform.position, Quaternion.identity);
+                spawned++;
+            }
+            if (randomNumber == 1)
+            {
+                Instantiate(teddy, currentPoint.transform.position, Quaternion.identity);
+                spawned++;
+            }
+            if (randomNumber == 2)
+            {
+                Instantiate(gameBoyObject, currentPoint.transform.position, Quaternion.identity);
+                spawned++;
+            }
         }
     }
 
@@ -171,5 +228,15 @@ public class SuppliesBuyingScript : MonoBehaviour
         }
     }
 
-  
+    public void NFTs()
+    {
+        if (bs.Money >= NFTPrice)
+        {
+            bs.Money -= NFTPrice;
+            surv.Hunger += NFTRefilled;
+            StartCoroutine(ac.Eat());
+        }
+    }
+
+
 }
