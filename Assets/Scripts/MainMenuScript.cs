@@ -20,8 +20,10 @@ public class MainMenuScript : MonoBehaviour
     public AudioMixer sfx;
     public TMP_Dropdown dropdown;
     public GameObject Settings;
+    public GameObject Credits;
     private int StringtoInt;
     private bool inInput;
+    private bool inMenu;
     Resolution[] resolutions;
 
     public TMP_InputField saveInterval;
@@ -63,6 +65,15 @@ public class MainMenuScript : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
             {
                 EventSystem.current.SetSelectedGameObject(null);
+            }
+        }
+
+        if(inMenu)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                OpenSettings(false);
+                OpenCredits(false);
             }
         }
     }
@@ -147,10 +158,30 @@ public class MainMenuScript : MonoBehaviour
 
     public void OpenSettings(bool open)
     {
-        if(open)
-            LeanTween.scale(Settings, new Vector3(1, 1, 1), 0.3f);
+        if (open)
+        {
+            LeanTween.scale(Settings, new Vector3(1, 1, 1), 0.7f).setEaseOutBounce();
+            inMenu = true;
+        }
         else
-            LeanTween.scale(Settings, new Vector3(0, 0, 0), 0.3f);
+        {
+            LeanTween.scale(Settings, new Vector3(0, 0, 0), 0.7f).setEaseInBounce();
+            inMenu = false;
+        }
+    }
+
+    public void OpenCredits(bool open)
+    {
+        if (open)
+        {
+            LeanTween.scale(Credits, new Vector3(1, 1, 1), 0.7f).setEaseOutBounce();
+            inMenu = true;
+        }
+        else
+        {
+            LeanTween.scale(Credits, new Vector3(0, 0, 0), 0.7f).setEaseInBounce();
+            inMenu = false;
+        }
     }
 
     public void Exit()
@@ -180,5 +211,15 @@ public class MainMenuScript : MonoBehaviour
     {
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+    }
+
+    public void Hypers()
+    {
+        Application.OpenURL("https://itshypers.itch.io/");
+    }
+
+    public void Chee()
+    {
+        Application.OpenURL("https://strawberrycheetah.itch.io/");
     }
 }

@@ -35,7 +35,7 @@ public class Bank : MonoBehaviour
     }
     private void Update()
     {
-        text.text = "$" + Money.ToString() + "- " + increment + "/s";
+        text.text = "$" + Money.ToString("n0") + "- " + increment + "/s";
         if (i < 2000 && i < toysSpawned)
         {
             index = Random.Range(0, locations.Length);
