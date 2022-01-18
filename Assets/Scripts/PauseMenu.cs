@@ -38,6 +38,20 @@ public class PauseMenu : MonoBehaviour
     private bool inInput;
     private int StringtoInt;
     private int balls;
+
+    [SerializeField]
+    private GameObject playerStat;
+    [SerializeField]
+    private GameObject settingb;
+    [SerializeField]
+    private GameObject shop;
+    [SerializeField]
+    private GameObject tabs;
+    [SerializeField]
+    private GameObject moneybutton;
+    [SerializeField]
+    private GameObject shopButton;
+
     private void Start()
     {
         saveInterval.text = PlayerPrefs.GetInt("autoSaveTimer", 10).ToString();
@@ -54,7 +68,23 @@ public class PauseMenu : MonoBehaviour
 
         int currentResolutionIndex = 0;
 
-        for (int i = 0; i < resolutions.Length; i++)
+        if (Application.platform == RuntimePlatform.WindowsPlayer)
+        {
+            Debug.Log("Windows");
+            playerStat.transform.position = new Vector3(0.341186523f, 498.690002f, 0);
+            settingb.transform.position = new Vector3(888.300049f, 498.926392f, 0);
+            shop.transform.position = new Vector3(851, 347.390015f, 0);
+            tabs.transform.position = new Vector3(865f, 359.063538f, 0);
+            moneybutton.transform.position = new Vector3(-751, -454, 0);
+            shopButton.transform.position = new Vector3(851, 346.399994f, 0);
+
+        }
+        if(Application.platform == RuntimePlatform.OSXEditor)
+        {
+            Debug.Log("mac");
+        }
+
+            for (int i = 0; i < resolutions.Length; i++)
         {
             string option = resolutions[i].width + " x " + resolutions[i].height + " x " + resolutions[i].refreshRate;
             options.Add(option);

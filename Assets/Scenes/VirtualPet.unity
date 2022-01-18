@@ -10487,7 +10487,7 @@ MonoBehaviour:
   fitType: 3
   rows: 1
   columns: 4
-  cellSize: {x: 467.4655, y: 59.380005}
+  cellSize: {x: 467.4655, y: 58.927124}
   spacing: {x: 3.03, y: 0}
   fitX: 1
   fitY: 1
@@ -17308,6 +17308,12 @@ MonoBehaviour:
     LShoeUnlocked: 01000000000000
     HatsUnlocked: 01000000000000000000
     FaceUnlocked: 01000000000000000000
+  playerStat: {fileID: 0}
+  settingb: {fileID: 0}
+  shop: {fileID: 0}
+  tabs: {fileID: 0}
+  moneybutton: {fileID: 0}
+  shopButton: {fileID: 0}
 --- !u!114 &1038171176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19947,7 +19953,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1184708516
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29180,17 +29186,17 @@ RectTransform:
   m_GameObject: {fileID: 1772045792}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1418300700}
   m_Father: {fileID: 1166488011}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 590.16003, y: -5}
-  m_SizeDelta: {x: 363.04, y: 105.830025}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1772045794
 MonoBehaviour:
@@ -29903,10 +29909,10 @@ RectTransform:
   m_Father: {fileID: 1166488011}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 211.52, y: -5}
-  m_SizeDelta: {x: 363.04, y: 105.830025}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1832851992
 MonoBehaviour:
@@ -31345,10 +31351,10 @@ RectTransform:
   m_Father: {fileID: 1166488011}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 968.80005, y: -5}
-  m_SizeDelta: {x: 363.04, y: 105.830025}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1907436671
 MonoBehaviour:

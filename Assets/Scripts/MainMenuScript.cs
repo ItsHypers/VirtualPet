@@ -222,4 +222,14 @@ public class MainMenuScript : MonoBehaviour
     {
         Application.OpenURL("https://strawberrycheetah.itch.io/");
     }
+
+    public void Killereks()
+    {
+        Application.OpenURL("https://killereks.itch.io/");
+    }
+    
+    public void Cama()
+    {
+        Application.OpenURL("https://soundcloud.com/user-164288366");
+    }
 }
