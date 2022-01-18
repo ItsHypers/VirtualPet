@@ -51,7 +51,6 @@ public class PauseMenu : MonoBehaviour
     private GameObject moneybutton;
     [SerializeField]
     private GameObject shopButton;
-
     private void Start()
     {
         saveInterval.text = PlayerPrefs.GetInt("autoSaveTimer", 10).ToString();
@@ -67,7 +66,7 @@ public class PauseMenu : MonoBehaviour
         List<string> options = new List<string>();
 
         int currentResolutionIndex = 0;
-
+        TransformExtensions.CopyWorldPlacementJson(playerStat.transform, true);
         if (Application.platform == RuntimePlatform.WindowsPlayer)
         {
             Debug.Log("Windows");
@@ -305,5 +304,29 @@ public class PauseMenu : MonoBehaviour
             Shop.SetActive(false);
             inShop = false;
         }
+    }
+}
+public static class TransformExtensions
+{
+    [Serializable]
+    private struct TransformData
+    {
+        public Vector3 position;
+        public Quaternion rotation;
+        public Vector3 scale;
+
+        public TransformData(Transform transform)
+        {
+            position = transform.position;
+            rotation = transform.rotation;
+            scale = transform.localScale;
+        }
+    }
+
+    public static string CopyWorldPlacementJson(Transform transform, bool humanReadable = false)
+    {
+        var data = new TransformData(transform);
+        var json = JsonUtility.ToJson(data, humanReadable);
+        return json;
     }
 }
