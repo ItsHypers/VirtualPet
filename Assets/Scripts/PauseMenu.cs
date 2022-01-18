@@ -32,7 +32,6 @@ public class PauseMenu : MonoBehaviour
     [Header("SO")]
     public SaveObject so;
 
-
     Resolution[] resolutions;
     private bool SettingsIsOpen;
     private bool inInput;
@@ -51,6 +50,9 @@ public class PauseMenu : MonoBehaviour
     private GameObject moneybutton;
     [SerializeField]
     private GameObject shopButton;
+
+    [SerializeField]
+    private GameObject camobj;
     private void Start()
     {
         saveInterval.text = PlayerPrefs.GetInt("autoSaveTimer", 10).ToString();
@@ -66,24 +68,8 @@ public class PauseMenu : MonoBehaviour
         List<string> options = new List<string>();
 
         int currentResolutionIndex = 0;
-        TransformExtensions.CopyWorldPlacementJson(playerStat.transform, true);
-        if (Application.platform == RuntimePlatform.WindowsPlayer)
-        {
-            Debug.Log("Windows");
-            playerStat.transform.position = new Vector3(0.341186523f, 498.690002f, 0);
-            settingb.transform.position = new Vector3(888.300049f, 498.926392f, 0);
-            shop.transform.position = new Vector3(851, 347.390015f, 0);
-            tabs.transform.position = new Vector3(865f, 359.063538f, 0);
-            moneybutton.transform.position = new Vector3(-751, -454, 0);
-            shopButton.transform.position = new Vector3(851, 346.399994f, 0);
 
-        }
-        if(Application.platform == RuntimePlatform.OSXEditor)
-        {
-            Debug.Log("mac");
-        }
-
-            for (int i = 0; i < resolutions.Length; i++)
+        for (int i = 0; i < resolutions.Length; i++)
         {
             string option = resolutions[i].width + " x " + resolutions[i].height + " x " + resolutions[i].refreshRate;
             options.Add(option);
@@ -96,6 +82,28 @@ public class PauseMenu : MonoBehaviour
         dropdown.AddOptions(options);
         dropdown.value = currentResolutionIndex;
         dropdown.RefreshShownValue();
+
+        if (Application.platform == RuntimePlatform.OSXEditor)
+        {
+            playerStat.GetComponent<RectTransform>().SetBottom(1088.37f);
+            shop.GetComponent<RectTransform>().SetTop(220.8f);
+            shop.GetComponent<RectTransform>().SetBottom(880.8f);
+            settingb.GetComponent<RectTransform>().SetBottom(1088.39f);
+            moneybutton.GetComponent<RectTransform>().SetTop(1063.8f);
+            shopButton.GetComponent<RectTransform>().SetTop(113.905f);
+            camobj.transform.position = new Vector3(30.09f, 12.2f, 0.97f);
+        }
+        else
+        {
+            playerStat.GetComponent<RectTransform>().SetBottom(989);
+            shop.GetComponent<RectTransform>().SetTop(147.5875f);
+            shop.GetComponent<RectTransform>().SetBottom(821.5875f);
+            settingb.GetComponent<RectTransform>().SetBottom(987.09f);
+            moneybutton.GetComponent<RectTransform>().SetTop(943.4f);
+            shopButton.GetComponent<RectTransform>().SetTop(90.54898f);
+            shopButton.GetComponent<RectTransform>().SetBottom(775.233f);
+            camobj.transform.position = new Vector3(30.09f, 11.28f, 3.16f);
+        }
     }
 
     private void Update()
@@ -306,27 +314,25 @@ public class PauseMenu : MonoBehaviour
         }
     }
 }
-public static class TransformExtensions
+public static class RectTransformExtensions
 {
-    [Serializable]
-    private struct TransformData
+    public static void SetLeft(this RectTransform rt, float left)
     {
-        public Vector3 position;
-        public Quaternion rotation;
-        public Vector3 scale;
-
-        public TransformData(Transform transform)
-        {
-            position = transform.position;
-            rotation = transform.rotation;
-            scale = transform.localScale;
-        }
+        rt.offsetMin = new Vector2(left, rt.offsetMin.y);
     }
 
-    public static string CopyWorldPlacementJson(Transform transform, bool humanReadable = false)
+    public static void SetRight(this RectTransform rt, float right)
     {
-        var data = new TransformData(transform);
-        var json = JsonUtility.ToJson(data, humanReadable);
-        return json;
+        rt.offsetMax = new Vector2(-right, rt.offsetMax.y);
+    }
+
+    public static void SetTop(this RectTransform rt, float top)
+    {
+        rt.offsetMax = new Vector2(rt.offsetMax.x, -top);
+    }
+
+    public static void SetBottom(this RectTransform rt, float bottom)
+    {
+        rt.offsetMin = new Vector2(rt.offsetMin.x, bottom);
     }
 }

@@ -30,6 +30,8 @@ public class MainMenuScript : MonoBehaviour
     public Toggle saveToggle;
     public Toggle fullscreen;
     public Toggle streamerMode;
+
+    public GameObject image;
     private void Start()
     {
         resolutions = Screen.resolutions;
@@ -56,6 +58,20 @@ public class MainMenuScript : MonoBehaviour
         saveToggle.isOn = PlayerPrefs.GetInt("AutoSave", 1) != 0;
         fullscreen.isOn = PlayerPrefs.GetInt("fullscreen", 1) != 0;
         streamerMode.isOn = PlayerPrefs.GetInt("StreamerMode", 1) != 0;
+
+        if (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.LinuxEditor)
+        {
+            Debug.Log("Windows");
+            image.GetComponent<RectTransform>().SetTop(0.0065479f);
+            image.GetComponent<RectTransform>().SetTop(1200.3f);
+
+        }
+        if (Application.platform == RuntimePlatform.OSXEditor)
+        {
+            Debug.Log("mac");
+            image.GetComponent<RectTransform>().SetTop(-0.0049505f);
+            image.GetComponent<RectTransform>().SetTop(1134.8f);
+        }
     }
 
     private void Update()
