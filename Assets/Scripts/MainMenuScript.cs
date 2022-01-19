@@ -229,23 +229,9 @@ public class MainMenuScript : MonoBehaviour
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
 
-    public void Hypers()
+    public void CreditButton(string link)
     {
-        Application.OpenURL("https://itshypers.itch.io/");
+        Application.OpenURL(link);
     }
 
-    public void Chee()
-    {
-        Application.OpenURL("https://strawberrycheetah.itch.io/");
-    }
-
-    public void Killereks()
-    {
-        Application.OpenURL("https://killereks.itch.io/");
-    }
-    
-    public void Cama()
-    {
-        Application.OpenURL("https://soundcloud.com/user-164288366");
-    }
 }
