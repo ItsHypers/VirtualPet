@@ -32,6 +32,8 @@ public class MainMenuScript : MonoBehaviour
     public Toggle fullscreen;
     public Toggle streamerMode;
 
+    public GameObject[] nonWebGL;
+
     public GameObject image;
     private void Start()
     {
@@ -67,6 +69,14 @@ public class MainMenuScript : MonoBehaviour
             Debug.Log("Windows");
             image.GetComponent<RectTransform>().SetTop(0.2077026f);
             image.GetComponent<RectTransform>().SetBottom(0.1923218f);
+        }
+
+        if (Application.platform == RuntimePlatform.WebGLPlayer)
+        {
+            foreach (GameObject go in nonWebGL)
+            {
+                go.SetActive(false);
+            }
         }
     }
 

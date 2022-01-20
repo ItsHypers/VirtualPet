@@ -57,6 +57,8 @@ public class PauseMenu : MonoBehaviour
 
     [SerializeField]
     private GameObject camobj;
+
+    public GameObject[] nonWebGL;
     private void Start()
     {
         saveInterval.text = PlayerPrefs.GetInt("autoSaveTimer", 10).ToString();
@@ -103,6 +105,13 @@ public class PauseMenu : MonoBehaviour
             shopButton.GetComponent<RectTransform>().SetTop(90.54898f);
             shopButton.GetComponent<RectTransform>().SetBottom(775.233f);
             camobj.transform.position = new Vector3(30.09f, 11.28f, 3.16f);
+        }
+        if (Application.platform == RuntimePlatform.WebGLPlayer)
+        {
+            foreach(GameObject go in nonWebGL)
+            {
+                go.SetActive(false);
+            }
         }
     }
 
@@ -245,7 +254,12 @@ public class PauseMenu : MonoBehaviour
 
     public void MainMenu()
     {
-        LeanTween.scale(SaveChecker, new Vector3(1, 1, 1), 0.3f);
+        if (Application.platform == RuntimePlatform.WebGLPlayer)
+        {
+            SceneManager.LoadScene(0);
+        }
+        else
+            LeanTween.scale(SaveChecker, new Vector3(1, 1, 1), 0.3f);
     }
     public void SaveCheck(bool save)
     {
