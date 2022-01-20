@@ -116,10 +116,10 @@ public class SaveScript : MonoBehaviour
         {
             if (HS.RHbool)
             {
-                HS.ChangeHand(so.rightHand);
+                HS.ChangeGlove(so.rightHand);
             }
             else
-                HS.ChangeHand(so.leftFoot);
+                HS.ChangeGlove(so.leftFoot);
         }
 
         foreach (FeetScript FS in FootS)

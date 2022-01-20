@@ -23,6 +23,6 @@ MonoBehaviour:
     it much harder to remove from your device. Use this to gain +120 more money a
     second!"
   clickerUpgrades: 100
-  tier1shop: 24000
-  tier2shop: 40000
-  tier3shop: 50000
+  tier1shop: 20000
+  tier2shop: 35000
+  tier3shop: 45000

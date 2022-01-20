@@ -8,6 +8,7 @@ using UnityEngine.Audio;
 using TMPro;
 using System;
 using UnityEngine.EventSystems;
+using System.Linq;
 public class PauseMenu : MonoBehaviour
 {
     [Header("bools")]
@@ -21,8 +22,9 @@ public class PauseMenu : MonoBehaviour
     public GameObject Shop;
     public AudioMixer master;
     public AudioMixer sfx;
-    public TMP_Dropdown dropdown;
+    public TMP_Dropdown resolutiondropdown;
     public GameObject Settings;
+    public GameObject Cheat;
     public Toggle saveToggle;
     public Toggle fullscreen;
     public SaveScript ss;
@@ -34,10 +36,12 @@ public class PauseMenu : MonoBehaviour
 
     Resolution[] resolutions;
     private bool SettingsIsOpen;
+    private bool CheatIsOpen;
     private bool inInput;
     private int StringtoInt;
     private int balls;
-
+    private int moneyamount;
+    public Bank bs;
     [SerializeField]
     private GameObject playerStat;
     [SerializeField]
@@ -64,24 +68,20 @@ public class PauseMenu : MonoBehaviour
         LeanTween.scale(Shop, new Vector3(0, 0, 0), 0.6f).setOnComplete(setActive);
 
         resolutions = Screen.resolutions;
-        dropdown.ClearOptions();
+        resolutiondropdown.ClearOptions();
+        int currentresolutionindex = 0;
         List<string> options = new List<string>();
-
-        int currentResolutionIndex = 0;
-
-        for (int i = 0; i < resolutions.Length; i++)
+        for (int i = resolutions.Length - 1; i >= 0; i--)
         {
             string option = resolutions[i].width + " x " + resolutions[i].height + " x " + resolutions[i].refreshRate;
             options.Add(option);
-
-            if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
-            {
-                currentResolutionIndex = i;
-            }
+            if (resolutions[i].width == Screen.width && resolutions[i].height == Screen.height)
+                currentresolutionindex = i;
         }
-        dropdown.AddOptions(options);
-        dropdown.value = currentResolutionIndex;
-        dropdown.RefreshShownValue();
+        resolutiondropdown.AddOptions(options);
+        resolutiondropdown.value = currentresolutionindex;
+        resolutions = resolutions.OrderByDescending(res => res.width).ToArray();
+        resolutiondropdown.RefreshShownValue();
 
         if (Application.platform == RuntimePlatform.OSXEditor)
         {
@@ -108,6 +108,11 @@ public class PauseMenu : MonoBehaviour
 
     private void Update()
     {
+
+        if(Input.GetKey(KeyCode.F1) && Input.GetKey(KeyCode.LeftShift) && !CheatIsOpen)
+        {
+            OpenCheat(true);
+        }
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             if (SettingsIsOpen)
@@ -222,6 +227,22 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    public void OpenCheat(bool open)
+    {
+        if (!CheatIsOpen)
+        {
+            Cheat.SetActive(true);
+            LeanTween.scale(Cheat, new Vector3(1, 1, 1), 0.3f);
+            CheatIsOpen = true;
+        }
+        else
+        {
+            LeanTween.scale(Cheat, new Vector3(0, 0, 0), 0.3f);
+            Cheat.SetActive(false);
+            CheatIsOpen = false;
+        }
+    }
+
     public void MainMenu()
     {
         LeanTween.scale(SaveChecker, new Vector3(1, 1, 1), 0.3f);
@@ -313,6 +334,16 @@ public class PauseMenu : MonoBehaviour
             inShop = false;
         }
     }
+
+    public void Give10()
+    {
+        bs.Money = bs.Money + 10000;
+    }
+    public void setMoneyCount(string money)
+    {
+        moneyamount = int.Parse(money);
+        bs.Money = bs.Money = moneyamount;
+    }
 }
 public static class RectTransformExtensions
 {
@@ -335,4 +366,6 @@ public static class RectTransformExtensions
     {
         rt.offsetMin = new Vector2(rt.offsetMin.x, bottom);
     }
+
+
 }

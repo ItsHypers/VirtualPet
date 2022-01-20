@@ -15,6 +15,12 @@ public class ClickerScript : MonoBehaviour
     private int upgradeUnlock;
     public float buttonIncrease;
     public TMP_Text buttonText;
+    private float Hi;
+    private float FI;
+    private float RFI;
+    private float LFI;
+    private float LGI;
+    private float RGI;
     private void Start()
     {
         if (PlayerPrefs.GetInt("FIRSTTIMEOPENING", 1) == 1)
@@ -54,13 +60,60 @@ public void UpdateButton(float amount)
         bs.Money = bs.Money + buttonIncrease;
         Debug.Log(buttonIncrease);
     }
-    public void Upgrade(float amount)
+    public void Upgrade(float amount, string item)
     {
-        increment = increment + amount;
+        if(item == "upgrade")
+        {
+            increment = increment + amount;
+        }
+        if (item == "hat")
+        {
+            if (amount > Hi)
+            {
+                increment = increment + amount;
+                Hi = amount;
+            }
+        }
+        if(item == "face")
+        {
+            if (amount > FI)
+            {
+                increment = increment + amount;
+                FI = amount;
+            }
+        }
+        if (item == "LG")
+        {
+            if (amount > LGI)
+            {
+                increment = increment + amount;
+                FI = amount;
+            }
+        }
+        if (item == "RG")
+        {
+            if (amount > RGI)
+            {
+                increment = increment + amount;
+                FI = amount;
+            }
+        }
+        if (item == "RS")
+        {
+            if (amount > RFI)
+            {
+                increment = increment + amount;
+                FI = amount;
+            }
+        }
+        if (item == "LS")
+        {
+            if (amount > LFI)
+            {
+                increment = increment + amount;
+                FI = amount;
+            }
+        }
     }
 
-    public void Downgrade(float amount)
-    {
-        increment = increment - amount;
-    }
 }

@@ -72,12 +72,12 @@ public class GloveBuyScript : MonoBehaviour
                         RightText[Array].text = RGNames[Array] + "-" + Environment.NewLine + "Bought!" + " + " + RGaddedIncrement[Array] + "/s";
                         BS.Money -= RGlovePrice[Array];
                         RGlovesUnlocked[Array] = true;
-                        RGS.ChangeHand(Array);
+                        RGS.ChangeGlove(Array);
                     }
                 }
                 else
                 {
-                    RGS.ChangeHand(Array);
+                    RGS.ChangeGlove(Array);
                 }
             }
         }
@@ -96,12 +96,12 @@ public class GloveBuyScript : MonoBehaviour
                         LeftText[Array].text = LGNames[Array] + "-" + Environment.NewLine + "Bought!" + " + " + LGaddedIncrement[Array] + "/s";
                         BS.Money -= LGlovePrice[Array];
                         LGlovesUnlocked[Array] = true;
-                        LGS.ChangeHand(Array);
+                        LGS.ChangeGlove(Array);
                     }
                 }
                 else
                 {
-                    LGS.ChangeHand(Array);
+                    LGS.ChangeGlove(Array);
                 }
             }
         }

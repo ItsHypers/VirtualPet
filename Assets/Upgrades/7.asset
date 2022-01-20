@@ -21,6 +21,6 @@ MonoBehaviour:
     .com files, once executed, the virus spreads to other existing files, rendering
     them inaccessible.  Use this to gain 250+ more money a second!
   clickerUpgrades: 225
-  tier1shop: 60000
-  tier2shop: 100000
-  tier3shop: 115000
+  tier1shop: 50000
+  tier2shop: 80000
+  tier3shop: 100000

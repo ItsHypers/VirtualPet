@@ -12,17 +12,19 @@ public class UpgradeItem : MonoBehaviour
     public GameObject player;
     public EndingSeq es;
     public SuppliesBuyingScript sbs;
+    public Survival ss;
 
 
     private void Awake()
     {
         if(upgrade.unlocked)
         {
-            cs.Upgrade(upgrade.increase);
+            cs.Upgrade(upgrade.increase, "upgrade");
             text.text = upgrade.upgradeName + " Bought!";
             player.transform.localScale += new Vector3(upgrade.scaleAmount, upgrade.scaleAmount, upgrade.scaleAmount);
             sbs.UpdatePrice(upgrade.tier1shop, upgrade.tier2shop, upgrade.tier3shop);
             cs.UpdateButton(upgrade.clickerUpgrades);
+            ss.upgradedUnlocked += 1;
         }
     }
     public void OnPurchase()
@@ -31,9 +33,10 @@ public class UpgradeItem : MonoBehaviour
         {
             text.text = upgrade.upgradeName + " Bought!";
             bs.Money -= upgrade.cost;
-            cs.Upgrade(upgrade.increase);
+            cs.Upgrade(upgrade.increase, "upgrade");
             player.transform.localScale += new Vector3(upgrade.scaleAmount, upgrade.scaleAmount, upgrade.scaleAmount);
             upgrade.unlocked = true;
+            ss.upgradedUnlocked += 1;
             if (upgrade.upgradeName == "AI")
             {
                 es.EndGameStart();

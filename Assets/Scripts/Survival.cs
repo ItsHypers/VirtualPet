@@ -11,7 +11,7 @@ public class Survival : MonoBehaviour
     public float Health = 100f;
     public float healthDecrease;
     public TMP_Text HealthText;
-
+    public Upgrade[] upgrades;
     [Header("Player Hunger")]
     public float maxHunter = 100f;
     public float Hunger = 100f;
@@ -29,7 +29,11 @@ public class Survival : MonoBehaviour
     public SaveObject so;
     public bool paused;
     public Animator playerAnim;
-
+    public GameObject healthCanvas;
+    public GameObject death;
+    private bool dead;
+    public SaveScript ss;
+    public int upgradedUnlocked;
     private void Start()
     {
         happinessDecrease = happinessDecreaseSave;
@@ -37,20 +41,29 @@ public class Survival : MonoBehaviour
         so.hunger = Hunger;
         so.health = Health;
         so.happiness = Happiness;
+
     }
     private void Update()
     {
+        if (upgradedUnlocked <= 5)
+        {
+            healthCanvas.transform.position = new Vector3(transform.position.x, transform.position.y + 5, transform.position.z);
+        }
+        if (upgradedUnlocked >= 6)
+        {
+            healthCanvas.transform.position = new Vector3(transform.position.x + 5, transform.position.y, transform.position.z);
+        }
         if (!paused)
         {
-            if(Health > 100)
+            if (Health > 100)
             {
                 Health = 100;
             }
-            if(Hunger > 100)
+            if (Hunger > 100)
             {
                 Hunger = 100;
             }
-            if(Happiness > 100)
+            if (Happiness > 100)
             {
                 Happiness = 100;
             }
@@ -107,11 +120,15 @@ public class Survival : MonoBehaviour
                     healthDecrease = -0.2f;
                 }
             }
-            if(Health <= 0)
+            if (Health <= 0 && !dead)
             {
-                playerAnim.SetTrigger("Death");
-                playerAnim.SetBool("action", true);
-                DeathScene();
+                paused = true;
+                playerAnim.SetBool("death", true);
+                playerAnim.SetTrigger("dead");
+                gameObject.GetComponent<AI>().enabled = false;
+                StartCoroutine(deathTimer());
+                Debug.Log("death");
+                dead = true;
 
             }
         }
@@ -120,8 +137,23 @@ public class Survival : MonoBehaviour
         HappinessText.text = (Happiness / maxHappiness * 100).ToString("F0") + "%";
     }
 
-    public void DeathScene()
+
+    private void OnMouseEnter()
     {
-        Debug.Log("Death");
+        Debug.Log("Name: " + gameObject.name);
+        healthCanvas.SetActive(true);
     }
+    private void OnMouseExit()
+    {
+        Debug.Log("Name: " + gameObject.name);
+        healthCanvas.SetActive(false);
+    }
+
+    IEnumerator deathTimer()
+    {
+        yield return new WaitForSeconds(5);
+        death.SetActive(true);
+    }
+
 }
+

@@ -19,7 +19,7 @@ MonoBehaviour:
   unlocked: 0
   description: Most browsers have defenses against malicious web scripts, but older,
     unsupported browsers have vulnerabilities that allow an attacker to run code
-    on the local device. Use this to earn 4 dollars more a second!
+    on the local device. Use this to earn +4 more money a second!
   clickerUpgrades: 2.5
   tier1shop: 300
   tier2shop: 500

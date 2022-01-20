@@ -23,6 +23,6 @@ MonoBehaviour:
     adware page used to steal data or make money for the attacker. Use this to earn
     +5 more money a second!
   clickerUpgrades: 5
-  tier1shop: 1500
-  tier2shop: 2500
-  tier3shop: 3250
+  tier1shop: 1200
+  tier2shop: 2000
+  tier3shop: 3000

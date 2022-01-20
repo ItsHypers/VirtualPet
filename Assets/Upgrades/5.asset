@@ -22,6 +22,6 @@ MonoBehaviour:
     malware may stay dormant until a specific date, time, or until the user performs
     a specific action. Use this to earn 40+ more money a second!
   clickerUpgrades: 40
-  tier1shop: 12000
-  tier2shop: 20000
-  tier3shop: 25000
+  tier1shop: 9500
+  tier2shop: 17000
+  tier3shop: 23000

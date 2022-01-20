@@ -11,7 +11,7 @@ public class FaceScript : MonoBehaviour
     public SaveObject so;
     public ClickerScript cs;
     public FaceBuyScript fbs;
-    private float previousIncrement;
+    private float currentIncrement;
 
     private void Awake()
     {
@@ -26,9 +26,11 @@ public class FaceScript : MonoBehaviour
     }
     public void AddIncrement(int face)
     {
-        cs.Downgrade(previousIncrement);
-        cs.Upgrade(fbs.addedIncrement[face]);
-        previousIncrement = fbs.addedIncrement[face];
+        if (fbs.addedIncrement[face] > currentIncrement)
+        {
+            cs.Upgrade(fbs.addedIncrement[face], "face");
+            currentIncrement = fbs.addedIncrement[face];
+        }
     }
 
     public void RandomFace()

@@ -8,6 +8,7 @@ using UnityEngine.Audio;
 using TMPro;
 using System;
 using UnityEngine.EventSystems;
+using System.Linq;
 
 public class MainMenuScript : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class MainMenuScript : MonoBehaviour
     public AudioSource error;
     public AudioMixer master;
     public AudioMixer sfx;
-    public TMP_Dropdown dropdown;
+    public TMP_Dropdown resolutiondropdown;
     public GameObject Settings;
     public GameObject Credits;
     private int StringtoInt;
@@ -35,42 +36,37 @@ public class MainMenuScript : MonoBehaviour
     private void Start()
     {
         resolutions = Screen.resolutions;
-        dropdown.ClearOptions();
+        resolutiondropdown.ClearOptions();
+        int currentresolutionindex = 0;
         List<string> options = new List<string>();
-
-        int currentResolutionIndex = 0;
-
-        for(int i = 0; i < resolutions.Length; i++)
+        for (int i = resolutions.Length - 1; i >= 0; i--)
         {
-            string option = resolutions[i].width + " x " + resolutions[i].height;
+            string option = resolutions[i].width + " x " + resolutions[i].height + " x " + resolutions[i].refreshRate;
             options.Add(option);
-
-            if(resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
-            {
-                currentResolutionIndex = i;
-            }
+            if (resolutions[i].width == Screen.width && resolutions[i].height == Screen.height)
+                currentresolutionindex = i;
         }
-        dropdown.AddOptions(options);
-        dropdown.value = currentResolutionIndex;
-        dropdown.RefreshShownValue();
+        resolutiondropdown.AddOptions(options);
+        resolutiondropdown.value = currentresolutionindex;
+        resolutions = resolutions.OrderByDescending(res => res.width).ToArray();
+        resolutiondropdown.RefreshShownValue();
 
         saveInterval.text = PlayerPrefs.GetInt("autoSaveTimer", 10).ToString();
         saveToggle.isOn = PlayerPrefs.GetInt("AutoSave", 1) != 0;
         fullscreen.isOn = PlayerPrefs.GetInt("fullscreen", 1) != 0;
         streamerMode.isOn = PlayerPrefs.GetInt("StreamerMode", 1) != 0;
 
-        if (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.LinuxEditor)
-        {
-            Debug.Log("Windows");
-            image.GetComponent<RectTransform>().SetTop(0.0065479f);
-            image.GetComponent<RectTransform>().SetTop(1200.3f);
-
-        }
         if (Application.platform == RuntimePlatform.OSXEditor)
         {
             Debug.Log("mac");
             image.GetComponent<RectTransform>().SetTop(-0.0049505f);
-            image.GetComponent<RectTransform>().SetTop(1134.8f);
+            image.GetComponent<RectTransform>().SetBottom(1134.8f);
+        }
+        else
+        {
+            Debug.Log("Windows");
+            image.GetComponent<RectTransform>().SetTop(0.2077026f);
+            image.GetComponent<RectTransform>().SetBottom(0.1923218f);
         }
     }
 

@@ -14,59 +14,49 @@ public class GloveScript : MonoBehaviour
     public SaveObject so;
     public ClickerScript cs;
     public GloveBuyScript gbs;
-    private float RpreviousIncrement;
-    private float LpreviousIncrement;
-
+    private float RGcurrentIncrement;
+    private float LGcurrentIncrement;
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
     }
 
-    public void ChangeHand(int hand)
+    public void ChangeGlove(int glove)
     {
         if (RHbool)
         {
-            sr.sprite = righthand[hand];
-            currentRH = hand;
-            AddIncrement(hand);
+            sr.sprite = righthand[glove];
+            currentRH = glove;
+            AddIncrement(glove);
         }
         else
         {
-            sr.sprite = lefthand[hand];
-            currentLH = hand;
-            AddIncrement(hand);
+            sr.sprite = lefthand[glove];
+            currentLH = glove;
+            AddIncrement(glove);
         }
     }
 
-    public void AddIncrement(int hand)
+    public void AddIncrement(int glove)
     {
         if (RHbool)
         {
-            cs.Downgrade(RpreviousIncrement);
-            cs.Upgrade(gbs.RGaddedIncrement[hand]);
-            RpreviousIncrement = gbs.RGaddedIncrement[hand];
+            if (gbs.RGaddedIncrement[glove] > RGcurrentIncrement)
+            {
+                cs.Upgrade(gbs.RGaddedIncrement[glove], "RG");
+                RGcurrentIncrement = gbs.RGaddedIncrement[glove];
+            }
         }
         else
         {
-            cs.Downgrade(LpreviousIncrement);
-            cs.Upgrade(gbs.LGaddedIncrement[hand]);
-            LpreviousIncrement = gbs.LGaddedIncrement[hand];
+            if (gbs.LGaddedIncrement[glove] > LGcurrentIncrement)
+            {
+                cs.Upgrade(gbs.LGaddedIncrement[glove], "LG");
+                LGcurrentIncrement = gbs.LGaddedIncrement[glove];
+            }
         }
     }
 
-    public void RandomHand()
-    {
-        if(RHbool)
-        {
-            randomInt = Random.Range(0, righthand.Length);
-            ChangeHand(randomInt);
-        }
-        else
-        {
-            randomInt = Random.Range(0, lefthand.Length);
-            ChangeHand(randomInt);
-        }
-    }
 
     public void Buy()
     {

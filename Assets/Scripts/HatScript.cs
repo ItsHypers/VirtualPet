@@ -12,6 +12,7 @@ public class HatScript : MonoBehaviour
     public ClickerScript cs;
     public HatsBuyScript hbs;
     private float previousIncrement;
+    private float currentIncrement;
 
     private void Awake()
     {
@@ -25,11 +26,13 @@ public class HatScript : MonoBehaviour
         AddIncrement(hat);
     }
 
-    public void AddIncrement(int face)
+    public void AddIncrement(int hat)
     {
-        cs.Downgrade(previousIncrement);
-        cs.Upgrade(hbs.addedIncrement[face]);
-        previousIncrement = hbs.addedIncrement[face];
+        if (hbs.addedIncrement[hat] > currentIncrement)
+        {
+            cs.Upgrade(hbs.addedIncrement[hat], "hat");
+            previousIncrement = hbs.addedIncrement[hat];
+        }
     }
 
     public void RandomHat()

@@ -14,9 +14,8 @@ public class FeetScript : MonoBehaviour
     public SaveObject so;
     public ClickerScript cs;
     public ShoeBuyScript sbs;
-    private float RpreviousIncrement;
-    private float LpreviousIncrement;
-
+    private float RScurrentIncrement;
+    private float LScurrentIncrement;
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -41,15 +40,19 @@ public class FeetScript : MonoBehaviour
     {
         if (RFbool)
         {
-            cs.Downgrade(RpreviousIncrement);
-            cs.Upgrade(sbs.RSaddedIncrement[foot]);
-            RpreviousIncrement = sbs.RSaddedIncrement[foot];
+            if (sbs.RSaddedIncrement[foot] > RScurrentIncrement)
+            {
+                cs.Upgrade(sbs.RSaddedIncrement[foot], "RS");
+                RScurrentIncrement = sbs.RSaddedIncrement[foot];
+            }
         }
         else
         {
-            cs.Downgrade(LpreviousIncrement);
-            cs.Upgrade(sbs.LSaddedIncrement[foot]);
-            LpreviousIncrement = sbs.LSaddedIncrement[foot];
+            if (sbs.LSaddedIncrement[foot] > LScurrentIncrement)
+            {
+                cs.Upgrade(sbs.LSaddedIncrement[foot], "LS");
+                LScurrentIncrement = sbs.LSaddedIncrement[foot];
+            }
         }
     }
 

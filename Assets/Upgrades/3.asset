@@ -23,6 +23,6 @@ MonoBehaviour:
     virus is activated. It will then lock the victim out of the files until a ransom
     is paid. Use this to earn +10 More money a second!
   clickerUpgrades: 10
-  tier1shop: 3000
-  tier2shop: 5000
-  tier3shop: 7000
+  tier1shop: 2500
+  tier2shop: 4000
+  tier3shop: 6000

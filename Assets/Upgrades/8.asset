@@ -22,6 +22,6 @@ MonoBehaviour:
     the PC hard drive, this can then use other malware to steal information, encrypt
     files, or destroy all data. Use this to gain +400 more money a second!
   clickerUpgrades: 400
-  tier1shop: 125000
-  tier2shop: 225000
-  tier3shop: 275000
+  tier1shop: 115000
+  tier2shop: 200000
+  tier3shop: 250000
