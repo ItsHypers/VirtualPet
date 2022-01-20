@@ -11,7 +11,6 @@ public class HatScript : MonoBehaviour
     public SaveObject so;
     public ClickerScript cs;
     public HatsBuyScript hbs;
-    private float previousIncrement;
     private float currentIncrement;
 
     private void Awake()
@@ -30,8 +29,8 @@ public class HatScript : MonoBehaviour
     {
         if (hbs.addedIncrement[hat] > currentIncrement)
         {
-            cs.Upgrade(hbs.addedIncrement[hat], "hat");
-            previousIncrement = hbs.addedIncrement[hat];
+            cs.Upgrade(hbs.addedIncrement[hat], currentIncrement, "hat");
+            currentIncrement = hbs.addedIncrement[hat];
         }
     }
 

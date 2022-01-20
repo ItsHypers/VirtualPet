@@ -60,16 +60,18 @@ public void UpdateButton(float amount)
         bs.Money = bs.Money + buttonIncrease;
         Debug.Log(buttonIncrease);
     }
-    public void Upgrade(float amount, string item)
+    public void Upgrade(float amount, float remove, string item)
     {
         if(item == "upgrade")
         {
+            increment = increment - remove;
             increment = increment + amount;
         }
         if (item == "hat")
         {
             if (amount > Hi)
             {
+                increment = increment - remove;
                 increment = increment + amount;
                 Hi = amount;
             }
@@ -78,6 +80,7 @@ public void UpdateButton(float amount)
         {
             if (amount > FI)
             {
+                increment = increment - remove;
                 increment = increment + amount;
                 FI = amount;
             }
@@ -86,6 +89,7 @@ public void UpdateButton(float amount)
         {
             if (amount > LGI)
             {
+                increment = increment - remove;
                 increment = increment + amount;
                 FI = amount;
             }
@@ -94,6 +98,7 @@ public void UpdateButton(float amount)
         {
             if (amount > RGI)
             {
+                increment = increment - remove;
                 increment = increment + amount;
                 FI = amount;
             }
@@ -102,6 +107,7 @@ public void UpdateButton(float amount)
         {
             if (amount > RFI)
             {
+                increment = increment - remove;
                 increment = increment + amount;
                 FI = amount;
             }
@@ -110,6 +116,7 @@ public void UpdateButton(float amount)
         {
             if (amount > LFI)
             {
+                increment = increment - remove;
                 increment = increment + amount;
                 FI = amount;
             }

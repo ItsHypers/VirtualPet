@@ -32,63 +32,66 @@ public class SaveScript : MonoBehaviour
     }
     private void Update()
     {
-        AutoSave = PlayerPrefs.GetInt("AutoSave", 1) != 0;
-        autoSaveTimer = PlayerPrefs.GetInt("autoSaveTimer", 10); 
-        if (AutoSave)
+        if (Application.platform != RuntimePlatform.WebGLPlayer)
         {
-            Timer += Time.deltaTime;
-        }
-        if (Timer >= autoSaveTimer || manualSave)
-        {
-            Timer = 0f;
-            autoSave.SetTrigger("saved");
-            so.health = survival.Health;
-            so.hunger = survival.Hunger;
-            so.happiness = survival.Happiness;
-            so.money = bs.Money;
-
-            so.ballsSpawned = SUBS.ballsSpawned;
-            so.teddySpawned = SUBS.teddySpawned;
-            so.gameBoySpawned = SUBS.gameBoySpawned;
-            so.toysSpawned = SUBS.toysSpawned;
-
-            so.hat = hs.currentHat;
-            so.face = fs.currentFace;
-
-            foreach (GloveScript HS in gs)
+            AutoSave = PlayerPrefs.GetInt("AutoSave", 1) != 0;
+            autoSaveTimer = PlayerPrefs.GetInt("autoSaveTimer", 10);
+            if (AutoSave)
             {
-                if (HS.RHbool)
+                Timer += Time.deltaTime;
+            }
+            if (Timer >= autoSaveTimer || manualSave)
+            {
+                Timer = 0f;
+                autoSave.SetTrigger("saved");
+                so.health = survival.Health;
+                so.hunger = survival.Hunger;
+                so.happiness = survival.Happiness;
+                so.money = bs.Money;
+
+                so.ballsSpawned = SUBS.ballsSpawned;
+                so.teddySpawned = SUBS.teddySpawned;
+                so.gameBoySpawned = SUBS.gameBoySpawned;
+                so.toysSpawned = SUBS.toysSpawned;
+
+                so.hat = hs.currentHat;
+                so.face = fs.currentFace;
+
+                foreach (GloveScript HS in gs)
                 {
-                    so.rightHand = HS.currentRH;
+                    if (HS.RHbool)
+                    {
+                        so.rightHand = HS.currentRH;
+                    }
+                    else
+                        so.leftHand = HS.currentLH;
                 }
-                else
-                    so.leftHand = HS.currentLH;
+
+                foreach (FeetScript FS in FootS)
+                {
+                    if (FS.RFbool)
+                        so.rightFoot = FS.currentRF;
+                    else
+                        so.leftFoot = FS.currentLF;
+                }
+
+                so.HatsUnlocked = HBS.hatsUnlocked;
+                so.FaceUnlocked = FBS.faceUnlocked;
+
+                so.LGlovesUnlocked = GBS.LGlovesUnlocked;
+                so.RGlovesUnlocked = GBS.RGlovesUnlocked;
+
+                so.RShoeUnlocked = SBS.RShoeUnlocked;
+                so.LShoeUnlocked = SBS.LShoeUnlocked;
+
+                foreach (Upgrade upgrade in upgrades)
+                {
+                    int boolInt = upgrade.unlocked ? 1 : 0;
+                    so.upgrades[upgrade.upgradeName] = boolInt;
+                }
+                SaveManager.Save(so);
+                manualSave = false;
             }
-
-            foreach (FeetScript FS in FootS)
-            {
-                if (FS.RFbool)
-                    so.rightFoot = FS.currentRF;
-                else
-                    so.leftFoot = FS.currentLF;
-            }
-
-            so.HatsUnlocked = HBS.hatsUnlocked;
-            so.FaceUnlocked = FBS.faceUnlocked;
-
-            so.LGlovesUnlocked = GBS.LGlovesUnlocked;
-            so.RGlovesUnlocked = GBS.RGlovesUnlocked;
-
-            so.RShoeUnlocked = SBS.RShoeUnlocked;
-            so.LShoeUnlocked = SBS.LShoeUnlocked;
-
-            foreach (Upgrade upgrade in upgrades)
-            {
-                int boolInt = upgrade.unlocked ? 1 : 0;
-                so.upgrades[upgrade.upgradeName] = boolInt;
-            }
-            SaveManager.Save(so);
-            manualSave = false;
         }
     }
     public void LoadGame()

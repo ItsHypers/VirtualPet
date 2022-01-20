@@ -19,7 +19,7 @@ public class UpgradeItem : MonoBehaviour
     {
         if(upgrade.unlocked)
         {
-            cs.Upgrade(upgrade.increase, "upgrade");
+            cs.Upgrade(upgrade.increase, 0, "upgrade");
             text.text = upgrade.upgradeName + " Bought!";
             player.transform.localScale += new Vector3(upgrade.scaleAmount, upgrade.scaleAmount, upgrade.scaleAmount);
             sbs.UpdatePrice(upgrade.tier1shop, upgrade.tier2shop, upgrade.tier3shop);
@@ -33,7 +33,7 @@ public class UpgradeItem : MonoBehaviour
         {
             text.text = upgrade.upgradeName + " Bought!";
             bs.Money -= upgrade.cost;
-            cs.Upgrade(upgrade.increase, "upgrade");
+            cs.Upgrade(upgrade.increase, 0, "upgrade");
             player.transform.localScale += new Vector3(upgrade.scaleAmount, upgrade.scaleAmount, upgrade.scaleAmount);
             upgrade.unlocked = true;
             ss.upgradedUnlocked += 1;

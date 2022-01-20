@@ -28,7 +28,7 @@ public class FaceScript : MonoBehaviour
     {
         if (fbs.addedIncrement[face] > currentIncrement)
         {
-            cs.Upgrade(fbs.addedIncrement[face], "face");
+            cs.Upgrade(fbs.addedIncrement[face], currentIncrement, "face");
             currentIncrement = fbs.addedIncrement[face];
         }
     }

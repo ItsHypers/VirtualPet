@@ -43,7 +43,7 @@ public class GloveScript : MonoBehaviour
         {
             if (gbs.RGaddedIncrement[glove] > RGcurrentIncrement)
             {
-                cs.Upgrade(gbs.RGaddedIncrement[glove], "RG");
+                cs.Upgrade(gbs.RGaddedIncrement[glove], RGcurrentIncrement, "RG");
                 RGcurrentIncrement = gbs.RGaddedIncrement[glove];
             }
         }
@@ -51,7 +51,7 @@ public class GloveScript : MonoBehaviour
         {
             if (gbs.LGaddedIncrement[glove] > LGcurrentIncrement)
             {
-                cs.Upgrade(gbs.LGaddedIncrement[glove], "LG");
+                cs.Upgrade(gbs.LGaddedIncrement[glove], LGcurrentIncrement, "LG");
                 LGcurrentIncrement = gbs.LGaddedIncrement[glove];
             }
         }

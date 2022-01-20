@@ -42,7 +42,7 @@ public class FeetScript : MonoBehaviour
         {
             if (sbs.RSaddedIncrement[foot] > RScurrentIncrement)
             {
-                cs.Upgrade(sbs.RSaddedIncrement[foot], "RS");
+                cs.Upgrade(sbs.RSaddedIncrement[foot], RScurrentIncrement, "RS");
                 RScurrentIncrement = sbs.RSaddedIncrement[foot];
             }
         }
@@ -50,7 +50,7 @@ public class FeetScript : MonoBehaviour
         {
             if (sbs.LSaddedIncrement[foot] > LScurrentIncrement)
             {
-                cs.Upgrade(sbs.LSaddedIncrement[foot], "LS");
+                cs.Upgrade(sbs.LSaddedIncrement[foot], LScurrentIncrement, "LS");
                 LScurrentIncrement = sbs.LSaddedIncrement[foot];
             }
         }
