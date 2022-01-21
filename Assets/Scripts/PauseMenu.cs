@@ -18,7 +18,6 @@ public class PauseMenu : MonoBehaviour
     public TMP_InputField saveInterval;
     public TMP_InputField ballInput;
     public GameObject SaveChecker;
-    public GameObject Tabs;
     public GameObject Shop;
     public AudioMixer master;
     public AudioMixer sfx;
@@ -49,8 +48,6 @@ public class PauseMenu : MonoBehaviour
     [SerializeField]
     private GameObject shop;
     [SerializeField]
-    private GameObject tabs;
-    [SerializeField]
     private GameObject moneybutton;
     [SerializeField]
     private GameObject shopButton;
@@ -66,7 +63,6 @@ public class PauseMenu : MonoBehaviour
         saveToggle.isOn = PlayerPrefs.GetInt("AutoSave", 1) != 0;
         fullscreen.isOn = PlayerPrefs.GetInt("fullscreen", 1) != 0;
         streamerMode.isOn = PlayerPrefs.GetInt("StreamerMode", 1) != 0;
-        LeanTween.scale(Tabs, new Vector3(0, 0, 0), 0.6f);
         LeanTween.scale(Shop, new Vector3(0, 0, 0), 0.6f).setOnComplete(setActive);
 
         resolutions = Screen.resolutions;
@@ -87,25 +83,36 @@ public class PauseMenu : MonoBehaviour
 
         if (Application.platform == RuntimePlatform.OSXEditor)
         {
-            playerStat.GetComponent<RectTransform>().SetBottom(1088.37f);
-            shop.GetComponent<RectTransform>().SetTop(220.8f);
-            shop.GetComponent<RectTransform>().SetBottom(880.8f);
-            settingb.GetComponent<RectTransform>().SetBottom(1088.39f);
-            moneybutton.GetComponent<RectTransform>().SetTop(1063.8f);
-            shopButton.GetComponent<RectTransform>().SetTop(113.905f);
+            playerStat.GetComponent<RectTransform>().SetTop(-8.369995f);
+            playerStat.GetComponent<RectTransform>().SetBottom(-1088.37f);
+            playerStat.GetComponent<RectTransform>().SetLeft(-97.441f);
+            playerStat.GetComponent<RectTransform>().SetRight(96.559f);
+
+
+            shop.GetComponent<RectTransform>().SetTop(-20.0995f);
+            shop.GetComponent<RectTransform>().SetBottom(31.3045f);
+            shop.GetComponent<RectTransform>().SetLeft(79f);
+            shop.GetComponent<RectTransform>().SetRight(-37f);
+
+            settingb.GetComponent<RectTransform>().SetBottom(1043.776f);
+            settingb.GetComponent<RectTransform>().SetTop(0.009765625f);
+            settingb.GetComponent<RectTransform>().SetLeft(1736.833f);
+
+            moneybutton.GetComponent<RectTransform>().SetTop(1001.438f);
+            moneybutton.GetComponent<RectTransform>().SetBottom(40.26465f);
+            moneybutton.GetComponent<RectTransform>().SetLeft(23.37079f);
+            moneybutton.GetComponent<RectTransform>().SetRight(1433.436f);
+
+
+            shopButton.GetComponent<RectTransform>().SetTop(94.80499f);
+            shopButton.GetComponent<RectTransform>().SetBottom(875.765f);
+            shopButton.GetComponent<RectTransform>().SetLeft(1653.466f);
+            shopButton.GetComponent<RectTransform>().SetRight(0.02001953f);
+
+
             camobj.transform.position = new Vector3(30.09f, 12.2f, 0.97f);
         }
-        else
-        {
-            playerStat.GetComponent<RectTransform>().SetBottom(989);
-            shop.GetComponent<RectTransform>().SetTop(147.5875f);
-            shop.GetComponent<RectTransform>().SetBottom(821.5875f);
-            settingb.GetComponent<RectTransform>().SetBottom(987.09f);
-            moneybutton.GetComponent<RectTransform>().SetTop(943.4f);
-            shopButton.GetComponent<RectTransform>().SetTop(90.54898f);
-            shopButton.GetComponent<RectTransform>().SetBottom(775.233f);
-            camobj.transform.position = new Vector3(30.09f, 11.28f, 3.16f);
-        }
+        
         if (Application.platform == RuntimePlatform.WebGLPlayer)
         {
             foreach(GameObject go in nonWebGL)
@@ -113,6 +120,7 @@ public class PauseMenu : MonoBehaviour
                 go.SetActive(false);
             }
         }
+        fullscreen.isOn = Screen.fullScreen;
     }
 
     private void Update()
@@ -320,14 +328,11 @@ public class PauseMenu : MonoBehaviour
     {
         if (inShop)
         {
-            LeanTween.scale(Tabs, new Vector3(0, 0, 0), 0.8f).setEaseInBounce();
             LeanTween.scale(Shop, new Vector3(0, 0, 0), 0.8f).setEaseInBounce().setOnComplete(setActive);
         }
         else
         {
-            Tabs.SetActive(true);
             Shop.SetActive(true);
-            LeanTween.scale(Tabs, new Vector3(1, 1, 0), 0.8f).setEaseOutBounce();
             LeanTween.scale(Shop, new Vector3(1, 1, 0), 0.8f).setEaseOutBounce();
             inShop = true;
         }
@@ -335,7 +340,6 @@ public class PauseMenu : MonoBehaviour
 
     public void CloseTabs()
     {
-        LeanTween.scale(Tabs, new Vector3(0, 0, 0), 0.3f);
         LeanTween.scale(Shop, new Vector3(0, 0, 0), 0.3f);
         LeanTween.scale(Settings, new Vector3(0, 0, 0), 0.3f);
     }
@@ -343,7 +347,6 @@ public class PauseMenu : MonoBehaviour
     {
         if (inShop)
         {
-            Tabs.SetActive(false);
             Shop.SetActive(false);
             inShop = false;
         }

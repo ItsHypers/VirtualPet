@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class TabGroup : MonoBehaviour
 {
@@ -12,7 +13,10 @@ public class TabGroup : MonoBehaviour
     public TabButton selectedTab;
     public List<GameObject> objectsToSwap;
     private int currentObject;
-
+    [SerializeField]
+    private string[] URLText;
+    [SerializeField]
+    private TMP_Text url;
     public PanelGroup panelGroup;
 
 
@@ -73,6 +77,10 @@ public class TabGroup : MonoBehaviour
             {
                 objectsToSwap[i].SetActive(true);
                 LeanTween.scale(objectsToSwap[i], new Vector3(1, 1, 0), 0.35f);
+                if(URLText != null)
+                {
+                    url.text = URLText[i];
+                }
             }
             else
             {
