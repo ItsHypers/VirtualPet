@@ -77,7 +77,11 @@ public class TabGroup : MonoBehaviour
             {
                 objectsToSwap[i].SetActive(true);
                 LeanTween.scale(objectsToSwap[i], new Vector3(1, 1, 0), 0.35f);
-                if(URLText != null)
+                if(URLText.Length < i+1 || URLText[i] == null)
+                {
+                    Debug.Log("empty");
+                }
+                else
                 {
                     url.text = URLText[i];
                 }
