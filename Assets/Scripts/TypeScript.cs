@@ -44,6 +44,16 @@ public class TypeScript : MonoBehaviour
         so.playerName = name;
     }
 
+    public void skipType()
+    {
+        PlayerPrefs.SetInt("StartScreen", 0);
+        surv.paused = false;
+        pc.SetActive(false);
+        background.Play();
+        typeScript.Stop();
+
+    }
+
     void Update()
     {
         if (PlayerPrefs.GetInt("StartScreen", 1) != 0)
